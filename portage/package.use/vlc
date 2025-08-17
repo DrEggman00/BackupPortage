@@ -650,3 +650,12 @@ media-video/vlc -bluray
 # required by app-office/onlyoffice-bin-9.0.3::gentoo
 # required by onlyoffice-bin (argument)
 >=dev-qt/qtgui-5.15.17 eglfs
+# required by www-client/chromium-138.0.7204.183::gentoo[system-png]
+# required by www-client/chromium (argument)
+>=media-libs/libpng-1.6.50-r1 -apng
+# required by www-client/chromium-138.0.7204.183::gentoo
+# required by www-client/chromium (argument)
+>=net-libs/nodejs-22.13.1 inspector
+# required by www-client/chromium-138.0.7204.183::gentoo[system-png]
+# required by www-client/chromium (argument)
+=media-libs/libpng-1.6.47 -apng
