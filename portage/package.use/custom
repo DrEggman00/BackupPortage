@@ -13,4 +13,3 @@ media-gfx/krita gif gsl mypaint-brush-engine pdf -raw color-management debug fft
 
 www-client/chromium proprietary-codecs widevine vaapi cups pulseaudio system-harfbuzz system-icu -system-png system-zstd screencast rar wayland gtk4 qt6 official hangouts kerberos pgo -debug -test -custom-cflags -headless -selinux -pax-kernel -ffmpeg-chromium 
 
-media-libs/libpng apng

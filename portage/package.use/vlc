@@ -652,10 +652,13 @@ media-video/vlc -bluray
 >=dev-qt/qtgui-5.15.17 eglfs
 # required by www-client/chromium-138.0.7204.183::gentoo[system-png]
 # required by www-client/chromium (argument)
->=media-libs/libpng-1.6.50-r1 -apng
+#>=media-libs/libpng-1.6.50-r1 -apng
 # required by www-client/chromium-138.0.7204.183::gentoo
 # required by www-client/chromium (argument)
->=net-libs/nodejs-22.13.1 inspector
+#>=net-libs/nodejs-22.13.1 inspector
 # required by www-client/chromium-138.0.7204.183::gentoo[system-png]
 # required by www-client/chromium (argument)
-=media-libs/libpng-1.6.47 -apng
+#=media-libs/libpng-1.6.47 -apng
+# required by www-client/firefox-141.0.3::gentoo[system-png]
+# required by firefox:rapid (argument)
+>=media-libs/libpng-1.6.50-r1 apng
