@@ -3,7 +3,7 @@ kde-plasma/plasma-meta X browser-integration crash-handler display-manager sddm 
 media-video/pipewire X bluetooth extra ffmpeg jack-client pipewire-alsa readline sound-server systemd 
 
 dev-java/eclipse-ecj doc -source
-www-client/firefox:rapid X -clang jack system-pipewire wayland wifi -wasm-sandbox lto -pgo jumbo-build system-av1 system-libvpx system-webp system-jpeg system-png system-icu system-harfbuzz system-libevent dbus hwaccel pulseaudio gmp-autoupdate -debug -valgrind -test 
+www-client/firefox:rapid X -clang jack system-pipewire wayland dbus  wasm-sandbox lto pgo jumbo-build -system-av1 -system-libvpx system-webp system-jpeg system-png -system-icu -system-harfbuzz system-libevent dbus hwaccel pulseaudio gmp-autoupdate -debug -valgrind -test 
 
 dev-lang/python ensurepip ncurses readline ssl xml gdbm tk -wininst 
 
@@ -13,3 +13,7 @@ media-gfx/krita gif gsl mypaint-brush-engine pdf -raw color-management debug fft
 
 www-client/chromium proprietary-codecs widevine vaapi cups pulseaudio system-harfbuzz system-icu -system-png system-zstd screencast rar wayland gtk4 qt6 official hangouts kerberos pgo -debug -test -custom-cflags -headless -selinux -pax-kernel -ffmpeg-chromium 
 
+net-vpn/tor man verify-sig systemd seccomp caps lzma zstd scrypt doc -test -selinux -hardened 
+
+net-wireless/wpa_supplicant dbus qt6 readline gui p2p wps fils hs2-0 mbo tdls mesh ap -macsec eap-sim fasteap uncommon-eap-types smartcard wimax -tkip -wep wvite -ps3 -privsep -selinux eapol-test 
+net-analyzer/wireshark pcap gui plugins dumpcap capinfos captype editcap mergecap reordercap text2pcap filecaps tshark netlink zstd -sharkd -dftest -androiddump -ciscodump -dpauxmon http2 bcg729 doc 
