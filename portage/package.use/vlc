@@ -669,3 +669,10 @@ media-video/vlc -bluray
 # required by app-containers/podman-5.3.2::gentoo
 # required by app-containers/podman (argument)
 >=net-firewall/iptables-1.8.11-r1 nftables
+# required by app-containers/lxc-6.0.4-r1::gentoo[tools,caps]
+# required by app-containers/waydroid-1.5.4::guru
+# required by waydroid (argument)
+>=sys-libs/libcap-2.76 static-libs
+# required by sys-boot/os-prober-1.82::gentoo
+# required by os-prober (argument)
+>=sys-boot/grub-2.12-r7 mount
