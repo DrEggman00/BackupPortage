@@ -1,6 +1,8 @@
-kde-plasma/plasma-meta browser-integration wayland crash-handler display-manager -elogind kwallet firewall networkmanager sddm smart wallpapers X accessibility bluetooth -discover -grub -wallpapers -oxygen-theme plymouth systemd thunderbolt 
-#kde-plasma/plasma-meta X browser-integration crash-handler display-manager sddm systemd firewall kwallet networkmanager pipewire pulseaudio -wallpapers -flatpak accessibility bluetooth -crypt -cups -discover grub plymouth -oxygen-theme -rdp -sdk -thunderbolt -wacom -webengine -unsupported -discover
+#kde-plasma/plasma-meta browser-integration wayland crash-handler display-manager -elogind kwallet firewall networkmanager sddm smart wallpapers X accessibility bluetooth -discover -grub -wallpapers -oxygen-theme plymouth systemd thunderbolt 
+kde-plasma/plasma-meta X browser-integration crash-handler display-manager sddm systemd firewall kwallet networkmanager pipewire pulseaudio -wallpapers -flatpak accessibility bluetooth -crypt -cups -discover grub plymouth -oxygen-theme -rdp -sdk -thunderbolt -wacom -webengine -unsupported -discover
 media-video/pipewire X bluetooth extra ffmpeg jack-client pipewire-alsa readline sound-server systemd 
+
+#sys-libs/zlib minizip
 
 #dev-java/eclipse-ecj doc -source
 www-client/firefox:rapid X -clang jack system-pipewire wayland dbus  wasm-sandbox lto pgo jumbo-build -system-av1 -system-libvpx system-webp system-jpeg system-png -system-icu -system-harfbuzz system-libevent dbus hwaccel pulseaudio gmp-autoupdate -debug -valgrind -test 
@@ -16,5 +18,4 @@ dev-lang/python ensurepip ncurses readline ssl xml gdbm tk -wininst
 net-vpn/tor man verify-sig systemd seccomp caps lzma zstd scrypt doc -test -selinux -hardened 
 
 net-wireless/wpa_supplicant dbus qt6 readline gui p2p wps fils hs2-0 mbo tdls mesh ap -macsec eap-sim fasteap uncommon-eap-types smartcard wimax -tkip -wep wvite -ps3 -privsep -selinux eapol-test 
-#GNOME:net-wireless/wpa_supplicant dbus qt5 qt6 -gnome readline gui p2p wps fils hs2-0 mbo tdls mesh ap -macsec eap-sim fasteap uncommon-eap-types smartcard wimax -tkip -wep wvite -ps3 -privsep -selinux eapol-test
 net-analyzer/wireshark pcap gui plugins dumpcap capinfos captype editcap mergecap reordercap text2pcap filecaps tshark netlink zstd -sharkd -dftest -androiddump -ciscodump -dpauxmon http2 bcg729 doc 
