@@ -1,0 +1,1 @@
+net-wireless/wpa_supplicant dbus readline qt6 p2p wps ap mesh hs2-0 mbo fils tdls fasteap uncommon-eap-types eap-sim smartcard -tkip -wep -macsec -wimax -ps3 -broadcom-sta -privsep -selinux

@@ -859,3 +859,6 @@ media-video/vlc -bluray
 # required by media-video/cheese-44.1-r1::gentoo
 # required by @preserved-rebuild (argument)
 >=media-libs/gst-plugins-base-1.24.11-r1 theora
+# required by dev-python/matplotlib-3.10.3::gentoo[-test]
+# required by dev-python/matplotlib (argument)
+>=dev-python/pillow-11.3.0 webp
