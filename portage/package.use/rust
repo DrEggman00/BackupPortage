@@ -1,0 +1,1 @@
+dev-lang/rust clippy rustfmt rust-analyzer rust-src lto system-llvm doc -wasm verify-sig -test -debug -dist -mrustc-bootstrap -miri -nightly -parallel-compiler -big-endian -llvm-libunwind 

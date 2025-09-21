@@ -1,0 +1,1 @@
+sys-kernel/gentoo-kernel -debug -experimental -hardened modules-compress -modules-sign -secureboot -savedconfig -test -verify-sig initramfs strip 

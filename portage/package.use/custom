@@ -3,7 +3,7 @@ kde-plasma/plasma-meta browser-integration wayland crash-handler display-manager
 media-video/pipewire X bluetooth extra ffmpeg jack-client pipewire-alsa readline sound-server systemd 
 
 #dev-java/eclipse-ecj doc -source
-www-client/firefox:rapid X -clang jack system-pipewire wayland dbus  wasm-sandbox lto pgo jumbo-build -system-av1 -system-libvpx system-webp system-jpeg system-png -system-icu -system-harfbuzz system-libevent dbus hwaccel pulseaudio gmp-autoupdate -debug -valgrind -test 
+#www-client/firefox:rapid X -clang jack system-pipewire wayland dbus  wasm-sandbox lto pgo jumbo-build -system-av1 -system-libvpx system-webp system-jpeg system-png -system-icu -system-harfbuzz system-libevent dbus hwaccel pulseaudio gmp-autoupdate -debug -valgrind -test 
 
 dev-lang/python ensurepip ncurses readline ssl xml gdbm tk -wininst 
 

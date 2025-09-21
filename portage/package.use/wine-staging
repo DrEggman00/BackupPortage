@@ -1,0 +1,4 @@
+app-emulation/wine-staging X xcomposite xinerama alsa pulseaudio dbus fontconfig gecko mono opengl vulkan sdl ssl truetype unwind mingw gstreamer ffmpeg dos udev samba netapi opencl
+# required by app-emulation/wine-staging-10.15::gentoo[samba]
+# required by wine-staging (argument)
+>=net-fs/samba-4.22.3 winbind

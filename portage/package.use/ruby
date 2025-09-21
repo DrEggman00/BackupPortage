@@ -1,0 +1,1 @@
+dev-lang/ruby ssl -berkdb -debug doc -examples gdbm jemalloc jit -socks5 -static-libs -systemtap -tk -valgrind -xemacs

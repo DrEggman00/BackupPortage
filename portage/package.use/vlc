@@ -862,3 +862,22 @@ media-video/vlc -bluray
 # required by dev-python/matplotlib-3.10.3::gentoo[-test]
 # required by dev-python/matplotlib (argument)
 >=dev-python/pillow-11.3.0 webp
+# required by media-libs/x264-0.0.20240513::gentoo[opencl]
+# required by media-video/vlc-3.0.21_p20250217-r3::gentoo[x264]
+# required by media-libs/phonon-vlc-0.12.0-r2::gentoo
+# required by media-libs/phonon-4.12.0-r5::gentoo[-minimal]
+# required by kde-apps/dolphin-25.04.3::gentoo
+# required by @selected
+# required by @world (argument)
+>=virtual/opencl-3-r5 abi_x86_32
+# required by virtual/opencl-3-r5::gentoo
+# required by media-libs/mesa-25.1.7::gentoo[opencl]
+# required by media-libs/gst-plugins-base-1.24.11-r1::gentoo[gles2,opengl]
+# required by media-libs/gst-plugins-bad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[vaapi]
+# required by app-misc/localsearch-3.8.2::gentoo[gstreamer]
+# required by app-misc/tinysparql-3.8.2::gentoo[localsearch]
+# required by gnome-base/nautilus-47.4::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-libs/opencl-icd-loader-2024.10.24 abi_x86_32
