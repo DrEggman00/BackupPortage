@@ -9,3 +9,13 @@ app-emulation/wine-staging X xcomposite xinerama alsa pulseaudio dbus fontconfig
 # required by games-emulation/eden-0.0.3::guru
 # required by games-emulation/eden (argument)
 >=net-libs/mbedtls-2.28.10:0 cmac
+# required by app-emulation/virt-manager-5.0.0-r2::gentoo[gui]
+# required by virt-manager (argument)
+>=net-misc/spice-gtk-0.42-r4 sasl
+# required by gnome-extra/cinnamon-6.4.10-r1::gentoo
+# required by gnome-extra/cinnamon (argument)
+>=x11-libs/xapp-2.8.9 introspection
+# required by gnome-extra/nemo-6.4.5::gentoo
+# required by gnome-extra/cinnamon-6.4.10-r1::gentoo
+# required by gnome-extra/cinnamon (argument)
+>=dev-libs/libxmlb-0.3.21 introspection

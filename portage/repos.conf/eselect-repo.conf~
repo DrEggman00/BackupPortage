@@ -10,3 +10,7 @@ location = /var/db/repos/guru
 sync-type = git
 sync-uri = https://github.com/gentoo-mirror/guru.git
 
+[tomoshibi-overlay]
+location = /var/db/repos/tomoshibi-overlay
+sync-type = git
+sync-uri = https://github.com/tht2005/tomoshibi-overlay.git
