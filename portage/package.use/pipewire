@@ -1,3 +1,3 @@
-media-video/pipewire -ffmpeg
-media-video/ffmpeg -sdl
-media-libs/libsdl2 -pipewire
+media-video/pipewire ffmpeg extra
+media-video/ffmpeg sdl
+media-libs/libsdl2 pipewire

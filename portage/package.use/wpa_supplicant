@@ -1,1 +1,20 @@
 net-wireless/wpa_supplicant dbus readline qt6 p2p wps ap mesh hs2-0 mbo fils tdls fasteap uncommon-eap-types eap-sim smartcard -tkip -wep -macsec -wimax -ps3 -broadcom-sta -privsep -selinux
+# required by app-emulation/wine-staging-10.16::gentoo[samba]
+# required by wine-staging (argument)
+>=net-fs/samba-4.22.3 winbind
+# required by net-im/telegram-desktop-6.0.2-r1::gentoo
+# required by telegram-desktop (argument)
+>=media-video/ffmpeg-7.1.2 vpx opus
+# required by www-client/firefox-144.0-r1::gentoo[system-libvpx]
+# required by firefox (argument)
+>=media-libs/libvpx-1.15.2 postproc
+# required by www-client/firefox-144.0-r1::gentoo[system-png]
+# required by firefox (argument)
+>=media-libs/libpng-1.6.50-r1 apng
+# required by www-client/firefox-144.0-r1::gentoo[pgo,X]
+# required by firefox (argument)
+>=x11-base/xorg-server-21.1.18 xvfb
+# required by app-accessibility/orca-47.5::gentoo[braille,python_single_target_python3_13]
+# required by kde-plasma/plasma-meta-6.4.5-r1::gentoo[accessibility]
+# required by plasma-meta (argument)
+>=app-accessibility/brltty-6.7 python

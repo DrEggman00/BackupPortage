@@ -33,6 +33,7 @@ dev-util/spirv-tools            abi_x86_32
 dev-util/sysprof-capture        abi_x86_32
 gnome-base/librsvg              abi_x86_32
 gui-libs/libdecor               abi_x86_32
+llvm-core/clang                 abi_x86_32
 llvm-core/llvm                  abi_x86_32
 media-gfx/graphite2             abi_x86_32
 media-libs/alsa-lib             abi_x86_32
@@ -74,8 +75,6 @@ sys-apps/dbus                   abi_x86_32
 sys-apps/systemd                abi_x86_32
 sys-apps/systemd-utils          abi_x86_32
 sys-apps/util-linux             abi_x86_32
-# move sys-devel/clang llvm-core/clang
-llvm-core/clang                 abi_x86_32
 sys-libs/gdbm                   abi_x86_32
 sys-libs/gpm                    abi_x86_32
 sys-libs/libcap                 abi_x86_32

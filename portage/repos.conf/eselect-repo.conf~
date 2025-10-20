@@ -1,16 +1,6 @@
 # created by eselect-repo
 
-[pentoo]
-location = /var/db/repos/pentoo
+[CachyOS-kernels]
+location = /var/db/repos/CachyOS-kernels
 sync-type = git
-sync-uri = https://github.com/pentoo/pentoo-overlay.git
-
-[guru]
-location = /var/db/repos/guru
-sync-type = git
-sync-uri = https://github.com/gentoo-mirror/guru.git
-
-[tomoshibi-overlay]
-location = /var/db/repos/tomoshibi-overlay
-sync-type = git
-sync-uri = https://github.com/tht2005/tomoshibi-overlay.git
+sync-uri = https://github.com/Szowisz/CachyOS-kernels.git
