@@ -18,3 +18,25 @@ net-wireless/wpa_supplicant dbus readline qt6 p2p wps ap mesh hs2-0 mbo fils tdl
 # required by kde-plasma/plasma-meta-6.4.5-r1::gentoo[accessibility]
 # required by plasma-meta (argument)
 >=app-accessibility/brltty-6.7 python
+# required by dev-lang/php-8.3.21::gentoo
+# required by @selected
+# required by @world (argument)
+>=app-eselect/eselect-php-0.9.9 fpm apache2
+# required by dev-lang/php-8.3.21::gentoo[gd]
+# required by @selected
+# required by @world (argument)
+>=media-libs/gd-2.3.3-r4 avif webp
+# required by app-emulation/virt-manager-5.1.0::gentoo[gui]
+# required by virt-manager (argument)
+>=net-misc/spice-gtk-0.42-r4 sasl usbredir
+# required by app-emulation/libvirt-11.6.0-r2::gentoo[virt-network]
+# required by app-emulation/libvirt-glib-5.0.0-r1::gentoo
+# required by app-emulation/virt-manager-5.1.0::gentoo
+# required by virt-manager (argument)
+>=net-dns/dnsmasq-2.91 script
+# required by app-crypt/swtpm-0.10.0-r2::gentoo
+# required by app-emulation/libvirt-11.6.0-r2::gentoo[qemu]
+# required by app-emulation/libvirt-glib-5.0.0-r1::gentoo
+# required by app-emulation/virt-manager-5.1.0::gentoo
+# required by virt-manager (argument)
+>=net-libs/gnutls-3.8.10 pkcs11 tools
