@@ -40,3 +40,18 @@ net-wireless/wpa_supplicant dbus readline qt6 p2p wps ap mesh hs2-0 mbo fils tdl
 # required by app-emulation/virt-manager-5.1.0::gentoo
 # required by virt-manager (argument)
 >=net-libs/gnutls-3.8.10 pkcs11 tools
+# required by media-gfx/blender-4.4.3::gentoo
+# required by blender (argument)
+>=media-libs/freetype-2.14.1-r1 brotli
+# required by media-gfx/blender-4.4.3::gentoo[bullet]
+# required by blender (argument)
+>=sci-physics/bullet-3.21 double-precision
+# required by media-gfx/blender-4.4.3::gentoo[ffmpeg]
+# required by blender (argument)
+>=media-video/ffmpeg-7.1.2 lame theora
+# required by media-gfx/blender-4.4.3::gentoo[fftw]
+# required by blender (argument)
+>=sci-libs/fftw-3.3.10-r1 threads
+# required by media-gfx/blender-4.4.3::gentoo[opensubdiv]
+# required by blender (argument)
+>=media-libs/opensubdiv-3.6.1 tbb

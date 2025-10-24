@@ -1,6 +1,18 @@
 # created by eselect-repo
 
-[CachyOS-kernels]
-location = /var/db/repos/CachyOS-kernels
+
+[pentoo]
+location = /var/db/repos/pentoo
 sync-type = git
-sync-uri = https://github.com/Szowisz/CachyOS-kernels.git
+sync-uri = https://github.com/pentoo/pentoo-overlay.git
+
+[steam-overlay]
+location = /var/db/repos/steam-overlay
+sync-type = git
+sync-uri = https://github.com/anyc/steam-overlay.git
+
+
+[zugaina]
+location = /var/db/repos/zugaina
+sync-type = rsync
+sync-uri = rsync://gentoo.zugaina.org/zugaina-portage
