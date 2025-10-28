@@ -2,7 +2,7 @@
 # Automatically generated file; DO NOT EDIT.
 # Linux/x86 6.12.47 Kernel Configuration
 #
-CONFIG_CC_VERSION_TEXT="x86_64-pc-linux-gnu-gcc (Gentoo 14.3.1_p20250801 p4) 14.3.1 20250801"
+CONFIG_CC_VERSION_TEXT="x86_64-pc-linux-gnu-gcc (Gentoo 14.3.1_p20250801) 14.3.1 20250801"
 CONFIG_CC_IS_GCC=y
 CONFIG_GCC_VERSION=140301
 CONFIG_CLANG_VERSION=0
