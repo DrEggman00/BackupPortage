@@ -1,8 +1,0 @@
->=dev-python/markdown-it-py-4
->=dev-python/mdit-py-plugins-0.5
->=sys-firmware/edk2-bin-202411
->=sys-firmware/ipxe-1.21.1_p20230601
->=dev-libs/tree-sitter-lua-0.4
->=dev-libs/tree-sitter-markdown-0.5
->=dev-libs/tree-sitter-vim-0.6
->=dev-libs/tree-sitter-vimdoc-4
