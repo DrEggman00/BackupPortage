@@ -11,7 +11,7 @@ dev-lang/python ensurepip ncurses readline ssl xml gdbm tk -wininst
 #media-gfx/gimp wayland -X jpeg2k jpegxl openexr webp xpm -alsa -fits -gnome -heif lua -mng poscript udev -vala -vector-icons -wmf -aqua -aalib debug doc -javascript openmp -test -unwind
 #media-gfx/krita gif gsl mypaint-brush-engine pdf -raw color-management debug fftw -heif jpeg2k jpegxl media openexr -test webp 
 
-www-client/chromium proprietary-codecs widevine vaapi cups pulseaudio system-harfbuzz system-icu -system-png system-zstd screencast rar wayland gtk4 qt6 official hangouts kerberos pgo -debug -test -custom-cflags -headless -selinux -pax-kernel -ffmpeg-chromium 
+www-client/chromium proprietary-codecs widevine vaapi cups pulseaudio system-harfbuzz system-icu -system-png system-zstd screencast rar wayland gtk4 qt6 official -hangouts kerberos pgo -debug -test -custom-cflags -headless -selinux -pax-kernel -ffmpeg-chromium 
 
 net-vpn/tor man verify-sig systemd seccomp caps lzma zstd scrypt doc -test -selinux -hardened 
 
