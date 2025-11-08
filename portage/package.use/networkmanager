@@ -1,1 +1,0 @@
-net-misc/networkmanager systemd wifi tools polkit nss introspection modemmanager ppp concheck iwd bluetooth connection-sharing -ovs -ofono ps1 -elogind -selinux -wext -debug -gtk-doc -audit -syslog iptables nftables

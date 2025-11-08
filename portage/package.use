@@ -1,3 +1,238 @@
+#CPU
+*/* CPU_FLAGS_X86: aes avx avx2 avx512_bitalg avx512_vbmi2 avx512_vnni avx512_vp2intersect avx512_vpopcntdq avx512bw avx512cd avx512dq avx512f avx512ifma avx512vbmi avx512vl bmi1 bmi2 f16c fma3 mmx mmxext pclmul popcnt rdrand sha sse sse2 sse3 sse4_1 sse4_2 ssse3 vpclmulqdq
+
+#Android Studio
+dev-util/android-studio -selinux
+
+#Blender
+media-gfx/blender bullet color-management cycles cycles-bin-kernels embree ffmpeg fftw fluid gmp jemalloc nanovdb oidn openexr opengl  openmp opengl opensubdiv openvdb otf pdf potrace pugixml sndfile tbb tiff truetype alembic collada ndof nls pipewire renderdoc sdl vulkan wayland cuda -optix oneapi 
+media-libs/openimageio tiff jpeg png openexr webp pugixml
+
+#Cinnamon
+#gnome-extra/cinnamon networkmanager nls gstreamer wayland eds
+
+#Clang
+llvm-core/clang extra pie static-analyzer verify-sig xml doc -test -debug -ieee-long-double
+
+#KDE
+kde-plasma/plasma-meta browser-integration wayland crash-handler display-manager kwallet firewall networkmanager sddm smart wallpapers X accessibility bluetooth -discover -grub -wallpapers -oxygen-theme plymouth systemd thunderbolt 
+#kde-plasma/plasma-meta X browser-integration crash-handler display-manager sddm systemd firewall kwallet networkmanager pipewire pulseaudio -wallpapers -flatpak accessibility bluetooth -crypt -cups -discover grub plymouth -oxygen-theme -rdp -sdk -thunderbolt -wacom -webengine -unsupported -discover
+
+#Pipewire
+media-video/pipewire X bluetooth extra ffmpeg jack-client pipewire-alsa readline sound-server systemd
+media-video/ffmpeg sdl
+media-libs/libsdl2 pipewire
+
+#NetworkManager
+net-misc/networkmanager iwd systemd wifi tools polkit nss introspection modemmanager ppp concheck iwd bluetooth connection-sharing -ovs -ofono ps1 -elogind -selinux -wext -debug -gtk-doc -audit -syslog iptables nftables
+
+#Python
+dev-lang/python ensurepip ncurses readline ssl xml gdbm tk -wininst 
+
+#Chromium
+www-client/chromium proprietary-codecs widevine vaapi cups pulseaudio system-harfbuzz system-icu -system-png system-zstd screencast rar wayland gtk4 qt6 official -hangouts kerberos pgo -debug -test -custom-cflags -headless -selinux -pax-kernel -ffmpeg-chromium 
+
+#Tor
+net-vpn/tor man verify-sig systemd seccomp caps lzma zstd scrypt doc -test -selinux -hardened 
+
+#Wireless Tools
+net-wireless/wpa_supplicant dbus qt6 readline gui p2p wps fils hs2-0 mbo tdls mesh ap -macsec eap-sim fasteap uncommon-eap-types smartcard wimax -tkip -wep wvite -ps3 -privsep -selinux eapol-test 
+#net-wireless/wpa_supplicant dbus readline qt6 p2p wps ap mesh hs2-0 mbo fils tdls fasteap uncommon-eap-types eap-sim smartcard -tkip -wep -macsec -wimax -ps3 -broadcom-sta -privsep -selinux
+
+#GNOME:net-wireless/wpa_supplicant dbus qt5 qt6 -gnome readline gui p2p wps fils hs2-0 mbo tdls mesh ap -macsec eap-sim fasteap uncommon-eap-types smartcard wimax -tkip -wep wvite -ps3 -privsep -selinux eapol-test
+net-analyzer/wireshark pcap gui plugins dumpcap capinfos captype editcap mergecap reordercap text2pcap filecaps tshark netlink zstd -sharkd -dftest -androiddump -ciscodump -dpauxmon http2 bcg729 doc 
+
+#Docker
+app-containers/docker systemd container-init overlay2 -btrfs -apparmor 
+
+#Firefox
+www-client/firefox X wayland dbus pulseaudio system-pipewire system-av1 system-harfbuzz system-icu system-jpeg system-libevent system-libvpx system-webp system-png openh264 hwaccel wasm-sandbox wifi clang pgo jumbo-build -jpegxl -libproxy -valgrind -telemetry -eme-free -jack -sndio -gnome-shell -debug -test -selinux 
+
+#GCC 
+sys-devel/gcc cxx pie ssp hardened lto rust time64 pgo pch openmp vanilla extra -libgdiagnostics zstd -valgrind fortran -ada cobol -d -modula2 -go -objc -fixed-point -objc-gc -debug cet -systemtap -ieee-long-double -test jit multilib -default-stack-clash-protection 
+
+#Gentoo-kernel
+sys-kernel/gentoo-kernel -debug -experimental -hardened modules-compress -modules-sign -secureboot -savedconfig -test -verify-sig initramfs strip
+# required by sys-boot/os-prober-1.82::gentoo
+# required by os-prober (argument)
+>=sys-boot/grub-2.12-r7 mount
+
+sys-kernel/installkernel dracut
+
+#Kodi
+media-tv/kodi -vdpau
+
+#Libreoffice
+app-office/libreoffice branding -cups dubs kde qt6 vulkan pdfimport -base mariadb postgres -java gstreamer bluetooth googledrive -ldap -odk -gtk -gtk3 -gtk4 -eds -coinmp -debug -test -valgrind -custom-cflags
+
+#Libvirt
+app-emulation/libvirt caps libvirtd qemu udev virt-network policykit nls parted numa virtiofs firewalld bash-completion -lxc -xen -virtualbox -dtrace -selinux -test -verify-sig 
+
+#MySQL
+dev-db/mysql server perl jemalloc router profiling -cjk -latin1 -cracklib -numa -selinux -test -test-install -debug -tcmalloc -verify-sig
+
+#NodeJS 
+net-libs/nodejs icu inspector snapshot ssl system-icu system-ssl npm corepack lto -doc -debug -pax-kernel -test 
+
+#P7zip
+app-arch/p7zip rar
+
+#PHP
+dev-lang/php cli ctype fileinfo filter iconv opcache phar posix session simplexml token bzip2 curl exif gd intl jpeg png readline sockets ssl zlib zip system unicode nls opcache-jit jit sodium pcntl posix pdo sqlite apache2 fpm mysql mysqli postgres pdo soap xmlreader xmlwriter xslt webp avif truetype 
+
+#Postgresql
+dev-db/postgresql systemd server readline ssl zlib lz4 zstd uuid icu python perl -pam -ldap -kerberos -oauth -static-libs -debug doc -test
+
+#QEMU 
+app-emulation/qemu aio io-uring udev vhost-net slirp spice sdl gtk usb fdt pin-upstream-blobs seccomp filecaps vnc jpeg png gnutls virgl opengl xattr virtfs alsa pulseaudio pipewire curl ssh nfs -plugins jemalloc -numa doc -oss -infiniband -xen -systemtap -debug -valgrind -selinux
+app-emulation/qemu   QEMU_SOFTMMU_TARGETS:   riscv32   riscv64
+app-emulation/qemu   QEMU_USER_TARGETS:   riscv32   riscv64
+app-emulation/virt-manager gui policykit sasl verif-sig
+
+#Ruby 
+dev-lang/ruby ssl -berkdb -debug doc -examples gdbm jemalloc jit -socks5 -static-libs -systemtap -tk -valgrind -xemacs
+
+#Steam 
+app-accessibility/at-spi2-core  abi_x86_32
+app-arch/bzip2                  abi_x86_32
+app-arch/lz4                    abi_x86_32
+app-arch/zstd                   abi_x86_32
+dev-db/sqlite                   abi_x86_32
+dev-lang/rust-bin               abi_x86_32
+dev-libs/dbus-glib              abi_x86_32
+dev-libs/elfutils               abi_x86_32
+dev-libs/expat                  abi_x86_32
+dev-libs/fribidi                abi_x86_32
+dev-libs/glib                   abi_x86_32
+dev-libs/gmp                    abi_x86_32
+dev-libs/icu                    abi_x86_32
+dev-libs/json-glib              abi_x86_32
+dev-libs/libevdev               abi_x86_32
+dev-libs/libffi                 abi_x86_32
+dev-libs/libgcrypt              abi_x86_32
+dev-libs/libgpg-error           abi_x86_32
+dev-libs/libgudev               abi_x86_32
+dev-libs/libgusb                abi_x86_32
+dev-libs/libpcre2               abi_x86_32
+dev-libs/libtasn1               abi_x86_32
+dev-libs/libunistring           abi_x86_32
+dev-libs/libusb                 abi_x86_32
+dev-libs/libxml2                abi_x86_32
+dev-libs/lzo                    abi_x86_32
+dev-libs/nettle                 abi_x86_32
+dev-libs/nspr                   abi_x86_32
+dev-libs/nss                    abi_x86_32
+dev-libs/openssl                abi_x86_32
+dev-libs/wayland                abi_x86_32
+dev-util/spirv-tools            abi_x86_32
+dev-util/sysprof-capture        abi_x86_32
+gnome-base/librsvg              abi_x86_32
+gui-libs/libdecor               abi_x86_32
+llvm-core/clang                 abi_x86_32
+llvm-core/llvm                  abi_x86_32
+media-gfx/graphite2             abi_x86_32
+media-libs/alsa-lib             abi_x86_32
+media-libs/flac                 abi_x86_32
+media-libs/fontconfig           abi_x86_32
+media-libs/freetype             abi_x86_32
+media-libs/glu                  abi_x86_32
+media-libs/harfbuzz             abi_x86_32
+media-libs/lcms                 abi_x86_32
+media-libs/libepoxy             abi_x86_32
+media-libs/libglvnd             abi_x86_32
+media-libs/libjpeg-turbo        abi_x86_32
+media-libs/libogg               abi_x86_32
+media-libs/libpng               abi_x86_32
+media-libs/libpulse             abi_x86_32
+media-libs/libsdl2              abi_x86_32
+media-libs/libsndfile           abi_x86_32
+media-libs/libva                abi_x86_32
+media-libs/libvorbis            abi_x86_32
+media-libs/mesa                 abi_x86_32
+media-libs/openal               abi_x86_32
+media-libs/opus                 abi_x86_32
+media-libs/tiff                 abi_x86_32
+media-sound/lame                abi_x86_32
+media-sound/mpg123-base         abi_x86_32
+media-video/pipewire            abi_x86_32
+net-dns/c-ares                  abi_x86_32
+net-dns/libidn2                 abi_x86_32
+net-libs/gnutls                 abi_x86_32
+net-libs/libasyncns             abi_x86_32
+net-libs/libndp                 abi_x86_32
+net-libs/libpsl                 abi_x86_32
+net-libs/nghttp2                abi_x86_32
+net-libs/nghttp3                abi_x86_32
+net-misc/curl                   abi_x86_32
+net-misc/networkmanager         abi_x86_32
+net-print/cups                  abi_x86_32
+sys-apps/dbus                   abi_x86_32
+sys-apps/systemd                abi_x86_32
+sys-apps/systemd-utils          abi_x86_32
+sys-apps/util-linux             abi_x86_32
+sys-libs/gdbm                   abi_x86_32
+sys-libs/gpm                    abi_x86_32
+sys-libs/libcap                 abi_x86_32
+sys-libs/libudev-compat         abi_x86_32
+sys-libs/ncurses                abi_x86_32
+sys-libs/pam                    abi_x86_32
+sys-libs/readline               abi_x86_32
+sys-libs/zlib                   abi_x86_32
+virtual/glu                     abi_x86_32
+virtual/libelf                  abi_x86_32
+virtual/libiconv                abi_x86_32
+virtual/libintl                 abi_x86_32
+virtual/libudev                 abi_x86_32
+virtual/libusb                  abi_x86_32
+virtual/opengl                  abi_x86_32
+virtual/rust                    abi_x86_32
+x11-libs/cairo                  abi_x86_32
+x11-libs/extest                 abi_x86_32
+x11-libs/gdk-pixbuf             abi_x86_32
+x11-libs/gtk+                   abi_x86_32
+x11-libs/gtk+                   abi_x86_32
+x11-libs/libdrm                 abi_x86_32
+x11-libs/libICE                 abi_x86_32
+x11-libs/libpciaccess           abi_x86_32
+x11-libs/libSM                  abi_x86_32
+x11-libs/libvdpau               abi_x86_32
+x11-libs/libX11                 abi_x86_32
+x11-libs/libXau                 abi_x86_32
+x11-libs/libxcb                 abi_x86_32
+x11-libs/libXcomposite          abi_x86_32
+x11-libs/libXcursor             abi_x86_32
+x11-libs/libXdamage             abi_x86_32
+x11-libs/libXdmcp               abi_x86_32
+x11-libs/libXext                abi_x86_32
+x11-libs/libXfixes              abi_x86_32
+x11-libs/libXft                 abi_x86_32
+x11-libs/libXi                  abi_x86_32
+x11-libs/libXinerama            abi_x86_32
+x11-libs/libxkbcommon           abi_x86_32
+x11-libs/libXrandr              abi_x86_32
+x11-libs/libXrender             abi_x86_32
+x11-libs/libXScrnSaver          abi_x86_32
+x11-libs/libxshmfence           abi_x86_32
+x11-libs/libXtst                abi_x86_32
+x11-libs/libXxf86vm             abi_x86_32
+x11-libs/pango                  abi_x86_32
+x11-libs/pixman                 abi_x86_32
+x11-libs/xcb-util-keysyms       abi_x86_32
+x11-misc/colord                 abi_x86_32
+app-arch/xz-utils               abi_x86_32
+app-crypt/p11-kit               abi_x86_32
+gui-libs/egl-gbm            abi_x86_32
+gui-libs/egl-wayland        abi_x86_32
+gui-libs/egl-x11            abi_x86_32
+x11-drivers/nvidia-drivers  abi_x86_32
+
+#Telegram Desktop
+net-im/telegram-desktop X wayland dbus screencast fonts jemalloc -libdispatch enchant -webkit
+
+#Virtualbox
+app-emulation/virtualbox gui vde udev alsa pulseaudio opengl vnc java vboxwebsrv -sdl sdk -debug -doc -dtrace -modules-compress -modules-sign -test -pch -lvm nls -vmmraw 
+
+#VLC
 media-video/vlc -bluray
 # required by sys-kernel/gentoo-kernel-6.12.38::gentoo[initramfs]
 # required by virtual/dist-kernel-6.12.38::gentoo
@@ -881,3 +1116,85 @@ media-video/vlc -bluray
 # required by @selected
 # required by @world (argument)
 >=dev-libs/opencl-icd-loader-2024.10.24 abi_x86_32
+
+#Wine
+app-emulation/wine-proton X xcomposite xinerama alsa pulseaudio dbus fontconfig gecko mono sdl ssl unwind mingw ffmpeg udev usb -v4l wayland nls
+app-emulation/wine-staging X xcomposite xinerama alsa pulseaudio dbus fontconfig gecko mono opengl vulkan sdl ssl truetype unwind mingw gstreamer ffmpeg dos udev samba netapi opencl
+
+#Wpa_supplicant
+#net-wireless/wpa_supplicant dbus readline qt6 p2p wps ap mesh hs2-0 mbo fils tdls fasteap uncommon-eap-types eap-sim smartcard -tkip -wep -macsec -wimax -ps3 -broadcom-sta -privsep -selinux
+# required by app-emulation/wine-staging-10.16::gentoo[samba]
+# required by wine-staging (argument)
+>=net-fs/samba-4.22.3 winbind
+# required by net-im/telegram-desktop-6.0.2-r1::gentoo
+# required by telegram-desktop (argument)
+>=media-video/ffmpeg-7.1.2 vpx opus
+# required by www-client/firefox-144.0-r1::gentoo[system-libvpx]
+# required by firefox (argument)
+>=media-libs/libvpx-1.15.2 postproc
+# required by www-client/firefox-144.0-r1::gentoo[system-png]
+# required by firefox (argument)
+>=media-libs/libpng-1.6.50-r1 apng
+# required by www-client/firefox-144.0-r1::gentoo[pgo,X]
+# required by firefox (argument)
+>=x11-base/xorg-server-21.1.18 xvfb
+# required by app-accessibility/orca-47.5::gentoo[braille,python_single_target_python3_13]
+# required by kde-plasma/plasma-meta-6.4.5-r1::gentoo[accessibility]
+# required by plasma-meta (argument)
+>=app-accessibility/brltty-6.7 python
+# required by dev-lang/php-8.3.21::gentoo
+# required by @selected
+# required by @world (argument)
+>=app-eselect/eselect-php-0.9.9 fpm apache2
+# required by dev-lang/php-8.3.21::gentoo[gd]
+# required by @selected
+# required by @world (argument)
+>=media-libs/gd-2.3.3-r4 avif webp
+# required by app-emulation/virt-manager-5.1.0::gentoo[gui]
+# required by virt-manager (argument)
+>=net-misc/spice-gtk-0.42-r4 sasl usbredir
+# required by app-emulation/libvirt-11.6.0-r2::gentoo[virt-network]
+# required by app-emulation/libvirt-glib-5.0.0-r1::gentoo
+# required by app-emulation/virt-manager-5.1.0::gentoo
+# required by virt-manager (argument)
+>=net-dns/dnsmasq-2.91 script
+# required by app-crypt/swtpm-0.10.0-r2::gentoo
+# required by app-emulation/libvirt-11.6.0-r2::gentoo[qemu]
+# required by app-emulation/libvirt-glib-5.0.0-r1::gentoo
+# required by app-emulation/virt-manager-5.1.0::gentoo
+# required by virt-manager (argument)
+>=net-libs/gnutls-3.8.10 pkcs11 tools
+# required by media-gfx/blender-4.4.3::gentoo
+# required by blender (argument)
+>=media-libs/freetype-2.14.1-r1 brotli
+# required by media-gfx/blender-4.4.3::gentoo[bullet]
+# required by blender (argument)
+>=sci-physics/bullet-3.21 double-precision
+# required by media-gfx/blender-4.4.3::gentoo[ffmpeg]
+# required by blender (argument)
+>=media-video/ffmpeg-7.1.2 lame theora
+# required by media-gfx/blender-4.4.3::gentoo[fftw]
+# required by blender (argument)
+>=sci-libs/fftw-3.3.10-r1 threads
+# required by media-gfx/blender-4.4.3::gentoo[opensubdiv]
+# required by blender (argument)
+>=media-libs/opensubdiv-3.6.1 tbb
+
+#Zig
+dev-lang/zig llvm doc verify-sig
+# required by app-emulation/libvirt-11.6.0-r2::gentoo[parted]
+# required by app-emulation/libvirt-glib-5.0.0-r1::gentoo
+# required by app-emulation/virt-manager-5.1.0::gentoo
+# required by @selected
+# required by @world (argument)
+>=sys-block/parted-3.6-r2 device-mapper
+# required by app-emulation/libvirt-11.6.0-r2::gentoo[parted]
+# required by app-emulation/libvirt-glib-5.0.0-r1::gentoo
+# required by app-emulation/virt-manager-5.1.0::gentoo
+# required by @selected
+# required by @world (argument)
+>=sys-fs/lvm2-2.03.22-r7 lvm
+# required by app-office/libreoffice-25.2.6.2::gentoo[postgres]
+# required by @selected
+# required by @world (argument)
+>=dev-db/postgresql-17.6-r2 kerberos

@@ -1,3 +1,0 @@
-media-gfx/blender bullet color-management cycles cycles-bin-kernels embree ffmpeg fftw fluid gmp jemalloc nanovdb oidn openexr opengl  openmp opengl opensubdiv openvdb otf pdf potrace pugixml sndfile tbb tiff truetype alembic collada ndof nls pipewire renderdoc sdl vulkan wayland cuda -optix oneapi 
-media-libs/openimageio tiff jpeg png openexr webp pugixml
-

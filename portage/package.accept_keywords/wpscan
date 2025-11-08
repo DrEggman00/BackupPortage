@@ -1,6 +1,0 @@
-net-analyzer/wpscan ~amd64
-dev-ruby/cms_scanner ~amd64
-dev-ruby/get_process_mem ~amd64
-dev-ruby/typhoeus ~amd64
-dev-ruby/ethon ~amd64
-dev-ruby/sys-proctable ~amd64

@@ -1,1 +1,0 @@
-app-emulation/libvirt caps libvirtd qemu udev virt-network policykit nls parted numa virtiofs firewalld bash-completion -lxc -xen -virtualbox -dtrace -selinux -test -verify-sig 
