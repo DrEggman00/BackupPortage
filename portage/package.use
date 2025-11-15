@@ -20,6 +20,7 @@ llvm-core/clang extra pie static-analyzer verify-sig xml doc -test -debug -ieee-
 #KDE
 kde-plasma/plasma-meta browser-integration wayland crash-handler display-manager kwallet firewall networkmanager sddm smart wallpapers X accessibility bluetooth -discover -grub -wallpapers -oxygen-theme plymouth systemd thunderbolt 
 #kde-plasma/plasma-meta X browser-integration crash-handler display-manager sddm systemd firewall kwallet networkmanager pipewire pulseaudio -wallpapers -flatpak accessibility bluetooth -crypt -cups -discover grub plymouth -oxygen-theme -rdp -sdk -thunderbolt -wacom -webengine -unsupported -discover
+#kde-plasma/plasma-workspace -semantic-desktop
 
 #Pipewire
 media-video/pipewire X bluetooth extra ffmpeg jack-client pipewire-alsa readline sound-server systemd
