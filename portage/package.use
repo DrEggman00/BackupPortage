@@ -4,6 +4,9 @@
 #Wireshark
 net-analyzer/wireshark capinfos captype dftest dumpcap editcap gui mergecap minizip netlink pcap plugins randkt randpktdump reordercap tshark text2pcap sharkd udpdump androiddump bcg729 ciscodump doc dpauxmon http2 http3 ibc libxml2 -lua lz4 wifi zlib -test ssl sshdump spandsp snappy smi -selinux sdjournal sbc opus maxminddb
 
+#Vulkan
+media-libs/vulkan-loader wayland layers 
+
 #Android Studio
 dev-util/android-studio -selinux
 

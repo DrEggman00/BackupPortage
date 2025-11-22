@@ -1,1 +1,1 @@
->=sys-kernel/gentoo-kernel-6.17.7
+=sys-firmware/edk2-bin-202411

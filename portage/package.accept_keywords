@@ -4,6 +4,11 @@ app-crypt/aescrypt ~amd64
 #Wireshark
 net-analyzer/wireshark ~amd64
 
+#Godot
+dev-games/godot ~amd64
+dev-games/recastnavigation ~amd64
+net-libs/wslay ~amd64
+
 #odin
 dev-lang/odin ~amd64
 
@@ -27,6 +32,11 @@ media-video/pipewire ~amd64
 
 #gentoo-kernel
 sys-kernel/gentoo-kernel ~amd64
+virtual/dist-kernel ~amd64
+sys-fs/zfs ~amd64
+sys-fs/zfs-kmod ~amd64
+
+
 
 #gnucobol
 dev-lang/gnucobol ~amd64
