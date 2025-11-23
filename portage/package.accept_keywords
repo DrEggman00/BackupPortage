@@ -1,6 +1,13 @@
 #aescrypt
 app-crypt/aescrypt ~amd64
 
+#Waydroid
+#app-containers/waydroid ~amd64
+#dev-python/pyclip ~amd64
+#dev-python/gbinder ~amd64
+#dev-libs/libglibutil ~amd64
+#dev-libs/gbinder ~amd64
+
 #Wireshark
 net-analyzer/wireshark ~amd64
 

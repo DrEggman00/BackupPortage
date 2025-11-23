@@ -92,8 +92,8 @@ dev-db/postgresql systemd server readline ssl zlib lz4 zstd uuid icu python perl
 
 #QEMU 
 app-emulation/qemu aio io-uring udev vhost-net slirp spice sdl gtk usb fdt pin-upstream-blobs seccomp filecaps vnc jpeg png gnutls virgl opengl xattr virtfs alsa pulseaudio pipewire curl ssh nfs -plugins jemalloc -numa doc -oss -infiniband -xen -systemtap -debug -valgrind -selinux
-app-emulation/qemu   QEMU_SOFTMMU_TARGETS:   riscv32   riscv64
-app-emulation/qemu   QEMU_USER_TARGETS:   riscv32   riscv64
+app-emulation/qemu   QEMU_SOFTMMU_TARGETS:  x86_64
+app-emulation/qemu   QEMU_USER_TARGETS:  x86_64
 app-emulation/virt-manager gui policykit sasl verif-sig
 
 #Ruby 
