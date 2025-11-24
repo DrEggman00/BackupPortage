@@ -1,0 +1,11 @@
+[51644e47-f3ce-5455-836e-e68adc588c01]
+name=/var/lib/iwd//=44722e4567676d616e3030.psk
+list=5200 2427 2447 5180
+
+[db2f0afd-e754-5306-ab7b-0d6d2b2121d8]
+name=/var/lib/iwd//UFT-Visitantes.open
+list=5745 2412 2462 5540
+
+[9a7c9a0f-c365-58cf-b678-a5da451f76d7]
+name=/var/lib/iwd//eduroam.8021x
+list= 5745 2437 2412 2462 5785 5540 5180

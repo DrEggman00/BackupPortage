@@ -1,0 +1,11 @@
+# Auto-generated from NetworkManager connection "eduroam"
+# Changes to that connection overwrite this file when enabled by NM's [main].iwd-config-path value
+[IPv6]
+Enabled=true
+
+[Security]
+EAP-Method=TTLS
+EAP-Identity=none
+EAP-TTLS-Phase2-Method=Tunneled-PAP
+EAP-TTLS-Phase2-Identity=vinicius.daniel
+EAP-TTLS-Phase2-Password=k@tWR*5^^p9645aN7&bOU6pY0&
