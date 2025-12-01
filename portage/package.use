@@ -1,6 +1,15 @@
 #CPU
 */* CPU_FLAGS_X86: aes avx avx2 avx512_bitalg avx512_vbmi2 avx512_vnni avx512_vp2intersect avx512_vpopcntdq avx512bw avx512cd avx512dq avx512f avx512ifma avx512vbmi avx512vl bmi1 bmi2 f16c fma3 mmx mmxext pclmul popcnt rdrand sha sse sse2 sse3 sse4_1 sse4_2 ssse3 vpclmulqdq
 
+#OBS Studios
+media-video/obs-studios pipewire pulseaudio nvenc qsv truetype v4l wayland browser python lua mpegts speex websocket -alsa -jack -sndio -decklink -test-input -vlc 
+
+#nerdfonts
+media-fonts/nerdfonts X nerdfontssymbolsonly -0xproto -3270 -adwaitamono -agave -anonymouspro -arimo -atkinsonhyperlegiblemono -aurulentsansmono -bigblueterminal -bitstreamverasansmono cascadiacode cascadiamono -codenewroman -comicshannsmono -commitmono -cousine -d2coding -daddytimemono -dejavusansmono -departuremono -droidsansmono -envycoder -fantasquesansmono firacode firamono -geistmono -gohu -gomono -hack -hasklig -heavydata -hermit -iawriter -ibmplexmono -inconsolata -inconsolatago -inconsolatalgc -intelonemono -iosevka -iosevkaterm -iosevkatermslab jetbrainsmono -lekton -liberationmono -lilex -martianmono -meslo -monaspace -monofur -monoid -mononoki -mplus -noto -opendyslexic -overpass -profont -proggyclean -recursive -robotomono -sharetechmono -sourcecodepro -spacemono terminus -tinos -ubuntu -ubuntumono -ubuntusans -victormono -zedmono
+
+#Conky
+app-admin/conky X xinerama xinput imlib iconv truetype systemd pulseaudio curl rss wifi iostats hddtemp intel-backlight lua-cairo lua-imlib wayland -mysql -apcupsd -irc -mpd -cmus -moc -xmms2 -webserver -ncurses -ical -extras bundled-toluapp math 
+
 #Wireshark
 net-analyzer/wireshark capinfos captype dftest dumpcap editcap gui mergecap minizip netlink pcap plugins randkt randpktdump reordercap tshark text2pcap sharkd udpdump androiddump bcg729 ciscodump doc dpauxmon http2 http3 ibc libxml2 -lua lz4 wifi zlib -test ssl sshdump spandsp snappy smi -selinux sdjournal sbc opus maxminddb
 
@@ -10,9 +19,13 @@ media-libs/vulkan-loader wayland layers
 #Android Studio
 dev-util/android-studio -selinux
 
+
 #Blender
-media-gfx/blender bullet color-management cycles cycles-bin-kernels embree ffmpeg fftw fluid gmp jemalloc nanovdb oidn openexr opengl  openmp opengl opensubdiv openvdb otf pdf potrace pugixml sndfile tbb tiff truetype alembic collada ndof nls pipewire renderdoc sdl vulkan wayland cuda -optix oneapi 
-media-libs/openimageio tiff jpeg png openexr webp pugixml
+#media-gfx/blender bullet color-management cycles -cycles-bin-kernels embree ffmpeg fftw fluid gmp jemalloc nanovdb oidn openexr opengl  openmp opensubdiv openvdb otf pdf potrace pugixml sndfile tbb tiff truetype alembic collada ndof nls pipewire renderdoc sdl vulkan wayland cuda optix -oneapi 
+media-gfx/blender -opencl bullet color-management cycles embree ffmpeg fftw fluid gmp jemalloc nanovdb oidn openexr opengl openmp opensubdiv openvdb otf pdf potrace pugixml sndfile tbb tiff truetype alembic collada ndof nls pipewire renderdoc sdl vulkan wayland -oneapi -cycles-bin-kernels
+#media-gfx/blender cuda optix
+#media-libs/openimageio tiff jpeg png openexr webp pugixml
+#media-libs/opensubdiv cuda openmp tbb
 
 #Cinnamon
 #gnome-extra/cinnamon networkmanager nls gstreamer wayland eds
@@ -53,7 +66,7 @@ net-analyzer/wireshark pcap gui plugins dumpcap capinfos captype editcap mergeca
 app-containers/docker systemd container-init overlay2 -btrfs -apparmor 
 
 #Firefox
-www-client/firefox X wayland dbus pulseaudio system-pipewire system-av1 system-harfbuzz system-icu system-jpeg system-libevent system-libvpx system-webp system-png openh264 hwaccel wasm-sandbox wifi clang pgo jumbo-build -jpegxl -libproxy -valgrind -telemetry -eme-free -jack -sndio -gnome-shell -debug -test -selinux 
+www-client/firefox X wayland dbus pulseaudio -system-pipewire -system-av1 -system-harfbuzz -system-icu -system-jpeg -system-libevent -system-libvpx -system-webp -system-png openh264 hwaccel wasm-sandbox wifi clang -pgo -jumbo-build -jpegxl -libproxy -valgrind -telemetry -eme-free -jack -sndio -gnome-shell -debug -test -selinux 
 
 #GCC 
 sys-devel/gcc cxx pie ssp hardened lto rust time64 pgo pch openmp vanilla extra -libgdiagnostics zstd -valgrind fortran -ada cobol -d -modula2 -go -objc -fixed-point -objc-gc -debug cet -systemtap -ieee-long-double -test jit multilib -default-stack-clash-protection 
@@ -1205,3 +1218,14 @@ dev-lang/zig llvm doc verify-sig
 # required by @selected
 # required by @world (argument)
 >=dev-db/postgresql-17.6-r2 kerberos
+# required by app-emulation/virt-manager-5.1.0::gentoo[python_single_target_python3_13]
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libxml2-2.15.0-r1 python
+# required by dev-texlive/texlive-xetex-2024_p71515::gentoo
+# required by texlive-xetex (argument)
+>=app-text/texlive-core-2024-r1 xetex cjk
+# required by dev-libs/libayatana-appindicator-0.5.94::gentoo
+# required by media-sound/spotify-1.2.74-r1::gentoo
+# required by spotify (argument)
+>=dev-libs/libdbusmenu-16.04.0-r4 gtk3

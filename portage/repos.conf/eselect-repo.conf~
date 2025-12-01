@@ -15,7 +15,8 @@ location = /var/db/repos/pentoo
 sync-type = git
 sync-uri = https://github.com/pentoo/pentoo-overlay.git
 
-[riscv]
-location = /var/db/repos/riscv
-sync-type = git
-sync-uri = https://github.com/gentoo/riscv.git
+
+
+
+[unrealengine]
+location = /var/db/repos/unrealengine

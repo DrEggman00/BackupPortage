@@ -1,12 +1,19 @@
 #aescrypt
 app-crypt/aescrypt ~amd64
 
+#nerdfont
+media-fonts/nerdfonts ~amd64
+
+
 #Waydroid
 #app-containers/waydroid ~amd64
 #dev-python/pyclip ~amd64
 #dev-python/gbinder ~amd64
 #dev-libs/libglibutil ~amd64
 #dev-libs/gbinder ~amd64
+
+#OBS Studios
+media-video/obs-studio ~amd64
 
 #Wireshark
 net-analyzer/wireshark ~amd64
@@ -24,6 +31,9 @@ dev-util/android-studio ~amd64
 
 #bitwarden desktop bin
 app-admin/bitwarden-desktop-bin ~amd64
+
+#blender
+#media-gfx/blender ~amd64
 
 #cuda
 dev-util/nvidia-cuda-toolkit ~amd64
