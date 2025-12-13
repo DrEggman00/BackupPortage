@@ -2,8 +2,16 @@
 app-crypt/aescrypt ~amd64
 
 #nerdfont
-media-fonts/nerdfonts ~amd64
+#media-fonts/nerdfonts ~amd64
 
+#Blender
+media-gfx/blender ~amd64
+media-libs/openimageio ~amd64
+sci-mathematics/manifold ~amd64
+
+#Latex
+app-office/texstudio ~amd64
+dev-tex/abntex ~amd64
 
 #Waydroid
 #app-containers/waydroid ~amd64

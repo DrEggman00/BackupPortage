@@ -1229,3 +1229,649 @@ dev-lang/zig llvm doc verify-sig
 # required by media-sound/spotify-1.2.74-r1::gentoo
 # required by spotify (argument)
 >=dev-libs/libdbusmenu-16.04.0-r4 gtk3
+# required by dev-python/qtconsole-5.6.1::gentoo
+# required by dev-python/ipython-9.4.0::gentoo[python_targets_python3_13,-python_targets_python3_12,gui,-python_targets_python3_11]
+# required by dev-python/ipyparallel-9.0.1::gentoo
+>=dev-python/qtpy-2.4.3-r1 printsupport
+# required by dev-python/charset-normalizer-3.4.4-r1::gentoo[python_targets_python3_13,native-extensions,-python_targets_python3_14,python_targets_python3_12,-python_targets_python3_11]
+# required by dev-python/requests-2.32.5::gentoo
+# required by media-gfx/blender-5.0.0::oasis[python_single_target_python3_13]
+# required by @selected
+# required by @world (argument)
+>=dev-python/mypy-1.19.0 python_targets_python3_12
+# required by dev-python/mypy-1.19.0::gentoo
+# required by dev-python/charset-normalizer-3.4.4-r1::gentoo[python_targets_python3_13,native-extensions,-python_targets_python3_14,python_targets_python3_12,-python_targets_python3_11]
+# required by dev-python/requests-2.32.5::gentoo
+# required by media-gfx/blender-5.0.0::oasis[python_single_target_python3_13]
+# required by @selected
+# required by @world (argument)
+>=dev-python/librt-0.7.3 python_targets_python3_12
+# required by dev-python/mypy-1.19.0::gentoo
+# required by dev-python/charset-normalizer-3.4.4-r1::gentoo[python_targets_python3_13,native-extensions,-python_targets_python3_14,python_targets_python3_12,-python_targets_python3_11]
+# required by dev-python/requests-2.32.5::gentoo
+# required by media-gfx/blender-5.0.0::oasis[python_single_target_python3_13]
+# required by @selected
+# required by @world (argument)
+>=dev-python/mypy-extensions-1.1.0 python_targets_python3_12
+# required by dev-python/scikit-build-core-0.11.6::gentoo
+# required by dev-python/pybind11-3.0.1::gentoo
+# required by dev-python/pillow-12.0.0::gentoo
+# required by media-tv/kodi-21.3::gentoo[python_single_target_python3_13]
+# required by @selected
+# required by @world (argument)
+>=dev-python/pathspec-0.12.1 python_targets_python3_12
+# required by dev-python/mypy-1.19.0::gentoo
+# required by dev-python/charset-normalizer-3.4.4-r1::gentoo[python_targets_python3_13,native-extensions,-python_targets_python3_14,python_targets_python3_12,-python_targets_python3_11]
+# required by dev-python/requests-2.32.5::gentoo
+# required by media-gfx/blender-5.0.0::oasis[python_single_target_python3_13]
+# required by @selected
+# required by @world (argument)
+>=dev-python/psutil-7.1.3 python_targets_python3_12
+# required by dev-python/mypy-1.19.0::gentoo
+# required by dev-python/charset-normalizer-3.4.4-r1::gentoo[python_targets_python3_13,native-extensions,-python_targets_python3_14,python_targets_python3_12,-python_targets_python3_11]
+# required by dev-python/requests-2.32.5::gentoo
+# required by media-gfx/blender-5.0.0::oasis[python_single_target_python3_13]
+# required by @selected
+# required by @world (argument)
+>=dev-python/typing-extensions-4.15.0 python_targets_python3_12
+# required by dev-python/pillow-12.0.0::gentoo
+# required by media-tv/kodi-21.3::gentoo[python_single_target_python3_13]
+# required by @selected
+# required by @world (argument)
+>=dev-python/pybind11-3.0.1 python_targets_python3_12
+# required by dev-python/pybind11-3.0.1::gentoo
+# required by dev-python/pillow-12.0.0::gentoo
+# required by media-tv/kodi-21.3::gentoo[python_single_target_python3_13]
+# required by @selected
+# required by @world (argument)
+>=dev-python/scikit-build-core-0.11.6 python_targets_python3_12
+# required by dev-python/scikit-build-core-0.11.6::gentoo
+# required by dev-python/pybind11-3.0.1::gentoo
+# required by dev-python/pillow-12.0.0::gentoo
+# required by media-tv/kodi-21.3::gentoo[python_single_target_python3_13]
+# required by @selected
+# required by @world (argument)
+>=dev-python/pyproject-metadata-0.10.0 python_targets_python3_12
+# required by dev-python/scikit-build-core-0.11.6::gentoo
+# required by dev-python/pybind11-3.0.1::gentoo
+# required by dev-python/pillow-12.0.0::gentoo
+# required by media-tv/kodi-21.3::gentoo[python_single_target_python3_13]
+# required by @selected
+# required by @world (argument)
+>=dev-python/hatch-vcs-0.5.0 python_targets_python3_12
+# required by dev-python/hatch-vcs-0.5.0::gentoo
+# required by dev-python/scikit-build-core-0.11.6::gentoo
+# required by dev-python/pybind11-3.0.1::gentoo
+# required by dev-python/pillow-12.0.0::gentoo
+# required by media-tv/kodi-21.3::gentoo[python_single_target_python3_13]
+# required by @selected
+# required by @world (argument)
+>=dev-python/hatchling-1.28.0 python_targets_python3_12
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/minitest-5.26.2 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/power_assert-3.0.1 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/rake-13.3.1 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/test-unit-3.7.3 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/rexml-3.4.4 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/rss-0.3.1 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/net-ftp-0.3.9 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/net-imap-0.5.12 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-smtp-0.5.1::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/net-pop-0.1.2 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/net-smtp-0.5.1 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/matrix-0.4.3 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/prime-0.1.4 ruby_targets_ruby34
+# required by dev-ruby/repl_type_completor-0.1.12::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/rbs-3.9.4 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/typeprof-0.31.0 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/debug-1.11.0 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/rubygems-3.7.2::gentoo
+# required by virtual/rubygems-21-r1::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/asciidoctor-2.0.26::gentoo[-test,ruby_targets_ruby32]
+# required by sys-kernel/dracut-109::gentoo
+# required by sys-kernel/installkernel-65::gentoo[dracut]
+# required by sys-kernel/linux-firmware-20251125_p20251203::gentoo[dist-kernel,initramfs]
+# required by @selected
+# required by @world (argument)
+>=dev-ruby/racc-1.8.1 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/mutex_m-0.3.0 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/getoptlong-0.2.1 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/base64-0.3.0 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/bigdecimal-3.3.1 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/observer-0.1.2 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/abbrev-0.1.2 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/resolv-replace-0.1.1 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/rinda-0.2.0 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/drb-2.2.3 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/nkf-0.2.0 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/syslog-0.3.0 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/csv-3.3.5 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/repl_type_completor-0.1.12 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/bundler-2.7.2 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/did_you_mean-2.0.0 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/irb-1.15.3 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/json-2.18.0 ruby_targets_ruby34
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/rdoc-6.16.1 ruby_targets_ruby34
+# required by dev-ruby/repl_type_completor-0.1.12::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/prism-1.6.0 ruby_targets_ruby34
+# required by dev-ruby/syslog-0.3.0::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/logger-1.7.0 ruby_targets_ruby34
+# required by dev-ruby/drb-2.2.3::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/rinda-0.2.0::gentoo[ruby_targets_ruby32]
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/ruby2_keywords-0.0.5-r1 ruby_targets_ruby34
+# required by dev-ruby/rinda-0.2.0::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/forwardable-1.3.3 ruby_targets_ruby34
+# required by dev-ruby/rinda-0.2.0::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/ipaddr-1.2.7 ruby_targets_ruby34
+# required by dev-ruby/resolv-replace-0.1.1::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=dev-ruby/resolv-0.7.0 ruby_targets_ruby34
+# required by dev-ruby/net-smtp-0.5.1::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+>=dev-ruby/net-protocol-0.2.2 ruby_targets_ruby34
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by virtual/rubygems-21-r1::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/asciidoctor-2.0.26::gentoo[-test,ruby_targets_ruby32]
+# required by sys-kernel/dracut-109::gentoo
+# required by sys-kernel/installkernel-65::gentoo[dracut]
+# required by sys-kernel/linux-firmware-20251125_p20251203::gentoo[dist-kernel,initramfs]
+# required by @selected
+# required by @world (argument)
+>=dev-ruby/timeout-0.5.0 ruby_targets_ruby34
+# required by dev-ruby/drb-2.2.3::gentoo[ruby_targets_ruby34,-test]
+# required by dev-ruby/rinda-0.2.0::gentoo[ruby_targets_ruby32]
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by dev-ruby/timeout-0.5.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-protocol-0.2.2::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-pop-0.1.2::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby33]
+# required by dev-ruby/racc-1.8.1::gentoo
+>=virtual/rubygems-21-r1 ruby_targets_ruby34
+# required by virtual/rubygems-21-r1::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/asciidoctor-2.0.26::gentoo[-test,ruby_targets_ruby32]
+# required by sys-kernel/dracut-109::gentoo
+# required by sys-kernel/installkernel-65::gentoo[dracut]
+# required by sys-kernel/linux-firmware-20251125_p20251203::gentoo[dist-kernel,initramfs]
+# required by @selected
+# required by @world (argument)
+>=dev-ruby/rubygems-3.7.2 ruby_targets_ruby34
+# required by dev-ruby/racc-1.8.1::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by dev-ruby/rubygems-3.7.2::gentoo[ruby_targets_ruby33]
+# required by virtual/rubygems-21-r1::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/asciidoctor-2.0.26::gentoo[-test,ruby_targets_ruby32]
+# required by sys-kernel/dracut-109::gentoo
+# required by sys-kernel/installkernel-65::gentoo[dracut]
+# required by sys-kernel/linux-firmware-20251125_p20251203::gentoo[dist-kernel,initramfs]
+# required by @selected
+# required by @world (argument)
+>=virtual/ruby-ssl-15 ruby_targets_ruby34
+# required by dev-python/hatchling-1.28.0::gentoo
+# required by dev-python/argcomplete-3.6.3::gentoo
+# required by app-emulation/virt-manager-5.1.0-r1::gentoo[python_single_target_python3_13]
+# required by @selected
+# required by @world (argument)
+>=dev-python/editables-0.5 python_targets_python3_12
+# required by dev-python/hatchling-1.28.0::gentoo
+# required by dev-python/argcomplete-3.6.3::gentoo
+# required by app-emulation/virt-manager-5.1.0-r1::gentoo[python_single_target_python3_13]
+# required by @selected
+# required by @world (argument)
+>=dev-python/pluggy-1.6.0 python_targets_python3_12
+# required by dev-ruby/rdoc-6.16.1::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/racc-1.8.1::gentoo
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by dev-ruby/rubygems-3.7.2::gentoo[ruby_targets_ruby33]
+# required by virtual/rubygems-21-r1::gentoo[ruby_targets_ruby32]
+# required by dev-ruby/asciidoctor-2.0.26::gentoo
+# required by sys-kernel/dracut-109::gentoo
+# required by sys-kernel/installkernel-65::gentoo[dracut]
+# required by sys-kernel/linux-firmware-20251125_p20251203::gentoo[dist-kernel,initramfs]
+# required by @selected
+# required by @world (argument)
+>=dev-ruby/erb-6.0.0 ruby_targets_ruby34
+# required by dev-ruby/rdoc-6.16.1::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/racc-1.8.1::gentoo
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by dev-ruby/rubygems-3.7.2::gentoo[ruby_targets_ruby33]
+# required by virtual/rubygems-21-r1::gentoo[ruby_targets_ruby32]
+# required by dev-ruby/asciidoctor-2.0.26::gentoo
+# required by sys-kernel/dracut-109::gentoo
+# required by sys-kernel/installkernel-65::gentoo[dracut]
+# required by sys-kernel/linux-firmware-20251125_p20251203::gentoo[dist-kernel,initramfs]
+# required by @selected
+# required by @world (argument)
+>=dev-ruby/psych-5.3.0 ruby_targets_ruby34
+# required by dev-ruby/rdoc-6.16.1::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/racc-1.8.1::gentoo
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by dev-ruby/rubygems-3.7.2::gentoo[ruby_targets_ruby33]
+# required by virtual/rubygems-21-r1::gentoo[ruby_targets_ruby32]
+# required by dev-ruby/asciidoctor-2.0.26::gentoo
+# required by sys-kernel/dracut-109::gentoo
+# required by sys-kernel/installkernel-65::gentoo[dracut]
+# required by sys-kernel/linux-firmware-20251125_p20251203::gentoo[dist-kernel,initramfs]
+# required by @selected
+# required by @world (argument)
+>=dev-ruby/tsort-0.2.0-r1 ruby_targets_ruby34
+# required by dev-ruby/rdoc-6.16.1::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/racc-1.8.1::gentoo
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by dev-ruby/rubygems-3.7.2::gentoo[ruby_targets_ruby33]
+# required by virtual/rubygems-21-r1::gentoo[ruby_targets_ruby32]
+# required by dev-ruby/asciidoctor-2.0.26::gentoo
+# required by sys-kernel/dracut-109::gentoo
+# required by sys-kernel/installkernel-65::gentoo[dracut]
+# required by sys-kernel/linux-firmware-20251125_p20251203::gentoo[dist-kernel,initramfs]
+# required by @selected
+# required by @world (argument)
+>=dev-ruby/kpeg-1.3.3 ruby_targets_ruby34
+# required by dev-ruby/time-0.4.1::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/net-ftp-0.3.9::gentoo[ruby_targets_ruby32]
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/racc-1.8.1::gentoo
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by dev-ruby/rubygems-3.7.2::gentoo[ruby_targets_ruby33]
+# required by virtual/rubygems-21-r1::gentoo[ruby_targets_ruby32]
+# required by dev-ruby/asciidoctor-2.0.26::gentoo
+# required by sys-kernel/dracut-109::gentoo
+# required by sys-kernel/installkernel-65::gentoo[dracut]
+# required by sys-kernel/linux-firmware-20251125_p20251203::gentoo[dist-kernel,initramfs]
+# required by @selected
+# required by @world (argument)
+>=dev-ruby/date-3.5.1 ruby_targets_ruby34
+# required by dev-ruby/psych-5.3.0::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/rdoc-6.16.1::gentoo[ruby_targets_ruby32]
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/racc-1.8.1::gentoo
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by dev-ruby/rubygems-3.7.2::gentoo[ruby_targets_ruby33]
+# required by virtual/rubygems-21-r1::gentoo[ruby_targets_ruby32]
+# required by dev-ruby/asciidoctor-2.0.26::gentoo
+# required by sys-kernel/dracut-109::gentoo
+# required by sys-kernel/installkernel-65::gentoo[dracut]
+# required by sys-kernel/linux-firmware-20251125_p20251203::gentoo[dist-kernel,initramfs]
+# required by @selected
+# required by @world (argument)
+>=dev-ruby/stringio-3.1.9 ruby_targets_ruby34
+# required by dev-ruby/rexml-3.4.4::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/racc-1.8.1::gentoo
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by dev-ruby/rubygems-3.7.2::gentoo[ruby_targets_ruby33]
+# required by virtual/rubygems-21-r1::gentoo[ruby_targets_ruby32]
+# required by dev-ruby/asciidoctor-2.0.26::gentoo
+# required by sys-kernel/dracut-109::gentoo
+# required by sys-kernel/installkernel-65::gentoo[dracut]
+# required by sys-kernel/linux-firmware-20251125_p20251203::gentoo[dist-kernel,initramfs]
+# required by @selected
+# required by @world (argument)
+>=dev-ruby/strscan-3.1.5 ruby_targets_ruby34
+# required by dev-ruby/prime-0.1.4::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/racc-1.8.1::gentoo
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by dev-ruby/rubygems-3.7.2::gentoo[ruby_targets_ruby33]
+# required by virtual/rubygems-21-r1::gentoo[ruby_targets_ruby32]
+# required by dev-ruby/asciidoctor-2.0.26::gentoo
+# required by sys-kernel/dracut-109::gentoo
+# required by sys-kernel/installkernel-65::gentoo[dracut]
+# required by sys-kernel/linux-firmware-20251125_p20251203::gentoo[dist-kernel,initramfs]
+# required by @selected
+# required by @world (argument)
+>=dev-ruby/singleton-0.3.0 ruby_targets_ruby34
+# required by dev-ruby/net-ftp-0.3.9::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/racc-1.8.1::gentoo
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by dev-ruby/rubygems-3.7.2::gentoo[ruby_targets_ruby33]
+# required by virtual/rubygems-21-r1::gentoo[ruby_targets_ruby32]
+# required by dev-ruby/asciidoctor-2.0.26::gentoo
+# required by sys-kernel/dracut-109::gentoo
+# required by sys-kernel/installkernel-65::gentoo[dracut]
+# required by sys-kernel/linux-firmware-20251125_p20251203::gentoo[dist-kernel,initramfs]
+# required by @selected
+# required by @world (argument)
+>=dev-ruby/time-0.4.1 ruby_targets_ruby34
+# required by dev-ruby/irb-1.15.3::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/racc-1.8.1::gentoo
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by dev-ruby/rubygems-3.7.2::gentoo[ruby_targets_ruby33]
+# required by virtual/rubygems-21-r1::gentoo[ruby_targets_ruby32]
+# required by dev-ruby/asciidoctor-2.0.26::gentoo
+# required by sys-kernel/dracut-109::gentoo
+# required by sys-kernel/installkernel-65::gentoo[dracut]
+# required by sys-kernel/linux-firmware-20251125_p20251203::gentoo[dist-kernel,initramfs]
+# required by @selected
+# required by @world (argument)
+>=dev-ruby/pp-0.6.3 ruby_targets_ruby34
+# required by dev-ruby/irb-1.15.3::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/racc-1.8.1::gentoo
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by dev-ruby/rubygems-3.7.2::gentoo[ruby_targets_ruby33]
+# required by virtual/rubygems-21-r1::gentoo[ruby_targets_ruby32]
+# required by dev-ruby/asciidoctor-2.0.26::gentoo
+# required by sys-kernel/dracut-109::gentoo
+# required by sys-kernel/installkernel-65::gentoo[dracut]
+# required by sys-kernel/linux-firmware-20251125_p20251203::gentoo[dist-kernel,initramfs]
+# required by @selected
+# required by @world (argument)
+>=dev-ruby/reline-0.6.3 ruby_targets_ruby34
+# required by dev-ruby/reline-0.6.3::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/debug-1.11.0::gentoo[ruby_targets_ruby34]
+# required by dev-lang/ruby-3.4.7-r1::gentoo
+# required by virtual/ruby-ssl-15::gentoo[ruby_targets_ruby34]
+# required by dev-ruby/racc-1.8.1::gentoo
+# required by dev-lang/ruby-3.3.10-r1::gentoo
+# required by dev-ruby/rubygems-3.7.2::gentoo[ruby_targets_ruby33]
+# required by virtual/rubygems-21-r1::gentoo[ruby_targets_ruby32]
+# required by dev-ruby/asciidoctor-2.0.26::gentoo
+# required by sys-kernel/dracut-109::gentoo
+# required by sys-kernel/installkernel-65::gentoo[dracut]
+# required by sys-kernel/linux-firmware-20251125_p20251203::gentoo[dist-kernel,initramfs]
+# required by @selected
+# required by @world (argument)
+>=dev-ruby/io-console-0.8.1 ruby_targets_ruby34
