@@ -1,8 +1,37 @@
 #aescrypt
 app-crypt/aescrypt ~amd64
 
-#nerdfont
-media-fonts/nerdfonts ~amd64
+#Tex Studios
+app-office/texstudio ~amd64
+
+#Eclipse
+dev-util/eclipse-parallel-bin ~amd64
+
+#LLVM
+llvm-core/clang ~amd64
+llvm-core/llvm ~amd64
+llvm-core/llvm-toolchain-symlinks ~amd64
+llvm-core/llvmgold ~amd64
+llvm-core/clang-common ~amd64
+llvm-runtimes/clang-runtime ~amd64
+llvm-core/clang-toolchain-symlinks ~amd64
+llvm-runtimes/compiler-rt ~amd64
+llvm-*/* ~amd64
+
+#RPCS3
+games-emulation/rpcs3 ~amd64
+
+
+#Eden
+games-emulation/eden ~amd64
+dev-libs/mcl ~amd64
+dev-libs/sirit ~amd64
+games-util/gamemode ~amd64
+dev-cpp/simpleini ~amd64
+dev-libs/frozen ~amd64
+dev-libs/unordered_dense ~amd64
+media-libs/VulkanMemoryAllocator ~amd64
+dev-libs/xbyak ~amd64
 
 
 #Waydroid
@@ -11,6 +40,14 @@ media-fonts/nerdfonts ~amd64
 #dev-python/gbinder ~amd64
 #dev-libs/libglibutil ~amd64
 #dev-libs/gbinder ~amd64
+
+#Blender
+media-gfx/blender ~amd64
+media-libs/openimageio ~amd64
+sci-mathematics/manifold ~amd64
+media-libs/openexr ~amd64
+
+
 
 #OBS Studios
 media-video/obs-studio ~amd64

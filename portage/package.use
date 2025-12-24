@@ -1,6 +1,9 @@
 #CPU
 */* CPU_FLAGS_X86: aes avx avx2 avx512_bitalg avx512_vbmi2 avx512_vnni avx512_vp2intersect avx512_vpopcntdq avx512bw avx512cd avx512dq avx512f avx512ifma avx512vbmi avx512vl bmi1 bmi2 f16c fma3 mmx mmxext pclmul popcnt rdrand sha sse sse2 sse3 sse4_1 sse4_2 ssse3 vpclmulqdq
 
+#LANG
+*/* L10N: "pt-BR en en-US"
+
 #OBS Studios
 media-video/obs-studios pipewire pulseaudio nvenc qsv truetype v4l wayland browser python lua mpegts speex websocket -alsa -jack -sndio -decklink -test-input -vlc 
 
@@ -50,7 +53,7 @@ net-misc/networkmanager iwd systemd wifi tools polkit nss introspection modemman
 dev-lang/python ensurepip ncurses readline ssl xml gdbm tk -wininst 
 
 #Chromium
-www-client/chromium proprietary-codecs widevine vaapi cups pulseaudio system-harfbuzz system-icu -system-png system-zstd screencast rar wayland gtk4 qt6 official -hangouts kerberos pgo -debug -test -custom-cflags -headless -selinux -pax-kernel -ffmpeg-chromium 
+www-client/chromium proprietary-codecs widevine vaapi cups pulseaudio system-harfbuzz system-icu -system-png system-zstd screencast rar wayland gtk4 qt6 official -hangouts kerberos pgo -debug -test -custom-cflags -headless -selinux -pax-kernel -ffmpeg-chromium  pt-BR
 
 #Tor
 net-vpn/tor man verify-sig systemd seccomp caps lzma zstd scrypt doc -test -selinux -hardened 

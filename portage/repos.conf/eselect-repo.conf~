@@ -5,11 +5,6 @@ location = /var/db/repos/steam-overlay
 sync-type = git
 sync-uri = https://github.com/anyc/steam-overlay.git
 
-[guru]
-location = /var/db/repos/guru
-sync-type = git
-sync-uri = https://github.com/gentoo-mirror/guru.git
-
 [pentoo]
 location = /var/db/repos/pentoo
 sync-type = git
@@ -18,5 +13,8 @@ sync-uri = https://github.com/pentoo/pentoo-overlay.git
 
 
 
-[unrealengine]
-location = /var/db/repos/unrealengine
+
+[guru]
+location = /var/db/repos/guru
+sync-type = git
+sync-uri = https://github.com/gentoo-mirror/guru.git
