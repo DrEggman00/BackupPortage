@@ -19,5 +19,6 @@ location = /var/db/repos/pentoo
 sync-type = git
 sync-uri = https://github.com/pentoo/pentoo-overlay.git
 
-[local]
-location = /var/db/repos/local
+
+[crossdev]
+location = /var/db/repos/crossdev
