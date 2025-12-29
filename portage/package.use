@@ -4,6 +4,10 @@
 #LANG
 */* L10N: "pt-BR en en-US"
 
+#Django
+dev-python/django sqlite
+dev-python/networkx
+
 #OBS Studios
 media-video/obs-studios pipewire pulseaudio nvenc qsv truetype v4l wayland browser python lua mpegts speex websocket -alsa -jack -sndio -decklink -test-input -vlc 
 
@@ -18,6 +22,7 @@ net-analyzer/wireshark capinfos captype dftest dumpcap editcap gui mergecap mini
 
 #Vulkan
 media-libs/vulkan-loader wayland layers 
+media-libs/mesa opencl
 
 #Android Studio
 dev-util/android-studio -selinux
@@ -53,7 +58,9 @@ net-misc/networkmanager iwd systemd wifi tools polkit nss introspection modemman
 dev-lang/python ensurepip ncurses readline ssl xml gdbm tk -wininst 
 
 #Chromium
-www-client/chromium proprietary-codecs widevine vaapi cups pulseaudio system-harfbuzz system-icu -system-png system-zstd screencast rar wayland gtk4 qt6 official -hangouts kerberos pgo -debug -test -custom-cflags -headless -selinux -pax-kernel -ffmpeg-chromium  pt-BR
+www-client/chromium -X wayland gtk4 qt6 proprietary-codecs widevine vaapi rar -cups pulseaudio system-harfbuzz system-icu system-png system-zstd screencast official -hangouts kerberos pgo lto -debug -test -custom-cflags -headless -selinux -pax-linux -ffmpeg-chromium  
+#www-client/chromium -X wayland proprietary-codecs widevine vaapi rar -cups pulseaudio system-harfbuzz system-icu -system-png system-zstd screencast rar wayland gtk4 qt6 official -hangouts kerberos pgo -debug -test lto custom-cflags -headless -selinux -pax-kernel -ffmpeg-chromium  pt-BR
+#www-client/chromium widevine screencast system-icu system-png bundled-toolchain -headless kerberos -selinux system-harfbuzz system-zstd official custom-flags lto pgo -debug -test -bindist -ffmpeg-chromium -hangouts -pax-kernel
 
 #Tor
 net-vpn/tor man verify-sig systemd seccomp caps lzma zstd scrypt doc -test -selinux -hardened 
@@ -108,8 +115,12 @@ dev-db/postgresql systemd server readline ssl zlib lz4 zstd uuid icu python perl
 
 #QEMU 
 app-emulation/qemu aio io-uring udev vhost-net slirp spice sdl gtk usb fdt pin-upstream-blobs seccomp filecaps vnc jpeg png gnutls virgl opengl xattr virtfs alsa pulseaudio pipewire curl ssh nfs -plugins jemalloc -numa doc -oss -infiniband -xen -systemtap -debug -valgrind -selinux
-app-emulation/qemu   QEMU_SOFTMMU_TARGETS:  x86_64
-app-emulation/qemu   QEMU_USER_TARGETS:  x86_64
+#app-emulation/qemu   QEMU_SOFTMMU_TARGETS:  x86_64 riscv32 riscv64
+#app-emulation/qemu   QEMU_USER_TARGETS:  x86_64 riscv32 riscv64
+
+app-emulation/qemu QEMU_SOFTMMU_TARGETS: riscv32 riscv64 -x86_64 -i386 arm armeb aarch64 aarch64_be -mips -mipsel -mips64 -mips64el -mipsn32 -mipsn32el ppc ppc64 ppc64le sparc sparc32plus sparc64 s390x -avr -rx -xtensa -xtensaeb -tricore -hexagon -microblaze -microblazeel alpha hppa m68k or1k sh4 sh4eb loongarch64 
+#app-emulation/qemu QEMU_USER_TARGETS:
+
 app-emulation/virt-manager gui policykit sasl verif-sig
 
 #Ruby 
@@ -1232,3 +1243,7 @@ dev-lang/zig llvm doc verify-sig
 # required by media-sound/spotify-1.2.74-r1::gentoo
 # required by spotify (argument)
 >=dev-libs/libdbusmenu-16.04.0-r4 gtk3
+# required by dev-python/qtconsole-5.6.1::gentoo
+# required by dev-python/ipython-9.4.0::gentoo[-python_targets_python3_11,gui,-python_targets_python3_12,python_targets_python3_13]
+# required by dev-python/ipyparallel-9.0.1::gentoo
+>=dev-python/qtpy-2.4.3-r1 printsupport

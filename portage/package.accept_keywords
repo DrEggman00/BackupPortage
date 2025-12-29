@@ -1,6 +1,6 @@
 #aescrypt
 app-crypt/aescrypt ~amd64
-
+games-emulation/xenia ~amd64
 #Tex Studios
 app-office/texstudio ~amd64
 
