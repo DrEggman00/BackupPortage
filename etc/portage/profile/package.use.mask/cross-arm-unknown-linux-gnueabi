@@ -1,0 +1,5 @@
+cross-arm-unknown-linux-gnueabi/linux-headers  multilib
+cross-arm-unknown-linux-gnueabi/glibc  cet cet cet cet cet multilib
+cross-arm-unknown-linux-gnueabi/binutils  cet cet cet cet cet multilib
+cross-arm-unknown-linux-gnueabi/gcc  cet cet cet cet cet multilib
+cross-arm-unknown-linux-gnueabi/gdb  multilib

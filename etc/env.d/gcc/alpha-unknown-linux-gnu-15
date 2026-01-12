@@ -1,0 +1,8 @@
+GCC_PATH="/usr/x86_64-pc-linux-gnu/alpha-unknown-linux-gnu/gcc-bin/15"
+LDPATH="/usr/lib/gcc/alpha-unknown-linux-gnu/15"
+MANPATH="/usr/share/gcc-data/alpha-unknown-linux-gnu/15/man"
+INFOPATH="/usr/share/gcc-data/alpha-unknown-linux-gnu/15/info"
+STDCXX_INCDIR="g++-v15"
+CTARGET="alpha-unknown-linux-gnu"
+GCC_SPECS=""
+MULTIOSDIRS="."

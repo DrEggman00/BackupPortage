@@ -1,0 +1,32 @@
+# Generated for texlive-basic	by texlive-module.eclass
+luahbtex	luahbtex	language.def,language.dat.lua	luatex.ini
+luajithbtex	luajithbtex	language.def,language.dat.lua	luatex.ini
+luajittex	luajittex	language.def,language.dat.lua	luatex.ini
+dviluatex	luatex	language.def,language.dat.lua	dviluatex.ini
+luatex	luatex	language.def,language.dat.lua	luatex.ini
+mf	mf-nowin	-	-translate-file=cp227.tcx mf.ini
+etex	pdftex	language.def	-translate-file=cp227.tcx *etex.ini
+pdfetex	pdftex	language.def	-translate-file=cp227.tcx *pdfetex.ini
+pdftex	pdftex	language.def	-translate-file=cp227.tcx *pdfetex.ini
+tex	tex	-	tex.ini
+# Generated for texlive-binextra	by texlive-module.eclass
+#! mflua	mflua-nowin	-	mf.ini
+# Generated for texlive-latex	by texlive-module.eclass
+dvilualatex	luatex	language.dat,language.dat.lua	dvilualatex.ini
+latex	pdftex	language.dat	-translate-file=cp227.tcx *latex.ini
+lualatex	luahbtex	language.dat,language.dat.lua	lualatex.ini
+pdflatex	pdftex	language.dat	-translate-file=cp227.tcx *pdflatex.ini
+mptopdf	pdftex	-	-translate-file=cp227.tcx mptopdf.tex
+# Generated for texlive-latexextra	by texlive-module.eclass
+dvilualatex-dev	luatex	language.dat,language.dat.lua	dvilualatex.ini
+latex-dev	pdftex	language.dat	-translate-file=cp227.tcx *latex.ini
+lualatex-dev	luahbtex	language.dat,language.dat.lua	lualatex.ini
+pdflatex-dev	pdftex	language.dat	-translate-file=cp227.tcx *pdflatex.ini
+# Generated for texlive-luatex	by texlive-module.eclass
+optex	luatex	-	optex.ini
+# Generated for texlive-mathscience	by texlive-module.eclass
+amstex	pdftex	-	-translate-file=cp227.tcx *amstex.ini
+# Generated for texlive-xetex	by texlive-module.eclass
+xelatex-dev	xetex	language.dat	-etex xelatex.ini
+xelatex	xetex	language.dat	-etex xelatex.ini
+xetex	xetex	language.def	-etex xetex.ini

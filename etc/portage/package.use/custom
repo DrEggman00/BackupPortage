@@ -1,0 +1,1258 @@
+#CPU
+*/* CPU_FLAGS_X86: aes avx avx2 avx512_bitalg avx512_vbmi2 avx512_vnni avx512_vp2intersect avx512_vpopcntdq avx512bw avx512cd avx512dq avx512f avx512ifma avx512vbmi avx512vl bmi1 bmi2 f16c fma3 mmx mmxext pclmul popcnt rdrand sha sse sse2 sse3 sse4_1 sse4_2 ssse3 vpclmulqdq
+
+#LANG
+*/* L10N: "pt-BR en en-US"
+
+#RetroArch
+games-emulation/RetroArch 7zip egl ffmpeg libass network openal opengl pipewire rgui sdl truetype vulkan wayland X
+
+#Django
+dev-python/django sqlite
+dev-python/networkx
+
+#OBS Studios
+media-video/obs-studios pipewire pulseaudio nvenc qsv truetype v4l wayland browser python lua mpegts speex websocket -alsa -jack -sndio -decklink -test-input -vlc 
+
+#nerdfonts
+media-fonts/nerdfonts X nerdfontssymbolsonly -0xproto -3270 -adwaitamono -agave -anonymouspro -arimo -atkinsonhyperlegiblemono -aurulentsansmono -bigblueterminal -bitstreamverasansmono cascadiacode cascadiamono -codenewroman -comicshannsmono -commitmono -cousine -d2coding -daddytimemono -dejavusansmono -departuremono -droidsansmono -envycoder -fantasquesansmono firacode firamono -geistmono -gohu -gomono -hack -hasklig -heavydata -hermit -iawriter -ibmplexmono -inconsolata -inconsolatago -inconsolatalgc -intelonemono -iosevka -iosevkaterm -iosevkatermslab jetbrainsmono -lekton -liberationmono -lilex -martianmono -meslo -monaspace -monofur -monoid -mononoki -mplus -noto -opendyslexic -overpass -profont -proggyclean -recursive -robotomono -sharetechmono -sourcecodepro -spacemono terminus -tinos -ubuntu -ubuntumono -ubuntusans -victormono -zedmono
+
+#Conky
+app-admin/conky X xinerama xinput imlib iconv truetype systemd pulseaudio curl rss wifi iostats hddtemp intel-backlight lua-cairo lua-imlib wayland -mysql -apcupsd -irc -mpd -cmus -moc -xmms2 -webserver -ncurses -ical -extras bundled-toluapp math 
+
+#Wireshark
+net-analyzer/wireshark capinfos captype dftest dumpcap editcap gui mergecap minizip netlink pcap plugins randkt randpktdump reordercap tshark text2pcap sharkd udpdump androiddump bcg729 ciscodump doc dpauxmon http2 http3 ibc libxml2 -lua lz4 wifi zlib -test ssl sshdump spandsp snappy smi -selinux sdjournal sbc opus maxminddb
+
+#Vulkan
+media-libs/vulkan-loader wayland layers 
+media-libs/mesa opencl
+
+#Android Studio
+dev-util/android-studio -selinux
+
+
+#Blender
+#media-gfx/blender bullet color-management cycles -cycles-bin-kernels embree ffmpeg fftw fluid gmp jemalloc nanovdb oidn openexr opengl  openmp opensubdiv openvdb otf pdf potrace pugixml sndfile tbb tiff truetype alembic collada ndof nls pipewire renderdoc sdl vulkan wayland cuda optix -oneapi 
+media-gfx/blender -opencl bullet color-management cycles embree ffmpeg fftw fluid gmp jemalloc nanovdb oidn openexr opengl openmp opensubdiv openvdb otf pdf potrace pugixml sndfile tbb tiff truetype alembic collada ndof nls pipewire renderdoc sdl vulkan wayland -oneapi -cycles-bin-kernels
+#media-gfx/blender cuda optix
+#media-libs/openimageio tiff jpeg png openexr webp pugixml
+#media-libs/opensubdiv cuda openmp tbb
+
+#Cinnamon
+#gnome-extra/cinnamon networkmanager nls gstreamer wayland eds
+
+#Clang
+llvm-core/clang extra pie static-analyzer verify-sig xml doc -test -debug -ieee-long-double
+
+#KDE
+kde-plasma/plasma-meta browser-integration wayland crash-handler display-manager kwallet firewall networkmanager sddm smart wallpapers X accessibility bluetooth -discover -grub -wallpapers -oxygen-theme plymouth systemd thunderbolt 
+#kde-plasma/plasma-meta X browser-integration crash-handler display-manager sddm systemd firewall kwallet networkmanager pipewire pulseaudio -wallpapers -flatpak accessibility bluetooth -crypt -cups -discover grub plymouth -oxygen-theme -rdp -sdk -thunderbolt -wacom -webengine -unsupported -discover
+#kde-plasma/plasma-workspace -semantic-desktop
+
+#Pipewire
+media-video/pipewire X bluetooth extra ffmpeg jack-client pipewire-alsa readline sound-server systemd
+media-video/ffmpeg sdl
+media-libs/libsdl2 pipewire
+
+#NetworkManager
+net-misc/networkmanager iwd systemd wifi tools polkit nss introspection modemmanager ppp concheck iwd bluetooth connection-sharing -ovs -ofono ps1 -elogind -selinux -wext -debug -gtk-doc -audit -syslog iptables nftables
+
+#Python
+dev-lang/python ensurepip ncurses readline ssl xml gdbm tk -wininst 
+
+#Chromium
+
+#www-client/chromium X official proprietary-codecs rar screencast system-harfbuzz system-icu system-png system-zstd vaapi wayland widevine -bundled-toolchain -cups -debug -custom-flags -ffmpeg-chromium gtk4 -headless pulseaudio hangouts 
+www-client/chromium X wayland gtk4 qt6 proprietary-codecs widevine vaapi rar -cups pulseaudio system-harfbuzz system-icu system-png system-zstd screencast official -hangouts -kerberos pgo lto -debug -test -custom-cflags -headless -selinux -pax-linux
+
+#www-client/chromium -X wayland proprietary-codecs widevine vaapi rar -cups pulseaudio system-harfbuzz system-icu -system-png system-zstd screencast rar wayland gtk4 qt6 official -hangouts kerberos pgo -debug -test lto custom-cflags -headless -selinux -pax-kernel -ffmpeg-chromium
+#
+#www-client/chromium widevine screencast system-icu system-png bundled-toolchain -headless kerberos -selinux system-harfbuzz system-zstd official custom-flags lto pgo -debug -test -bindist -ffmpeg-chromium -hangouts -pax-kernel
+
+www-client/chromium L10N: pt-BR
+
+
+#Tor
+net-vpn/tor man verify-sig systemd seccomp caps lzma zstd scrypt doc -test -selinux -hardened 
+
+#Wireless Tools
+net-wireless/wpa_supplicant dbus qt6 readline gui p2p wps fils hs2-0 mbo tdls mesh ap -macsec eap-sim fasteap uncommon-eap-types smartcard wimax -tkip -wep wvite -ps3 -privsep -selinux eapol-test 
+#net-wireless/wpa_supplicant dbus readline qt6 p2p wps ap mesh hs2-0 mbo fils tdls fasteap uncommon-eap-types eap-sim smartcard -tkip -wep -macsec -wimax -ps3 -broadcom-sta -privsep -selinux
+
+#GNOME:net-wireless/wpa_supplicant dbus qt5 qt6 -gnome readline gui p2p wps fils hs2-0 mbo tdls mesh ap -macsec eap-sim fasteap uncommon-eap-types smartcard wimax -tkip -wep wvite -ps3 -privsep -selinux eapol-test
+net-analyzer/wireshark pcap gui plugins dumpcap capinfos captype editcap mergecap reordercap text2pcap filecaps tshark netlink zstd -sharkd -dftest -androiddump -ciscodump -dpauxmon http2 bcg729 doc 
+
+#Docker
+app-containers/docker systemd container-init overlay2 -btrfs -apparmor 
+
+#Firefox
+www-client/firefox X wayland dbus pulseaudio -system-pipewire -system-av1 -system-harfbuzz -system-icu -system-jpeg -system-libevent -system-libvpx -system-webp -system-png openh264 hwaccel wasm-sandbox wifi clang -pgo -jumbo-build -jpegxl -libproxy -valgrind -telemetry -eme-free -jack -sndio -gnome-shell -debug -test -selinux 
+
+#GCC 
+sys-devel/gcc cxx pie ssp hardened lto rust time64 pgo pch openmp vanilla extra -libgdiagnostics zstd -valgrind fortran -ada cobol -d -modula2 -go -objc -fixed-point -objc-gc -debug cet -systemtap -ieee-long-double -test jit multilib -default-stack-clash-protection 
+
+#Gentoo-kernel
+sys-kernel/gentoo-kernel -debug -experimental -hardened modules-compress -modules-sign -secureboot -savedconfig -test -verify-sig initramfs strip
+# required by sys-boot/os-prober-1.82::gentoo
+# required by os-prober (argument)
+>=sys-boot/grub-2.12-r7 mount
+
+sys-kernel/installkernel dracut
+
+#Kodi
+media-tv/kodi -vdpau
+
+#Libreoffice
+app-office/libreoffice branding -cups dubs kde qt6 vulkan pdfimport -base mariadb postgres -java gstreamer bluetooth googledrive -ldap -odk -gtk -gtk3 -gtk4 -eds -coinmp -debug -test -valgrind -custom-cflags
+
+#Libvirt
+app-emulation/libvirt caps libvirtd qemu udev virt-network policykit nls parted numa virtiofs firewalld bash-completion -lxc -xen -virtualbox -dtrace -selinux -test -verify-sig 
+
+#MySQL
+dev-db/mysql server perl jemalloc router profiling -cjk -latin1 -cracklib -numa -selinux -test -test-install -debug -tcmalloc -verify-sig
+
+#NodeJS 
+net-libs/nodejs icu inspector snapshot ssl system-icu system-ssl npm corepack lto -doc -debug -pax-kernel -test 
+
+#P7zip
+app-arch/p7zip rar
+
+#PHP
+dev-lang/php cli ctype fileinfo filter iconv opcache phar posix session simplexml token bzip2 curl exif gd intl jpeg png readline sockets ssl zlib zip system unicode nls opcache-jit jit sodium pcntl posix pdo sqlite apache2 fpm mysql mysqli postgres pdo soap xmlreader xmlwriter xslt webp avif truetype 
+
+#Postgresql
+dev-db/postgresql systemd server readline ssl zlib lz4 zstd uuid icu python perl -pam -ldap -kerberos -oauth -static-libs -debug doc -test
+
+#QEMU 
+app-emulation/qemu aio io-uring udev vhost-net slirp spice sdl gtk usb fdt pin-upstream-blobs seccomp filecaps vnc jpeg png gnutls virgl opengl xattr virtfs alsa pulseaudio pipewire curl ssh nfs -plugins jemalloc -numa doc -oss -infiniband -xen -systemtap -debug -valgrind -selinux
+#app-emulation/qemu   QEMU_SOFTMMU_TARGETS:  x86_64 riscv32 riscv64
+#app-emulation/qemu   QEMU_USER_TARGETS:  x86_64 riscv32 riscv64
+
+app-emulation/qemu QEMU_SOFTMMU_TARGETS: riscv32 riscv64 x86_64 i386 arm armeb aarch64 aarch64_be mips mipsel mips64 mips64el mipsn32 mipsn32el ppc ppc64 ppc64le sparc sparc32plus sparc64 s390x -avr -rx -xtensa -xtensaeb -tricore -hexagon -microblaze -microblazeel alpha hppa m68k or1k sh4 sh4eb loongarch64 
+app-emulation/qemu QEMU_USER_TARGETS: riscv32 riscv64 x86_64 i386 arm armeb aarch64 aarch64_be mips mipsel mips64 mips64el mipsn32 mipsn32el ppc ppc64 ppc64le sparc sparc32plus sparc64 s390x -avr -rx -xtensa -xtensaeb -tricore -hexagon -microblaze -microblazeel alpha hppa m68k or1k sh4 sh4eb loongarch64
+app-emulation/virt-manager gui policykit sasl verif-sig
+
+#Ruby 
+dev-lang/ruby ssl -berkdb -debug doc -examples gdbm jemalloc jit -socks5 -static-libs -systemtap -tk -valgrind -xemacs
+
+#Steam 
+app-accessibility/at-spi2-core  abi_x86_32
+app-arch/bzip2                  abi_x86_32
+app-arch/lz4                    abi_x86_32
+app-arch/zstd                   abi_x86_32
+dev-db/sqlite                   abi_x86_32
+dev-lang/rust-bin               abi_x86_32
+dev-libs/dbus-glib              abi_x86_32
+dev-libs/elfutils               abi_x86_32
+dev-libs/expat                  abi_x86_32
+dev-libs/fribidi                abi_x86_32
+dev-libs/glib                   abi_x86_32
+dev-libs/gmp                    abi_x86_32
+dev-libs/icu                    abi_x86_32
+dev-libs/json-glib              abi_x86_32
+dev-libs/libevdev               abi_x86_32
+dev-libs/libffi                 abi_x86_32
+dev-libs/libgcrypt              abi_x86_32
+dev-libs/libgpg-error           abi_x86_32
+dev-libs/libgudev               abi_x86_32
+dev-libs/libgusb                abi_x86_32
+dev-libs/libpcre2               abi_x86_32
+dev-libs/libtasn1               abi_x86_32
+dev-libs/libunistring           abi_x86_32
+dev-libs/libusb                 abi_x86_32
+dev-libs/libxml2                abi_x86_32
+dev-libs/lzo                    abi_x86_32
+dev-libs/nettle                 abi_x86_32
+dev-libs/nspr                   abi_x86_32
+dev-libs/nss                    abi_x86_32
+dev-libs/openssl                abi_x86_32
+dev-libs/wayland                abi_x86_32
+dev-util/spirv-tools            abi_x86_32
+dev-util/sysprof-capture        abi_x86_32
+gnome-base/librsvg              abi_x86_32
+gui-libs/libdecor               abi_x86_32
+llvm-core/clang                 abi_x86_32
+llvm-core/llvm                  abi_x86_32
+media-gfx/graphite2             abi_x86_32
+media-libs/alsa-lib             abi_x86_32
+media-libs/flac                 abi_x86_32
+media-libs/fontconfig           abi_x86_32
+media-libs/freetype             abi_x86_32
+media-libs/glu                  abi_x86_32
+media-libs/harfbuzz             abi_x86_32
+media-libs/lcms                 abi_x86_32
+media-libs/libepoxy             abi_x86_32
+media-libs/libglvnd             abi_x86_32
+media-libs/libjpeg-turbo        abi_x86_32
+media-libs/libogg               abi_x86_32
+media-libs/libpng               abi_x86_32
+media-libs/libpulse             abi_x86_32
+media-libs/libsdl2              abi_x86_32
+media-libs/libsndfile           abi_x86_32
+media-libs/libva                abi_x86_32
+media-libs/libvorbis            abi_x86_32
+media-libs/mesa                 abi_x86_32
+media-libs/openal               abi_x86_32
+media-libs/opus                 abi_x86_32
+media-libs/tiff                 abi_x86_32
+media-sound/lame                abi_x86_32
+media-sound/mpg123-base         abi_x86_32
+media-video/pipewire            abi_x86_32
+net-dns/c-ares                  abi_x86_32
+net-dns/libidn2                 abi_x86_32
+net-libs/gnutls                 abi_x86_32
+net-libs/libasyncns             abi_x86_32
+net-libs/libndp                 abi_x86_32
+net-libs/libpsl                 abi_x86_32
+net-libs/nghttp2                abi_x86_32
+net-libs/nghttp3                abi_x86_32
+net-misc/curl                   abi_x86_32
+net-misc/networkmanager         abi_x86_32
+net-print/cups                  abi_x86_32
+sys-apps/dbus                   abi_x86_32
+sys-apps/systemd                abi_x86_32
+sys-apps/systemd-utils          abi_x86_32
+sys-apps/util-linux             abi_x86_32
+sys-libs/gdbm                   abi_x86_32
+sys-libs/gpm                    abi_x86_32
+sys-libs/libcap                 abi_x86_32
+sys-libs/libudev-compat         abi_x86_32
+sys-libs/ncurses                abi_x86_32
+sys-libs/pam                    abi_x86_32
+sys-libs/readline               abi_x86_32
+sys-libs/zlib                   abi_x86_32
+virtual/glu                     abi_x86_32
+virtual/libelf                  abi_x86_32
+virtual/libiconv                abi_x86_32
+virtual/libintl                 abi_x86_32
+virtual/libudev                 abi_x86_32
+virtual/libusb                  abi_x86_32
+virtual/opengl                  abi_x86_32
+virtual/rust                    abi_x86_32
+x11-libs/cairo                  abi_x86_32
+x11-libs/extest                 abi_x86_32
+x11-libs/gdk-pixbuf             abi_x86_32
+x11-libs/gtk+                   abi_x86_32
+x11-libs/gtk+                   abi_x86_32
+x11-libs/libdrm                 abi_x86_32
+x11-libs/libICE                 abi_x86_32
+x11-libs/libpciaccess           abi_x86_32
+x11-libs/libSM                  abi_x86_32
+x11-libs/libvdpau               abi_x86_32
+x11-libs/libX11                 abi_x86_32
+x11-libs/libXau                 abi_x86_32
+x11-libs/libxcb                 abi_x86_32
+x11-libs/libXcomposite          abi_x86_32
+x11-libs/libXcursor             abi_x86_32
+x11-libs/libXdamage             abi_x86_32
+x11-libs/libXdmcp               abi_x86_32
+x11-libs/libXext                abi_x86_32
+x11-libs/libXfixes              abi_x86_32
+x11-libs/libXft                 abi_x86_32
+x11-libs/libXi                  abi_x86_32
+x11-libs/libXinerama            abi_x86_32
+x11-libs/libxkbcommon           abi_x86_32
+x11-libs/libXrandr              abi_x86_32
+x11-libs/libXrender             abi_x86_32
+x11-libs/libXScrnSaver          abi_x86_32
+x11-libs/libxshmfence           abi_x86_32
+x11-libs/libXtst                abi_x86_32
+x11-libs/libXxf86vm             abi_x86_32
+x11-libs/pango                  abi_x86_32
+x11-libs/pixman                 abi_x86_32
+x11-libs/xcb-util-keysyms       abi_x86_32
+x11-misc/colord                 abi_x86_32
+app-arch/xz-utils               abi_x86_32
+app-crypt/p11-kit               abi_x86_32
+gui-libs/egl-gbm            abi_x86_32
+gui-libs/egl-wayland        abi_x86_32
+gui-libs/egl-x11            abi_x86_32
+x11-drivers/nvidia-drivers  abi_x86_32
+
+#Telegram Desktop
+net-im/telegram-desktop X wayland dbus screencast fonts jemalloc -libdispatch enchant -webkit
+
+#Virtualbox
+app-emulation/virtualbox gui vde udev alsa pulseaudio opengl vnc java vboxwebsrv -sdl sdk -debug -doc -dtrace -modules-compress -modules-sign -test -pch -lvm nls -vmmraw 
+
+#VLC
+media-video/vlc -bluray
+# required by sys-kernel/gentoo-kernel-6.12.38::gentoo[initramfs]
+# required by virtual/dist-kernel-6.12.38::gentoo
+>=sys-kernel/installkernel-50 dracut
+# required by app-accessibility/orca-47.5::gentoo[python_single_target_python3_13,braille]
+# required by kde-plasma/plasma-meta-6.3.6::gentoo[accessibility]
+# required by plasma-meta (argument)
+>=app-accessibility/brltty-6.7 python
+# required by kde-plasma/xdg-desktop-portal-kde-6.3.6-r1::gentoo
+# required by kde-plasma/plasma-integration-6.3.6::gentoo
+# required by kde-plasma/plasma-workspace-6.3.6::gentoo
+# required by virtual/notification-daemon-0::gentoo[kde]
+# required by x11-libs/libnotify-0.8.6::gentoo
+# required by media-video/vlc-3.0.21_p20250217-r3::gentoo[libnotify]
+# required by media-libs/phonon-vlc-0.12.0-r2::gentoo
+# required by media-libs/phonon-4.12.0-r5::gentoo[-minimal]
+# required by kde-apps/kio-extras-25.04.3::gentoo[phonon]
+# required by kde-frameworks/kio-5.116.0-r4::gentoo
+# required by kde-frameworks/kdeclarative-5.116.0::gentoo
+# required by kde-frameworks/kcmutils-5.116.0::gentoo
+# required by kde-plasma/breeze-6.3.6::gentoo[qt5]
+# required by kde-plasma/kwin-6.3.6::gentoo
+# required by kde-plasma/plasma-desktop-6.3.6::gentoo
+# required by kde-plasma/plasma-meta-6.3.6::gentoo
+# required by plasma-meta (argument)
+>=dev-qt/qtbase-6.9.1-r2 cups
+# required by www-client/firefox-140.1.0::gentoo[system-libvpx]
+# required by =firefox-140.1.0 (argument)
+>=media-libs/libvpx-1.14.1 postproc
+# required by x11-libs/pango-1.56.3::gentoo
+# required by gui-libs/libdecor-0.2.2-r1::gentoo
+# required by media-libs/libsdl2-2.32.6::gentoo[wayland]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=media-libs/freetype-2.13.3 brotli abi_x86_32
+# required by media-gfx/blender-4.4.3::gentoo[bullet]
+# required by blender (argument)
+>=sci-physics/bullet-3.21 double-precision
+# required by media-gfx/blender-4.4.3::gentoo[ffmpeg]
+# required by blender (argument)
+>=media-video/ffmpeg-7.1.1-r2 theora vpx lame opus
+# required by media-gfx/blender-4.4.3::gentoo[fftw]
+# required by blender (argument)
+>=sci-libs/fftw-3.3.10-r1 threads
+# required by media-gfx/blender-4.4.3::gentoo[opensubdiv]
+# required by blender (argument)
+>=media-libs/opensubdiv-3.6.0-r3 tbb
+# required by app-emulation/libvirt-11.1.0-r1::gentoo[virt-network]
+# required by app-emulation/libvirt-glib-5.0.0-r1::gentoo
+# required by app-emulation/virt-manager-5.0.0-r2::gentoo
+# required by virt-manager (argument)
+>=net-dns/dnsmasq-2.91 script
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[ssl]
+# required by wine-proton (argument)
+>=net-libs/gnutls-3.8.9-r1 pkcs11 tools abi_x86_32
+# required by app-emulation/virt-manager-5.0.0-r2::gentoo[gui]
+# required by virt-manager (argument)
+>=net-misc/spice-gtk-0.42-r4 usbredir
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo
+# required by wine-proton (argument)
+>=dev-libs/libgcrypt-1.11.1 abi_x86_32
+# required by media-libs/mesa-25.0.7::gentoo
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=media-libs/libglvnd-1.7.0 abi_x86_32
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo
+# required by wine-proton (argument)
+>=media-libs/vulkan-loader-1.4.313.0 abi_x86_32
+# required by media-libs/libsdl2-2.32.6::gentoo[X]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=x11-libs/libXcursor-1.2.3 abi_x86_32
+# required by media-libs/libsdl2-2.32.6::gentoo[X]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=x11-libs/libXfixes-6.0.1 abi_x86_32
+# required by media-libs/libsdl2-2.32.6::gentoo[X]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=x11-libs/libXi-1.8.2 abi_x86_32
+# required by media-libs/libsdl2-2.32.6::gentoo[X]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=x11-libs/libXrandr-1.5.4 abi_x86_32
+# required by x11-libs/libXft-2.3.9::gentoo
+# required by x11-libs/pango-1.56.3::gentoo[X]
+# required by gui-libs/libdecor-0.2.2-r1::gentoo
+# required by media-libs/libsdl2-2.32.6::gentoo[wayland]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=x11-libs/libXrender-0.9.12 abi_x86_32
+# required by media-libs/mesa-25.0.7::gentoo[X]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=x11-libs/libXxf86vm-1.1.6 abi_x86_32
+# required by media-libs/libsdl2-2.32.6::gentoo[dbus]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=sys-apps/dbus-1.16.2 abi_x86_32
+# required by x11-libs/pango-1.56.3::gentoo
+# required by gui-libs/libdecor-0.2.2-r1::gentoo
+# required by media-libs/libsdl2-2.32.6::gentoo[wayland]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=media-libs/fontconfig-2.16.2-r1 abi_x86_32
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=media-libs/libsdl2-2.32.6 abi_x86_32
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[ssl]
+# required by wine-proton (argument)
+>=dev-libs/gmp-6.3.0-r1 abi_x86_32
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[xcomposite]
+# required by wine-proton (argument)
+>=x11-libs/libXcomposite-0.4.6 abi_x86_32
+# required by x11-libs/pango-1.56.3::gentoo[X]
+# required by gui-libs/libdecor-0.2.2-r1::gentoo
+# required by media-libs/libsdl2-2.32.6::gentoo[wayland]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=x11-libs/libX11-1.8.12 abi_x86_32
+# required by x11-libs/libXi-1.8.2::gentoo
+# required by media-libs/libsdl2-2.32.6::gentoo[X]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=x11-libs/libXext-1.3.6 abi_x86_32
+# required by media-video/pipewire-1.4.6::gentoo
+# required by media-libs/libsdl2-2.32.6::gentoo[pipewire]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=media-libs/alsa-lib-1.2.14 abi_x86_32
+# required by media-libs/libpulse-17.0::gentoo[glib]
+# required by media-libs/libsdl2-2.32.6::gentoo[pulseaudio]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=dev-libs/glib-2.84.3 abi_x86_32
+# required by media-plugins/gst-plugins-pulse-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[pulseaudio]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=media-libs/gst-plugins-base-1.24.11-r1 abi_x86_32
+# required by media-libs/gst-plugins-bad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-faad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[aac]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=media-libs/gstreamer-1.24.11 abi_x86_32
+# required by media-plugins/gst-plugins-pulse-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[pulseaudio]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=media-libs/libpulse-17.0 abi_x86_32
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[unwind,-llvm-libunwind]
+# required by wine-proton (argument)
+>=sys-libs/libunwind-1.8.2 abi_x86_32
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[usb]
+# required by wine-proton (argument)
+>=dev-libs/libusb-1.0.28 abi_x86_32
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=media-plugins/gst-plugins-meta-1.24.11 abi_x86_32
+# required by media-plugins/gst-plugins-pulse-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[pulseaudio]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=media-libs/gst-plugins-good-1.24.11 abi_x86_32
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[-dvd,a52]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=media-plugins/gst-plugins-a52dec-1.24.11 abi_x86_32
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[aac]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=media-plugins/gst-plugins-faad-1.24.11 abi_x86_32
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[dts]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=media-plugins/gst-plugins-dts-1.24.11 abi_x86_32
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[flac]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=media-plugins/gst-plugins-flac-1.24.11 abi_x86_32
+# required by media-plugins/gst-plugins-mpeg2dec-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[-dvd,-vcd,mpeg]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=media-libs/gst-plugins-ugly-1.24.11 abi_x86_32
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[mp3]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=media-plugins/gst-plugins-mpg123-1.24.11 abi_x86_32
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[-dvd,-vcd,mpeg]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=media-plugins/gst-plugins-mpeg2dec-1.24.11 abi_x86_32
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[pulseaudio]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=media-plugins/gst-plugins-pulse-1.24.11 abi_x86_32
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[x264]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=media-plugins/gst-plugins-x264-1.24.11 abi_x86_32
+# required by media-plugins/gst-plugins-x264-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[x264]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=media-libs/x264-0.0.20240513 abi_x86_32
+# required by media-plugins/gst-plugins-mpeg2dec-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[-dvd,-vcd,mpeg]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=media-libs/libmpeg2-0.5.1-r3 abi_x86_32
+# required by media-plugins/gst-plugins-mpg123-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[mp3]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=media-sound/mpg123-base-1.32.10-r2 abi_x86_32
+# required by media-plugins/gst-plugins-flac-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[flac]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=media-libs/flac-1.5.0 abi_x86_32
+# required by media-libs/libvorbis-1.3.7-r2::gentoo
+# required by media-libs/gst-plugins-base-1.24.11-r1::gentoo[vorbis]
+# required by media-libs/gst-plugins-bad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-faad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[aac]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=media-libs/libogg-1.3.5-r2 abi_x86_32
+# required by media-plugins/gst-plugins-dts-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[dts]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=media-libs/libdca-0.0.7 abi_x86_32
+# required by media-libs/gst-plugins-bad-1.24.11::gentoo[orc]
+# required by media-plugins/gst-plugins-faad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[aac]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=dev-lang/orc-0.4.41 abi_x86_32
+# required by media-plugins/gst-plugins-dts-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[dts]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=media-libs/gst-plugins-bad-1.24.11 abi_x86_32
+# required by media-libs/gst-plugins-bad-1.24.11::gentoo[bzip2]
+# required by media-plugins/gst-plugins-faad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[aac]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=app-arch/bzip2-1.0.8-r5 abi_x86_32
+# required by media-libs/gst-plugins-base-1.24.11-r1::gentoo[gles2,wayland,opengl]
+# required by media-libs/gst-plugins-bad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-faad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[aac]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=dev-libs/wayland-1.23.1 abi_x86_32
+# required by media-libs/mesa-25.0.7::gentoo
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=x11-libs/libdrm-2.4.125 abi_x86_32
+# required by x11-libs/libdrm-2.4.125::gentoo[video_cards_intel]
+# required by media-libs/mesa-25.0.7::gentoo
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=x11-libs/libpciaccess-0.18.1 abi_x86_32
+# required by llvm-core/llvm-20.1.7::gentoo
+# required by llvm-core/lld-20.1.7::gentoo
+# required by llvm-core/lld-toolchain-symlinks-20::gentoo
+>=sys-libs/zlib-1.3.1-r1 abi_x86_32
+# required by llvm-core/llvm-20.1.7::gentoo[libffi]
+# required by llvm-core/lld-20.1.7::gentoo
+# required by llvm-core/lld-toolchain-symlinks-20::gentoo
+>=dev-libs/libffi-3.5.1 abi_x86_32
+# required by media-plugins/gst-plugins-faad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[aac]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=media-libs/faad2-2.11.1 abi_x86_32
+# required by media-plugins/gst-plugins-a52dec-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[-dvd,a52]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=media-libs/a52dec-0.7.4-r9 abi_x86_32
+# required by media-libs/libpulse-17.0::gentoo
+# required by media-libs/libsdl2-2.32.6::gentoo[pulseaudio]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=media-libs/libsndfile-1.2.2-r2 abi_x86_32
+# required by media-libs/libpulse-17.0::gentoo[asyncns]
+# required by media-libs/libsdl2-2.32.6::gentoo[pulseaudio]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=net-libs/libasyncns-0.8-r4 abi_x86_32
+# required by media-libs/mesa-25.0.7::gentoo[X]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=x11-libs/libxcb-1.17.0 abi_x86_32
+# required by x11-libs/libxcb-1.17.0::gentoo
+# required by x11-libs/xcb-util-keysyms-0.4.1::gentoo
+# required by media-libs/mesa-25.0.7::gentoo[X]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=x11-libs/libXau-1.0.12 abi_x86_32
+# required by x11-libs/libxcb-1.17.0::gentoo
+# required by x11-libs/xcb-util-keysyms-0.4.1::gentoo
+# required by media-libs/mesa-25.0.7::gentoo[X]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=x11-libs/libXdmcp-1.1.5 abi_x86_32
+# required by media-libs/gst-plugins-base-1.24.11-r1::gentoo[vorbis]
+# required by media-libs/gst-plugins-bad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-faad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[aac]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=media-libs/libvorbis-1.3.7-r2 abi_x86_32
+# required by media-libs/libsndfile-1.2.2-r2::gentoo[-minimal]
+# required by media-libs/libpulse-17.0::gentoo
+# required by media-libs/libsdl2-2.32.6::gentoo[pulseaudio]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=media-libs/opus-1.5.2 abi_x86_32
+# required by media-libs/libsndfile-1.2.2-r2::gentoo[-minimal]
+# required by media-libs/libpulse-17.0::gentoo
+# required by media-libs/libsdl2-2.32.6::gentoo[pulseaudio]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=media-sound/lame-3.100-r3 abi_x86_32
+# required by media-libs/gstreamer-1.24.11::gentoo[caps]
+# required by media-libs/gst-plugins-base-1.24.11-r1::gentoo
+# required by media-libs/gst-plugins-bad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-faad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[aac]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=sys-libs/libcap-2.76 abi_x86_32
+# required by sys-libs/libcap-2.76::gentoo[pam]
+# required by media-libs/gstreamer-1.24.11::gentoo[caps]
+# required by media-libs/gst-plugins-base-1.24.11-r1::gentoo
+# required by media-libs/gst-plugins-bad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-faad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[aac]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=sys-libs/pam-1.7.1 abi_x86_32
+# required by sys-libs/pam-1.7.1::gentoo[-berkdb]
+# required by sys-libs/libcap-2.76::gentoo[pam]
+# required by media-libs/gstreamer-1.24.11::gentoo[caps]
+# required by media-libs/gst-plugins-base-1.24.11-r1::gentoo
+# required by media-libs/gst-plugins-bad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-faad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[aac]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=sys-libs/gdbm-1.25 abi_x86_32
+# required by sys-libs/gdbm-1.25::gentoo[readline]
+# required by sys-libs/pam-1.7.1::gentoo[-berkdb]
+# required by sys-libs/libcap-2.76::gentoo[pam]
+# required by media-libs/gstreamer-1.24.11::gentoo[caps]
+# required by media-libs/gst-plugins-base-1.24.11-r1::gentoo
+# required by media-libs/gst-plugins-bad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-faad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[aac]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=sys-libs/readline-8.2_p13-r1 abi_x86_32
+# required by sys-libs/readline-8.2_p13-r1::gentoo
+# required by sys-libs/gdbm-1.25::gentoo[readline]
+# required by sys-libs/pam-1.7.1::gentoo[-berkdb]
+# required by sys-libs/libcap-2.76::gentoo[pam]
+# required by media-libs/gstreamer-1.24.11::gentoo[caps]
+# required by media-libs/gst-plugins-base-1.24.11-r1::gentoo
+# required by media-libs/gst-plugins-bad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-faad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[aac]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=sys-libs/ncurses-6.5_p20250329 abi_x86_32
+# required by sys-libs/ncurses-6.5_p20250329::gentoo[gpm]
+# required by sys-libs/readline-8.2_p13-r1::gentoo
+# required by sys-libs/gdbm-1.25::gentoo[readline]
+# required by sys-libs/pam-1.7.1::gentoo[-berkdb]
+# required by sys-libs/libcap-2.76::gentoo[pam]
+# required by media-libs/gstreamer-1.24.11::gentoo[caps]
+# required by media-libs/gst-plugins-base-1.24.11-r1::gentoo
+# required by media-libs/gst-plugins-bad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-faad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[aac]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=sys-libs/gpm-1.20.7-r6 abi_x86_32
+# required by media-libs/gst-plugins-base-1.24.11-r1::gentoo[pango]
+# required by media-libs/gst-plugins-bad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-faad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[aac]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=x11-libs/pango-1.56.3 abi_x86_32
+# required by media-libs/gst-plugins-base-1.24.11-r1::gentoo[X]
+# required by media-libs/gst-plugins-bad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-faad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[aac]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=x11-libs/libXv-1.0.13 abi_x86_32
+# required by media-libs/gst-plugins-base-1.24.11-r1::gentoo[opengl,gles2]
+# required by media-libs/gst-plugins-bad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-faad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[aac]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=media-libs/graphene-1.10.8-r1 abi_x86_32
+# required by media-libs/gst-plugins-base-1.24.11-r1::gentoo[opengl,gles2]
+# required by media-libs/gst-plugins-bad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-faad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[aac]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=media-libs/libpng-1.6.47 abi_x86_32
+# required by media-libs/gst-plugins-base-1.24.11-r1::gentoo[opengl,gles2]
+# required by media-libs/gst-plugins-bad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-faad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[aac]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by wine-proton (argument)
+>=media-libs/libjpeg-turbo-3.1.0 abi_x86_32
+# required by x11-libs/pango-1.56.3::gentoo
+# required by gui-libs/libdecor-0.2.2-r1::gentoo
+# required by media-libs/libsdl2-2.32.6::gentoo[wayland]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=dev-libs/fribidi-1.0.16 abi_x86_32
+# required by x11-libs/pango-1.56.3::gentoo
+# required by gui-libs/libdecor-0.2.2-r1::gentoo
+# required by media-libs/libsdl2-2.32.6::gentoo[wayland]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=media-libs/harfbuzz-11.2.1 abi_x86_32
+# required by x11-libs/pango-1.56.3::gentoo
+# required by gui-libs/libdecor-0.2.2-r1::gentoo
+# required by media-libs/libsdl2-2.32.6::gentoo[wayland]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=x11-libs/cairo-1.18.4-r1 abi_x86_32
+# required by x11-libs/pango-1.56.3::gentoo[X]
+# required by gui-libs/libdecor-0.2.2-r1::gentoo
+# required by media-libs/libsdl2-2.32.6::gentoo[wayland]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=x11-libs/libXft-2.3.9 abi_x86_32
+# required by x11-libs/cairo-1.18.4-r1::gentoo
+# required by gui-libs/libdecor-0.2.2-r1::gentoo
+# required by media-libs/libsdl2-2.32.6::gentoo[wayland]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=x11-libs/pixman-0.46.0 abi_x86_32
+# required by media-libs/harfbuzz-11.2.1::gentoo[graphite]
+# required by x11-libs/pango-1.56.3::gentoo
+# required by gui-libs/libdecor-0.2.2-r1::gentoo
+# required by media-libs/libsdl2-2.32.6::gentoo[wayland]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=media-gfx/graphite2-1.3.14_p20210810-r3 abi_x86_32
+# required by dev-libs/libxml2-2.13.8::gentoo[icu]
+# required by llvm-core/llvm-20.1.7::gentoo[xml]
+# required by llvm-core/lld-20.1.7::gentoo
+# required by llvm-core/lld-toolchain-symlinks-20::gentoo
+>=dev-libs/icu-77.1 abi_x86_32
+# required by dev-libs/glib-2.84.3::gentoo
+# required by media-libs/harfbuzz-11.2.1::gentoo[glib]
+# required by x11-libs/pango-1.56.3::gentoo
+# required by gui-libs/libdecor-0.2.2-r1::gentoo
+# required by media-libs/libsdl2-2.32.6::gentoo[wayland]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=dev-libs/libpcre2-10.45 abi_x86_32
+# required by dev-libs/glib-2.84.3::gentoo
+# required by media-libs/harfbuzz-11.2.1::gentoo[glib]
+# required by x11-libs/pango-1.56.3::gentoo
+# required by gui-libs/libdecor-0.2.2-r1::gentoo
+# required by media-libs/libsdl2-2.32.6::gentoo[wayland]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=sys-apps/util-linux-2.41.1 abi_x86_32
+# required by media-libs/libsdl2-2.32.6::gentoo[pipewire]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=media-video/pipewire-1.4.6 abi_x86_32
+# required by media-libs/libsdl2-2.32.6::gentoo[wayland]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=gui-libs/libdecor-0.2.2-r1 abi_x86_32
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=media-libs/mesa-25.0.7 abi_x86_32
+# required by media-libs/libsdl2-2.32.6::gentoo[wayland]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=x11-libs/libxkbcommon-1.10.0 abi_x86_32
+# required by llvm-core/llvm-20.1.7::gentoo[xml]
+# required by llvm-core/lld-20.1.7::gentoo
+# required by llvm-core/lld-toolchain-symlinks-20::gentoo
+>=dev-libs/libxml2-2.13.8 abi_x86_32
+# required by media-libs/mesa-25.0.7::gentoo
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=dev-libs/expat-2.7.1 abi_x86_32
+# required by media-libs/mesa-25.0.7::gentoo
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=dev-util/spirv-tools-1.4.313.0 abi_x86_32
+# required by media-libs/mesa-25.0.7::gentoo[llvm_slot_20,llvm]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=llvm-core/llvm-20.1.7 abi_x86_32
+# required by media-libs/mesa-25.0.7::gentoo[X]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=x11-libs/libxshmfence-1.3.3 abi_x86_32
+# required by media-libs/mesa-25.0.7::gentoo[X]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
+# required by wine-proton (argument)
+>=x11-libs/xcb-util-keysyms-0.4.1 abi_x86_32
+# required by llvm-core/llvm-20.1.7::gentoo[zstd]
+# required by llvm-core/lld-20.1.7::gentoo
+# required by llvm-core/lld-toolchain-symlinks-20::gentoo
+>=app-arch/zstd-1.5.7-r1 abi_x86_32
+# required by dev-libs/libgcrypt-1.11.1::gentoo
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo
+# required by wine-proton (argument)
+>=dev-libs/libgpg-error-1.55 abi_x86_32
+# required by media-libs/freetype-2.13.3::gentoo[brotli]
+# required by media-gfx/fontforge-20230101-r2::gentoo[-test]
+# required by app-office/libreoffice-25.2.4.3-r1::gentoo
+# required by libreoffice (argument)
+>=app-arch/brotli-1.1.0 abi_x86_32
+# required by net-libs/gnutls-3.8.9-r1::gentoo
+# required by net-libs/ngtcp2-1.12.0::gentoo[gnutls,ssl]
+# required by net-libs/nodejs-22.13.1::gentoo[system-ssl]
+# required by www-client/firefox-140.1.0::gentoo
+# required by =firefox-140.1.0 (argument)
+>=dev-libs/libtasn1-4.20.0 abi_x86_32
+# required by net-libs/gnutls-3.8.9-r1::gentoo
+# required by net-libs/ngtcp2-1.12.0::gentoo[gnutls,ssl]
+# required by net-libs/nodejs-22.13.1::gentoo[system-ssl]
+# required by www-client/firefox-140.1.0::gentoo
+# required by =firefox-140.1.0 (argument)
+>=dev-libs/libunistring-1.3 abi_x86_32
+# required by net-libs/gnutls-3.8.9-r1::gentoo
+# required by net-libs/ngtcp2-1.12.0::gentoo[gnutls,ssl]
+# required by net-libs/nodejs-22.13.1::gentoo[system-ssl]
+# required by www-client/firefox-140.1.0::gentoo
+# required by =firefox-140.1.0 (argument)
+>=dev-libs/nettle-3.10.1 abi_x86_32
+# required by net-libs/gnutls-3.8.9-r1::gentoo[pkcs11]
+# required by net-libs/ngtcp2-1.12.0::gentoo[gnutls,ssl]
+# required by net-libs/nodejs-22.13.1::gentoo[system-ssl]
+# required by www-client/firefox-140.1.0::gentoo
+# required by =firefox-140.1.0 (argument)
+>=app-crypt/p11-kit-0.25.5 abi_x86_32
+# required by net-libs/gnutls-3.8.9-r1::gentoo[idn]
+# required by net-libs/ngtcp2-1.12.0::gentoo[gnutls,ssl]
+# required by net-libs/nodejs-22.13.1::gentoo[system-ssl]
+# required by www-client/firefox-140.1.0::gentoo
+# required by =firefox-140.1.0 (argument)
+>=net-dns/libidn2-2.3.8 abi_x86_32
+# required by dev-libs/glib-2.84.3::gentoo
+# required by app-emulation/libvirt-glib-5.0.0-r1::gentoo
+# required by app-emulation/virt-manager-5.0.0-r2::gentoo
+# required by virt-manager (argument)
+>=virtual/libintl-0-r2 abi_x86_32
+# required by media-libs/libsdl2-2.32.6::gentoo[udev]
+# required by app-emulation/virtualbox-7.1.10::gentoo[sdl]
+# required by virtualbox (argument)
+>=virtual/libudev-251-r2 abi_x86_32
+# required by virtual/libudev-251-r2::gentoo
+# required by sys-apps/hwloc-2.11.2-r1::gentoo[udev]
+# required by dev-cpp/tbb-2021.9.0::gentoo
+# required by media-libs/embree-4.4.0::gentoo[tbb]
+# required by media-libs/openpgl-0.7.0::gentoo
+# required by media-gfx/blender-4.4.3::gentoo[openpgl]
+# required by blender (argument)
+>=sys-apps/systemd-257.6 abi_x86_32
+# required by sys-apps/systemd-257.6::gentoo[lz4]
+# required by media-libs/libpulse-17.0::gentoo[systemd]
+# required by app-emulation/virtualbox-7.1.10::gentoo[pulseaudio]
+# required by virtualbox (argument)
+>=app-arch/lz4-1.10.0-r1 abi_x86_32
+# required by dev-libs/glib-2.84.3::gentoo
+# required by app-emulation/libvirt-glib-5.0.0-r1::gentoo
+# required by app-emulation/virt-manager-5.0.0-r2::gentoo
+# required by virt-manager (argument)
+>=virtual/libiconv-0-r2 abi_x86_32
+# required by media-libs/libsdl2-2.32.6::gentoo[opengl]
+# required by app-emulation/virtualbox-7.1.10::gentoo[sdl]
+# required by virtualbox (argument)
+>=virtual/opengl-8 abi_x86_32
+# required by media-libs/libsdl2-2.32.6::gentoo[opengl]
+# required by app-emulation/virtualbox-7.1.10::gentoo[sdl]
+# required by virtualbox (argument)
+>=virtual/glu-9.0-r2 abi_x86_32
+# required by virtual/glu-9.0-r2::gentoo
+# required by media-gfx/blender-4.4.3::gentoo
+# required by blender (argument)
+>=media-libs/glu-9.0.3 abi_x86_32
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[cdda]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by virtual/wine-0-r11::gentoo
+# required by wine (argument)
+>=media-plugins/gst-plugins-cdparanoia-1.24.11 abi_x86_32
+# required by media-plugins/gst-plugins-cdparanoia-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[cdda]
+# required by app-emulation/wine-proton-9.0.4-r2::gentoo[gstreamer]
+# required by virtual/wine-0-r11::gentoo
+# required by wine (argument)
+>=media-sound/cdparanoia-3.10.2-r8 abi_x86_32
+# required by gnome-base/gnome-keyring-46.2::gentoo
+# required by virtual/secret-service-0::gentoo
+# required by app-crypt/libsecret-0.21.7::gentoo
+# required by app-editors/vscodium-1.102.24914::gentoo
+# required by vscodium (argument)
+>=app-crypt/gcr-3.41.2-r1:0 gtk
+# required by media-libs/sdl2-ttf-2.24.0::gentoo
+# required by media-libs/sdl2-ttf (argument)
+>=media-libs/freetype-2.13.3 harfbuzz
+# required by www-client/firefox-140.1.0::gentoo[X,pgo]
+# required by @selected
+# required by @world (argument)
+>=x11-base/xorg-server-21.1.18 xvfb
+# required by www-client/firefox-140.1.0::gentoo[system-png]
+# required by @selected
+# required by @world (argument)
+>=media-libs/libpng-1.6.47 apng
+# required by app-office/onlyoffice-bin-9.0.3::gentoo
+# required by onlyoffice-bin (argument)
+>=dev-qt/qtgui-5.15.17 eglfs
+# required by www-client/chromium-138.0.7204.183::gentoo[system-png]
+# required by www-client/chromium (argument)
+#>=media-libs/libpng-1.6.50-r1 -apng
+# required by www-client/chromium-138.0.7204.183::gentoo
+# required by www-client/chromium (argument)
+#>=net-libs/nodejs-22.13.1 inspector
+# required by www-client/chromium-138.0.7204.183::gentoo[system-png]
+# required by www-client/chromium (argument)
+#=media-libs/libpng-1.6.47 -apng
+# required by www-client/firefox-141.0.3::gentoo[system-png]
+# required by firefox:rapid (argument)
+>=media-libs/libpng-1.6.50-r1 apng
+# required by net-wireless/aircrack-ng-1.7-r3::pentoo[airdrop-ng]
+# required by net-wireless/aircrack-ng (argument)
+>=net-wireless/lorcon-2020.06.06_p20220216-r3 python
+# required by app-containers/containers-common-0.63.0::gentoo
+# required by app-containers/podman-5.3.2::gentoo
+# required by app-containers/podman (argument)
+>=net-firewall/iptables-1.8.11-r1 nftables
+# required by app-containers/lxc-6.0.4-r1::gentoo[tools,caps]
+# required by app-containers/waydroid-1.5.4::guru
+# required by waydroid (argument)
+>=sys-libs/libcap-2.76 static-libs
+# required by sys-boot/os-prober-1.82::gentoo
+# required by os-prober (argument)
+>=sys-boot/grub-2.12-r7 mount
+# required by media-libs/gst-plugins-base-1.24.11-r1::gentoo[theora]
+# required by media-plugins/gst-plugins-v4l2-1.24.11::gentoo
+# required by media-video/cheese-44.1-r1::gentoo
+# required by gnome-base/gnome-extra-apps-45.2::gentoo
+# required by gnome-base/gnome-45.2::gentoo[extras]
+# required by gnome-base/gnome (argument)
+>=media-libs/libtheora-1.2.0-r1 abi_x86_32
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/anyascii-0.3.3 python_targets_python3_12
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/material-color-utilities-0.1.5 python_targets_python3_12
+# required by dev-python/svglib-1.5.1::gentoo
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/reportlab-4.4.3 python_targets_python3_12
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/svglib-1.5.1 python_targets_python3_12
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/yapsy-1.12.2-r2 python_targets_python3_12
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/lxml-6.0.0 python_targets_python3_12
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/pygobject-3.50.1 python_targets_python3_12
+# required by dev-python/pygobject-3.50.1::gentoo[cairo]
+# required by dev-util/blueprint-compiler-0.16.0::gentoo[python_single_target_python3_12]
+# required by gui-apps/gradience-0.4.1::guru
+# required by gradience (argument)
+>=dev-python/pycairo-1.28.0 python_targets_python3_12
+# required by dev-python/lxml-6.0.0::gentoo
+# required by dev-python/svglib-1.5.1::gentoo
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/cython-3.1.2-r1 python_targets_python3_12
+# required by dev-python/cssselect2-0.8.0::gentoo
+# required by dev-python/svglib-1.5.1::gentoo
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/gpep517-19 python_targets_python3_12
+# required by dev-python/olefile-0.47::gentoo
+# required by dev-python/pillow-11.3.0::gentoo
+# required by dev-python/material-color-utilities-0.1.5::guru
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/setuptools-80.9.0-r1 python_targets_python3_12
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/regex-2025.7.31::gentoo
+# required by dev-python/material-color-utilities-0.1.5::guru
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/jaraco-collections-5.2.1 python_targets_python3_12
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/regex-2025.7.31::gentoo
+# required by dev-python/material-color-utilities-0.1.5::guru
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/jaraco-functools-4.2.1 python_targets_python3_12
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/regex-2025.7.31::gentoo
+# required by dev-python/material-color-utilities-0.1.5::guru
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/jaraco-text-4.0.0 python_targets_python3_12
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/regex-2025.7.31::gentoo
+# required by dev-python/material-color-utilities-0.1.5::guru
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/more-itertools-10.7.0 python_targets_python3_12
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/regex-2025.7.31::gentoo
+# required by dev-python/material-color-utilities-0.1.5::guru
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/packaging-25.0 python_targets_python3_12
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/regex-2025.7.31::gentoo
+# required by dev-python/material-color-utilities-0.1.5::guru
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/platformdirs-4.3.8 python_targets_python3_12
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/regex-2025.7.31::gentoo
+# required by dev-python/material-color-utilities-0.1.5::guru
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/wheel-0.45.1 python_targets_python3_12
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/regex-2025.7.31::gentoo
+# required by dev-python/material-color-utilities-0.1.5::guru
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/setuptools-scm-8.3.1 python_targets_python3_12
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/regex-2025.7.31::gentoo
+# required by dev-python/material-color-utilities-0.1.5::guru
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/trove-classifiers-2025.5.9.12 python_targets_python3_12
+# required by dev-python/platformdirs-4.3.8::gentoo
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/regex-2025.7.31::gentoo
+# required by dev-python/material-color-utilities-0.1.5::guru
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/flit-core-3.12.0 python_targets_python3_12
+# required by dev-python/jaraco-text-4.0.0::gentoo
+# required by dev-python/jaraco-collections-5.2.1::gentoo
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/regex-2025.7.31::gentoo
+# required by dev-python/material-color-utilities-0.1.5::guru
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/jaraco-context-6.0.1-r1 python_targets_python3_12
+# required by dev-python/gpep517-19::gentoo
+# required by dev-python/anyascii-0.3.3::gentoo
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/installer-0.7.0 python_targets_python3_12
+# required by dev-python/svglib-1.5.1::gentoo
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/cssselect2-0.8.0 python_targets_python3_12
+# required by dev-python/svglib-1.5.1::gentoo
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/tinycss2-1.4.0 python_targets_python3_12
+# required by dev-python/tinycss2-1.4.0::gentoo
+# required by dev-python/cssselect2-0.8.0::gentoo
+# required by dev-python/svglib-1.5.1::gentoo
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/webencodings-0.5.1-r2 python_targets_python3_12
+# required by dev-python/reportlab-4.4.3::gentoo
+# required by dev-python/svglib-1.5.1::gentoo
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/charset-normalizer-3.4.2 python_targets_python3_12
+# required by dev-python/reportlab-4.4.3::gentoo
+# required by dev-python/svglib-1.5.1::gentoo
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/pillow-11.3.0 python_targets_python3_12
+# required by dev-python/pillow-11.3.0::gentoo
+# required by dev-python/material-color-utilities-0.1.5::guru
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/olefile-0.47 python_targets_python3_12
+# required by dev-python/material-color-utilities-0.1.5::guru
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/regex-2025.7.31 python_targets_python3_12
+# required by dev-python/material-color-utilities-0.1.5::guru
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/poetry-core-2.1.3 python_targets_python3_12
+# required by dev-python/material-color-utilities-0.1.5::guru
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/build-1.2.2_p1-r2 python_targets_python3_12
+# required by dev-python/build-1.2.2_p1-r2::gentoo
+# required by dev-python/material-color-utilities-0.1.5::guru
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/pyproject-hooks-1.2.0 python_targets_python3_12
+# required by dev-python/poetry-core-2.1.3::gentoo[-test]
+# required by dev-python/material-color-utilities-0.1.5::guru
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/fastjsonschema-2.21.1 python_targets_python3_12
+# required by dev-python/poetry-core-2.1.3::gentoo[-test]
+# required by dev-python/material-color-utilities-0.1.5::guru
+# required by gui-apps/gradience-0.4.1::guru[python_single_target_python3_12]
+# required by gradience (argument)
+>=dev-python/lark-1.2.2 python_targets_python3_12
+# required by media-video/cheese-44.1-r1::gentoo
+# required by @preserved-rebuild (argument)
+>=media-libs/gst-plugins-base-1.24.11-r1 theora
+# required by dev-python/matplotlib-3.10.3::gentoo[-test]
+# required by dev-python/matplotlib (argument)
+>=dev-python/pillow-11.3.0 webp
+# required by media-libs/x264-0.0.20240513::gentoo[opencl]
+# required by media-video/vlc-3.0.21_p20250217-r3::gentoo[x264]
+# required by media-libs/phonon-vlc-0.12.0-r2::gentoo
+# required by media-libs/phonon-4.12.0-r5::gentoo[-minimal]
+# required by kde-apps/dolphin-25.04.3::gentoo
+# required by @selected
+# required by @world (argument)
+>=virtual/opencl-3-r5 abi_x86_32
+# required by virtual/opencl-3-r5::gentoo
+# required by media-libs/mesa-25.1.7::gentoo[opencl]
+# required by media-libs/gst-plugins-base-1.24.11-r1::gentoo[gles2,opengl]
+# required by media-libs/gst-plugins-bad-1.24.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.24.11::gentoo[vaapi]
+# required by app-misc/localsearch-3.8.2::gentoo[gstreamer]
+# required by app-misc/tinysparql-3.8.2::gentoo[localsearch]
+# required by gnome-base/nautilus-47.4::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-libs/opencl-icd-loader-2024.10.24 abi_x86_32
+
+#Wine
+app-emulation/wine-proton X xcomposite xinerama alsa pulseaudio dbus fontconfig gecko mono sdl ssl unwind mingw ffmpeg udev usb -v4l wayland nls
+app-emulation/wine-staging X xcomposite xinerama alsa pulseaudio dbus fontconfig gecko mono opengl vulkan sdl ssl truetype unwind mingw gstreamer ffmpeg dos udev samba netapi opencl pipewire
+
+#Wpa_supplicant
+#net-wireless/wpa_supplicant dbus readline qt6 p2p wps ap mesh hs2-0 mbo fils tdls fasteap uncommon-eap-types eap-sim smartcard -tkip -wep -macsec -wimax -ps3 -broadcom-sta -privsep -selinux
+# required by app-emulation/wine-staging-10.16::gentoo[samba]
+# required by wine-staging (argument)
+>=net-fs/samba-4.22.3 winbind
+# required by net-im/telegram-desktop-6.0.2-r1::gentoo
+# required by telegram-desktop (argument)
+>=media-video/ffmpeg-7.1.2 vpx opus
+# required by www-client/firefox-144.0-r1::gentoo[system-libvpx]
+# required by firefox (argument)
+>=media-libs/libvpx-1.15.2 postproc
+# required by www-client/firefox-144.0-r1::gentoo[system-png]
+# required by firefox (argument)
+>=media-libs/libpng-1.6.50-r1 apng
+# required by www-client/firefox-144.0-r1::gentoo[pgo,X]
+# required by firefox (argument)
+>=x11-base/xorg-server-21.1.18 xvfb
+# required by app-accessibility/orca-47.5::gentoo[braille,python_single_target_python3_13]
+# required by kde-plasma/plasma-meta-6.4.5-r1::gentoo[accessibility]
+# required by plasma-meta (argument)
+>=app-accessibility/brltty-6.7 python
+# required by dev-lang/php-8.3.21::gentoo
+# required by @selected
+# required by @world (argument)
+>=app-eselect/eselect-php-0.9.9 fpm apache2
+# required by dev-lang/php-8.3.21::gentoo[gd]
+# required by @selected
+# required by @world (argument)
+>=media-libs/gd-2.3.3-r4 avif webp
+# required by app-emulation/virt-manager-5.1.0::gentoo[gui]
+# required by virt-manager (argument)
+>=net-misc/spice-gtk-0.42-r4 sasl usbredir
+# required by app-emulation/libvirt-11.6.0-r2::gentoo[virt-network]
+# required by app-emulation/libvirt-glib-5.0.0-r1::gentoo
+# required by app-emulation/virt-manager-5.1.0::gentoo
+# required by virt-manager (argument)
+>=net-dns/dnsmasq-2.91 script
+# required by app-crypt/swtpm-0.10.0-r2::gentoo
+# required by app-emulation/libvirt-11.6.0-r2::gentoo[qemu]
+# required by app-emulation/libvirt-glib-5.0.0-r1::gentoo
+# required by app-emulation/virt-manager-5.1.0::gentoo
+# required by virt-manager (argument)
+>=net-libs/gnutls-3.8.10 pkcs11 tools
+# required by media-gfx/blender-4.4.3::gentoo
+# required by blender (argument)
+>=media-libs/freetype-2.14.1-r1 brotli
+# required by media-gfx/blender-4.4.3::gentoo[bullet]
+# required by blender (argument)
+>=sci-physics/bullet-3.21 double-precision
+# required by media-gfx/blender-4.4.3::gentoo[ffmpeg]
+# required by blender (argument)
+>=media-video/ffmpeg-7.1.2 lame theora
+# required by media-gfx/blender-4.4.3::gentoo[fftw]
+# required by blender (argument)
+>=sci-libs/fftw-3.3.10-r1 threads
+# required by media-gfx/blender-4.4.3::gentoo[opensubdiv]
+# required by blender (argument)
+>=media-libs/opensubdiv-3.6.1 tbb
+
+#Zig
+dev-lang/zig llvm doc verify-sig
+# required by app-emulation/libvirt-11.6.0-r2::gentoo[parted]
+# required by app-emulation/libvirt-glib-5.0.0-r1::gentoo
+# required by app-emulation/virt-manager-5.1.0::gentoo
+# required by @selected
+# required by @world (argument)
+>=sys-block/parted-3.6-r2 device-mapper
+# required by app-emulation/libvirt-11.6.0-r2::gentoo[parted]
+# required by app-emulation/libvirt-glib-5.0.0-r1::gentoo
+# required by app-emulation/virt-manager-5.1.0::gentoo
+# required by @selected
+# required by @world (argument)
+>=sys-fs/lvm2-2.03.22-r7 lvm
+# required by app-office/libreoffice-25.2.6.2::gentoo[postgres]
+# required by @selected
+# required by @world (argument)
+>=dev-db/postgresql-17.6-r2 kerberos
+# required by app-emulation/virt-manager-5.1.0::gentoo[python_single_target_python3_13]
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libxml2-2.15.0-r1 python
+# required by dev-texlive/texlive-xetex-2024_p71515::gentoo
+# required by texlive-xetex (argument)
+>=app-text/texlive-core-2024-r1 xetex cjk
+# required by dev-libs/libayatana-appindicator-0.5.94::gentoo
+# required by media-sound/spotify-1.2.74-r1::gentoo
+# required by spotify (argument)
+>=dev-libs/libdbusmenu-16.04.0-r4 gtk3
+# required by dev-python/qtconsole-5.6.1::gentoo
+# required by dev-python/ipython-9.4.0::gentoo[-python_targets_python3_11,gui,-python_targets_python3_12,python_targets_python3_13]
+# required by dev-python/ipyparallel-9.0.1::gentoo
+>=dev-python/qtpy-2.4.3-r1 printsupport

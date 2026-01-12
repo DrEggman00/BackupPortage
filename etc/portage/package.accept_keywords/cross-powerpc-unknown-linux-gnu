@@ -1,0 +1,5 @@
+cross-powerpc-unknown-linux-gnu/linux-headers ppc ~ppc -amd64 -~amd64
+cross-powerpc-unknown-linux-gnu/glibc ppc ~ppc -amd64 -~amd64
+cross-powerpc-unknown-linux-gnu/binutils ppc ~ppc -amd64 -~amd64
+cross-powerpc-unknown-linux-gnu/gcc ppc ~ppc -amd64 -~amd64
+cross-powerpc-unknown-linux-gnu/gdb ppc ~ppc -amd64 -~amd64

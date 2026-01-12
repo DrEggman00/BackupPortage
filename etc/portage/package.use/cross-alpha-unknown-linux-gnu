@@ -1,0 +1,4 @@
+cross-alpha-unknown-linux-gnu/binutils -multilib
+cross-alpha-unknown-linux-gnu/linux-headers -selinux -multilib
+cross-alpha-unknown-linux-gnu/glibc static-libs static-libs static-libs static-libs static-libs static-libs static-libs -selinux -libraries -multilib
+cross-alpha-unknown-linux-gnu/gcc -sanitize -vtv -vtv -vtv -sanitize -vtv -vtv -sanitize -vtv -selinux -objc -objc++ -objc-gc -vtv -sanitize -multilib

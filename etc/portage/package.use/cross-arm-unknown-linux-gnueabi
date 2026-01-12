@@ -1,0 +1,4 @@
+cross-arm-unknown-linux-gnueabi/binutils -multilib
+cross-arm-unknown-linux-gnueabi/linux-headers -selinux -multilib
+cross-arm-unknown-linux-gnueabi/glibc static-libs static-libs static-libs static-libs static-libs -selinux -libraries -multilib
+cross-arm-unknown-linux-gnueabi/gcc -sanitize -vtv -vtv -vtv -sanitize -vtv -selinux -objc -objc++ -objc-gc -vtv -sanitize -multilib
