@@ -4,6 +4,9 @@
 #LANG
 */* L10N: "pt-BR en en-US"
 
+#RetroArch
+games-emulation/RetroArch 7zip egl ffmpeg libass network openal opengl pipewire rgui sdl truetype vulkan wayland X
+
 #Django
 dev-python/django sqlite
 dev-python/networkx
@@ -58,9 +61,16 @@ net-misc/networkmanager iwd systemd wifi tools polkit nss introspection modemman
 dev-lang/python ensurepip ncurses readline ssl xml gdbm tk -wininst 
 
 #Chromium
-www-client/chromium -X wayland gtk4 qt6 proprietary-codecs widevine vaapi rar -cups pulseaudio system-harfbuzz system-icu system-png system-zstd screencast official -hangouts kerberos pgo lto -debug -test -custom-cflags -headless -selinux -pax-linux -ffmpeg-chromium  
-#www-client/chromium -X wayland proprietary-codecs widevine vaapi rar -cups pulseaudio system-harfbuzz system-icu -system-png system-zstd screencast rar wayland gtk4 qt6 official -hangouts kerberos pgo -debug -test lto custom-cflags -headless -selinux -pax-kernel -ffmpeg-chromium  pt-BR
+
+#www-client/chromium X official proprietary-codecs rar screencast system-harfbuzz system-icu system-png system-zstd vaapi wayland widevine -bundled-toolchain -cups -debug -custom-flags -ffmpeg-chromium gtk4 -headless pulseaudio hangouts 
+www-client/chromium X wayland gtk4 qt6 proprietary-codecs widevine vaapi rar -cups pulseaudio system-harfbuzz system-icu system-png system-zstd screencast official -hangouts -kerberos pgo lto -debug -test -custom-cflags -headless -selinux -pax-linux
+
+#www-client/chromium -X wayland proprietary-codecs widevine vaapi rar -cups pulseaudio system-harfbuzz system-icu -system-png system-zstd screencast rar wayland gtk4 qt6 official -hangouts kerberos pgo -debug -test lto custom-cflags -headless -selinux -pax-kernel -ffmpeg-chromium
+#
 #www-client/chromium widevine screencast system-icu system-png bundled-toolchain -headless kerberos -selinux system-harfbuzz system-zstd official custom-flags lto pgo -debug -test -bindist -ffmpeg-chromium -hangouts -pax-kernel
+
+www-client/chromium L10N: pt-BR
+
 
 #Tor
 net-vpn/tor man verify-sig systemd seccomp caps lzma zstd scrypt doc -test -selinux -hardened 
@@ -118,9 +128,8 @@ app-emulation/qemu aio io-uring udev vhost-net slirp spice sdl gtk usb fdt pin-u
 #app-emulation/qemu   QEMU_SOFTMMU_TARGETS:  x86_64 riscv32 riscv64
 #app-emulation/qemu   QEMU_USER_TARGETS:  x86_64 riscv32 riscv64
 
-app-emulation/qemu QEMU_SOFTMMU_TARGETS: riscv32 riscv64 -x86_64 -i386 arm armeb aarch64 aarch64_be -mips -mipsel -mips64 -mips64el -mipsn32 -mipsn32el ppc ppc64 ppc64le sparc sparc32plus sparc64 s390x -avr -rx -xtensa -xtensaeb -tricore -hexagon -microblaze -microblazeel alpha hppa m68k or1k sh4 sh4eb loongarch64 
-#app-emulation/qemu QEMU_USER_TARGETS:
-
+app-emulation/qemu QEMU_SOFTMMU_TARGETS: riscv32 riscv64 x86_64 i386 arm armeb aarch64 aarch64_be mips mipsel mips64 mips64el mipsn32 mipsn32el ppc ppc64 ppc64le sparc sparc32plus sparc64 s390x -avr -rx -xtensa -xtensaeb -tricore -hexagon -microblaze -microblazeel alpha hppa m68k or1k sh4 sh4eb loongarch64 
+app-emulation/qemu QEMU_USER_TARGETS: riscv32 riscv64 x86_64 i386 arm armeb aarch64 aarch64_be mips mipsel mips64 mips64el mipsn32 mipsn32el ppc ppc64 ppc64le sparc sparc32plus sparc64 s390x -avr -rx -xtensa -xtensaeb -tricore -hexagon -microblaze -microblazeel alpha hppa m68k or1k sh4 sh4eb loongarch64
 app-emulation/virt-manager gui policykit sasl verif-sig
 
 #Ruby 
