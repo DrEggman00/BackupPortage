@@ -1,4 +1,0 @@
-cross-powerpc64-unknown-linux-gnu/binutils -multilib
-cross-powerpc64-unknown-linux-gnu/linux-headers -selinux -multilib
-cross-powerpc64-unknown-linux-gnu/glibc static-libs static-libs static-libs -selinux -libraries -multilib
-cross-powerpc64-unknown-linux-gnu/gcc -sanitize -vtv -vtv -vtv -selinux -objc -objc++ -objc-gc -vtv -sanitize -multilib

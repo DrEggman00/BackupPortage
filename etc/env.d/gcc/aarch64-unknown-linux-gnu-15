@@ -1,8 +1,0 @@
-GCC_PATH="/usr/x86_64-pc-linux-gnu/aarch64-unknown-linux-gnu/gcc-bin/15"
-LDPATH="/usr/lib/gcc/aarch64-unknown-linux-gnu/15"
-MANPATH="/usr/share/gcc-data/aarch64-unknown-linux-gnu/15/man"
-INFOPATH="/usr/share/gcc-data/aarch64-unknown-linux-gnu/15/info"
-STDCXX_INCDIR="g++-v15"
-CTARGET="aarch64-unknown-linux-gnu"
-GCC_SPECS=""
-MULTIOSDIRS="../lib64"

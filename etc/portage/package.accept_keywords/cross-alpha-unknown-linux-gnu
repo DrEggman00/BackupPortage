@@ -1,5 +1,0 @@
-cross-alpha-unknown-linux-gnu/linux-headers alpha ~alpha -amd64 -~amd64
-cross-alpha-unknown-linux-gnu/glibc alpha ~alpha -amd64 -~amd64
-cross-alpha-unknown-linux-gnu/binutils alpha ~alpha -amd64 -~amd64
-cross-alpha-unknown-linux-gnu/gcc alpha ~alpha -amd64 -~amd64
-cross-alpha-unknown-linux-gnu/gdb alpha ~alpha -amd64 -~amd64

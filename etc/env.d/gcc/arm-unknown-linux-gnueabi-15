@@ -1,8 +1,0 @@
-GCC_PATH="/usr/x86_64-pc-linux-gnu/arm-unknown-linux-gnueabi/gcc-bin/15"
-LDPATH="/usr/lib/gcc/arm-unknown-linux-gnueabi/15"
-MANPATH="/usr/share/gcc-data/arm-unknown-linux-gnueabi/15/man"
-INFOPATH="/usr/share/gcc-data/arm-unknown-linux-gnueabi/15/info"
-STDCXX_INCDIR="g++-v15"
-CTARGET="arm-unknown-linux-gnueabi"
-GCC_SPECS=""
-MULTIOSDIRS="."

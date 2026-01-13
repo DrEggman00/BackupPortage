@@ -1,5 +1,0 @@
-[safe]
-	directory = /var/db/repos/steam-overlay
-	directory = /var/db/repos/pentoo
-	directory = /var/db/repos/guru
-	directory = /var/db/repos/salfter

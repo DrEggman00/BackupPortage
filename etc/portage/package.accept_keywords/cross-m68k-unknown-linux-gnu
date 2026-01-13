@@ -1,5 +1,0 @@
-cross-m68k-unknown-linux-gnu/linux-headers m68k ~m68k -amd64 -~amd64
-cross-m68k-unknown-linux-gnu/glibc m68k ~m68k -amd64 -~amd64
-cross-m68k-unknown-linux-gnu/binutils m68k ~m68k -amd64 -~amd64
-cross-m68k-unknown-linux-gnu/gcc m68k ~m68k -amd64 -~amd64
-cross-m68k-unknown-linux-gnu/gdb m68k ~m68k -amd64 -~amd64

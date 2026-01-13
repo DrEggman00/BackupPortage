@@ -1,8 +1,0 @@
-GCC_PATH="/usr/x86_64-pc-linux-gnu/m68k-unknown-linux-gnu/gcc-bin/13"
-LDPATH="/usr/lib/gcc/m68k-unknown-linux-gnu/13"
-MANPATH="/usr/share/gcc-data/m68k-unknown-linux-gnu/13/man"
-INFOPATH="/usr/share/gcc-data/m68k-unknown-linux-gnu/13/info"
-STDCXX_INCDIR="g++-v13"
-CTARGET="m68k-unknown-linux-gnu"
-GCC_SPECS=""
-MULTIOSDIRS="."
