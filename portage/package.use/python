@@ -1,0 +1,2 @@
+#Python
+dev-lang/python ensurepip ncurses readline ssl xml gdbm tk -wininst 

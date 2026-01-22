@@ -1,0 +1,5 @@
+#firefox
+www-client/firefox ~amd64
+dev-libs/nss ~amd64
+dev-libs/nspr ~amd64
+media-video/pipewire ~amd64

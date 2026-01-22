@@ -1,0 +1,7 @@
+#Chromium
+#www-client/chromium X official proprietary-codecs rar screencast system-harfbuzz system-icu system-png system-zstd vaapi wayland widevine -bundled-toolchain -cups -debug -custom-flags -ffmpeg-chromium gtk4 -headless hangouts 
+www-client/chromium X wayland gtk4 qt6 proprietary-codecs widevine pulseaudio vaapi rar -cups system-harfbuzz system-icu system-png system-zstd screencast official -hangouts -kerberos pgo lto -debug -test -custom-cflags -headless -selinux -pax-linux
+#www-client/chromium -X wayland proprietary-codecs widevine vaapi rar -cups system-harfbuzz system-icu -system-png system-zstd screencast rar wayland gtk4 qt6 official -hangouts kerberos pgo -debug -test lto custom-cflags -headless -selinux -pax-kernel -ffmpeg-chromium
+#
+#www-client/chromium widevine screencast system-icu system-png bundled-toolchain -headless kerberos -selinux system-harfbuzz system-zstd official custom-flags lto pgo -debug -test -bindist -ffmpeg-chromium -hangouts -pax-kernel
+www-client/chromium L10N: pt-BR

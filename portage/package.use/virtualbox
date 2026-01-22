@@ -1,0 +1,2 @@
+#Virtualbox
+app-emulation/virtualbox gui vde udev alsa opengl vnc java vboxwebsrv -sdl sdk -debug -doc -dtrace -modules-compress -modules-sign -test -pch -lvm nls -vmmraw 

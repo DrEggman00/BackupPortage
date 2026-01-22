@@ -1,0 +1,2 @@
+#PHP
+dev-lang/php cli ctype fileinfo filter iconv opcache phar posix session simplexml token bzip2 curl exif gd intl jpeg png readline sockets ssl zlib zip system unicode nls opcache-jit jit sodium pcntl posix pdo sqlite apache2 fpm mysql mysqli postgres pdo soap xmlreader xmlwriter xslt webp avif truetype 

@@ -1,0 +1,18 @@
+#Blender
+#media-gfx/blender bullet color-management cycles -cycles-bin-kernels embree ffmpeg fftw fluid gmp jemalloc nanovdb oidn openexr opengl  openmp opensubdiv openvdb otf pdf potrace pugixml sndfile tbb tiff truetype alembic collada ndof nls pipewire renderdoc sdl vulkan wayland cuda optix -oneapi 
+media-gfx/blender -opencl bullet color-management cycles embree ffmpeg fftw fluid gmp jemalloc nanovdb oidn openexr opengl openmp opensubdiv openvdb otf pdf potrace pugixml sndfile tbb tiff truetype alembic collada ndof nls pipewire renderdoc sdl vulkan wayland -oneapi -cycles-bin-kernels
+#media-gfx/blender cuda optix
+#media-libs/openimageio tiff jpeg png openexr webp pugixml
+#media-libs/opensubdiv cuda openmp tbb
+# required by media-gfx/blender-4.4.3::gentoo[bullet]
+# required by blender (argument)
+>=sci-physics/bullet-3.21 double-precision
+# required by media-gfx/blender-4.4.3::gentoo[ffmpeg]
+# required by blender (argument)
+>=media-video/ffmpeg-7.1.1-r2 theora vpx lame opus
+# required by media-gfx/blender-4.4.3::gentoo[fftw]
+# required by blender (argument)
+>=sci-libs/fftw-3.3.10-r1 threads
+# required by media-gfx/blender-4.4.3::gentoo[opensubdiv]
+# required by blender (argument)
+>=media-libs/opensubdiv-3.6.0-r3 tbb
