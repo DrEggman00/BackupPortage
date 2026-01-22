@@ -12,13 +12,13 @@ dev-python/django sqlite
 dev-python/networkx
 
 #OBS Studios
-media-video/obs-studios pipewire pulseaudio nvenc qsv truetype v4l wayland browser python lua mpegts speex websocket -alsa -jack -sndio -decklink -test-input -vlc 
+media-video/obs-studios pipewire nvenc qsv truetype v4l wayland browser python lua mpegts speex websocket -alsa -jack -sndio -decklink -test-input -vlc 
 
 #nerdfonts
 media-fonts/nerdfonts X nerdfontssymbolsonly -0xproto -3270 -adwaitamono -agave -anonymouspro -arimo -atkinsonhyperlegiblemono -aurulentsansmono -bigblueterminal -bitstreamverasansmono cascadiacode cascadiamono -codenewroman -comicshannsmono -commitmono -cousine -d2coding -daddytimemono -dejavusansmono -departuremono -droidsansmono -envycoder -fantasquesansmono firacode firamono -geistmono -gohu -gomono -hack -hasklig -heavydata -hermit -iawriter -ibmplexmono -inconsolata -inconsolatago -inconsolatalgc -intelonemono -iosevka -iosevkaterm -iosevkatermslab jetbrainsmono -lekton -liberationmono -lilex -martianmono -meslo -monaspace -monofur -monoid -mononoki -mplus -noto -opendyslexic -overpass -profont -proggyclean -recursive -robotomono -sharetechmono -sourcecodepro -spacemono terminus -tinos -ubuntu -ubuntumono -ubuntusans -victormono -zedmono
 
 #Conky
-app-admin/conky X xinerama xinput imlib iconv truetype systemd pulseaudio curl rss wifi iostats hddtemp intel-backlight lua-cairo lua-imlib wayland -mysql -apcupsd -irc -mpd -cmus -moc -xmms2 -webserver -ncurses -ical -extras bundled-toluapp math 
+app-admin/conky X xinerama xinput imlib iconv truetype systemd curl rss wifi iostats hddtemp intel-backlight lua-cairo lua-imlib wayland -mysql -apcupsd -irc -mpd -cmus -moc -xmms2 -webserver -ncurses -ical -extras bundled-toluapp math 
 
 #Wireshark
 net-analyzer/wireshark capinfos captype dftest dumpcap editcap gui mergecap minizip netlink pcap plugins randkt randpktdump reordercap tshark text2pcap sharkd udpdump androiddump bcg729 ciscodump doc dpauxmon http2 http3 ibc libxml2 -lua lz4 wifi zlib -test ssl sshdump spandsp snappy smi -selinux sdjournal sbc opus maxminddb
@@ -46,7 +46,7 @@ llvm-core/clang extra pie static-analyzer verify-sig xml doc -test -debug -ieee-
 
 #KDE
 kde-plasma/plasma-meta browser-integration wayland crash-handler display-manager kwallet firewall networkmanager sddm smart wallpapers X accessibility bluetooth -discover -grub -wallpapers -oxygen-theme plymouth systemd thunderbolt 
-#kde-plasma/plasma-meta X browser-integration crash-handler display-manager sddm systemd firewall kwallet networkmanager pipewire pulseaudio -wallpapers -flatpak accessibility bluetooth -crypt -cups -discover grub plymouth -oxygen-theme -rdp -sdk -thunderbolt -wacom -webengine -unsupported -discover
+#kde-plasma/plasma-meta X browser-integration crash-handler display-manager sddm systemd firewall kwallet networkmanager pipewire -wallpapers -flatpak accessibility bluetooth -crypt -cups -discover grub plymouth -oxygen-theme -rdp -sdk -thunderbolt -wacom -webengine -unsupported -discover
 #kde-plasma/plasma-workspace -semantic-desktop
 
 #Pipewire
@@ -62,10 +62,10 @@ dev-lang/python ensurepip ncurses readline ssl xml gdbm tk -wininst
 
 #Chromium
 
-#www-client/chromium X official proprietary-codecs rar screencast system-harfbuzz system-icu system-png system-zstd vaapi wayland widevine -bundled-toolchain -cups -debug -custom-flags -ffmpeg-chromium gtk4 -headless pulseaudio hangouts 
-www-client/chromium X wayland gtk4 qt6 proprietary-codecs widevine vaapi rar -cups pulseaudio system-harfbuzz system-icu system-png system-zstd screencast official -hangouts -kerberos pgo lto -debug -test -custom-cflags -headless -selinux -pax-linux
+#www-client/chromium X official proprietary-codecs rar screencast system-harfbuzz system-icu system-png system-zstd vaapi wayland widevine -bundled-toolchain -cups -debug -custom-flags -ffmpeg-chromium gtk4 -headless hangouts 
+www-client/chromium X wayland gtk4 qt6 proprietary-codecs widevine pulseaudio vaapi rar -cups system-harfbuzz system-icu system-png system-zstd screencast official -hangouts -kerberos pgo lto -debug -test -custom-cflags -headless -selinux -pax-linux
 
-#www-client/chromium -X wayland proprietary-codecs widevine vaapi rar -cups pulseaudio system-harfbuzz system-icu -system-png system-zstd screencast rar wayland gtk4 qt6 official -hangouts kerberos pgo -debug -test lto custom-cflags -headless -selinux -pax-kernel -ffmpeg-chromium
+#www-client/chromium -X wayland proprietary-codecs widevine vaapi rar -cups system-harfbuzz system-icu -system-png system-zstd screencast rar wayland gtk4 qt6 official -hangouts kerberos pgo -debug -test lto custom-cflags -headless -selinux -pax-kernel -ffmpeg-chromium
 #
 #www-client/chromium widevine screencast system-icu system-png bundled-toolchain -headless kerberos -selinux system-harfbuzz system-zstd official custom-flags lto pgo -debug -test -bindist -ffmpeg-chromium -hangouts -pax-kernel
 
@@ -86,7 +86,7 @@ net-analyzer/wireshark pcap gui plugins dumpcap capinfos captype editcap mergeca
 app-containers/docker systemd container-init overlay2 -btrfs -apparmor 
 
 #Firefox
-www-client/firefox X wayland dbus pulseaudio -system-pipewire -system-av1 -system-harfbuzz -system-icu -system-jpeg -system-libevent -system-libvpx -system-webp -system-png openh264 hwaccel wasm-sandbox wifi clang -pgo -jumbo-build -jpegxl -libproxy -valgrind -telemetry -eme-free -jack -sndio -gnome-shell -debug -test -selinux 
+www-client/firefox X wayland dbus -system-pipewire -system-av1 -system-harfbuzz -system-icu -system-jpeg -system-libevent -system-libvpx -system-webp -system-png openh264 hwaccel wasm-sandbox wifi clang -pgo -jumbo-build -jpegxl -libproxy -valgrind -telemetry -eme-free -jack -sndio -gnome-shell -debug -test -selinux 
 
 #GCC 
 sys-devel/gcc cxx pie ssp hardened lto rust time64 pgo pch openmp vanilla extra -libgdiagnostics zstd -valgrind fortran -ada cobol -d -modula2 -go -objc -fixed-point -objc-gc -debug cet -systemtap -ieee-long-double -test jit multilib -default-stack-clash-protection 
@@ -124,7 +124,7 @@ dev-lang/php cli ctype fileinfo filter iconv opcache phar posix session simplexm
 dev-db/postgresql systemd server readline ssl zlib lz4 zstd uuid icu python perl -pam -ldap -kerberos -oauth -static-libs -debug doc -test
 
 #QEMU 
-app-emulation/qemu aio io-uring udev vhost-net slirp spice sdl gtk usb fdt pin-upstream-blobs seccomp filecaps vnc jpeg png gnutls virgl opengl xattr virtfs alsa pulseaudio pipewire curl ssh nfs -plugins jemalloc -numa doc -oss -infiniband -xen -systemtap -debug -valgrind -selinux
+app-emulation/qemu aio io-uring udev vhost-net slirp spice sdl gtk usb fdt pin-upstream-blobs seccomp filecaps vnc jpeg png gnutls virgl opengl xattr virtfs alsa pipewire curl ssh nfs -plugins jemalloc -numa doc -oss -infiniband -xen -systemtap -debug -valgrind -selinux
 #app-emulation/qemu   QEMU_SOFTMMU_TARGETS:  x86_64 riscv32 riscv64
 #app-emulation/qemu   QEMU_USER_TARGETS:  x86_64 riscv32 riscv64
 
@@ -273,7 +273,7 @@ x11-drivers/nvidia-drivers  abi_x86_32
 net-im/telegram-desktop X wayland dbus screencast fonts jemalloc -libdispatch enchant -webkit
 
 #Virtualbox
-app-emulation/virtualbox gui vde udev alsa pulseaudio opengl vnc java vboxwebsrv -sdl sdk -debug -doc -dtrace -modules-compress -modules-sign -test -pch -lvm nls -vmmraw 
+app-emulation/virtualbox gui vde udev alsa opengl vnc java vboxwebsrv -sdl sdk -debug -doc -dtrace -modules-compress -modules-sign -test -pch -lvm nls -vmmraw 
 
 #VLC
 media-video/vlc -bluray
@@ -1161,8 +1161,8 @@ media-video/vlc -bluray
 >=dev-libs/opencl-icd-loader-2024.10.24 abi_x86_32
 
 #Wine
-app-emulation/wine-proton X xcomposite xinerama alsa pulseaudio dbus fontconfig gecko mono sdl ssl unwind mingw ffmpeg udev usb -v4l wayland nls
-app-emulation/wine-staging X xcomposite xinerama alsa pulseaudio dbus fontconfig gecko mono opengl vulkan sdl ssl truetype unwind mingw gstreamer ffmpeg dos udev samba netapi opencl pipewire
+app-emulation/wine-proton X xcomposite xinerama alsa dbus fontconfig gecko mono sdl ssl unwind mingw ffmpeg udev usb -v4l wayland nls
+app-emulation/wine-staging X xcomposite xinerama alsa dbus fontconfig gecko mono opengl vulkan sdl ssl truetype unwind mingw gstreamer ffmpeg dos udev samba netapi opencl pipewire
 
 #Wpa_supplicant
 #net-wireless/wpa_supplicant dbus readline qt6 p2p wps ap mesh hs2-0 mbo fils tdls fasteap uncommon-eap-types eap-sim smartcard -tkip -wep -macsec -wimax -ps3 -broadcom-sta -privsep -selinux
@@ -1256,3 +1256,6 @@ dev-lang/zig llvm doc verify-sig
 # required by dev-python/ipython-9.4.0::gentoo[-python_targets_python3_11,gui,-python_targets_python3_12,python_targets_python3_13]
 # required by dev-python/ipyparallel-9.0.1::gentoo
 >=dev-python/qtpy-2.4.3-r1 printsupport
+games-emulation/sdlmame qt5
+app-text/texlive cjk xetex
+app-text/texlive-core cjk xetex
