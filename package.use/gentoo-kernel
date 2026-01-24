@@ -1,0 +1,9 @@
+#Gentoo-kernel
+sys-kernel/gentoo-kernel -debug -experimental -hardened modules-compress -modules-sign -secureboot -savedconfig -test -verify-sig initramfs strip
+# required by sys-boot/os-prober-1.82::gentoo
+# required by os-prober (argument)
+>=sys-boot/grub-2.12-r7 mount
+sys-kernel/installkernel dracut
+# required by sys-kernel/gentoo-kernel-6.12.38::gentoo[initramfs]
+# required by virtual/dist-kernel-6.12.38::gentoo
+>=sys-kernel/installkernel-50 dracut

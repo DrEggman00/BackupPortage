@@ -1,0 +1,5 @@
+cross-m68k-unknown-linux-gnu/linux-headers  multilib
+cross-m68k-unknown-linux-gnu/glibc  cet cet cet cet multilib
+cross-m68k-unknown-linux-gnu/binutils  cet cet cet cet multilib
+cross-m68k-unknown-linux-gnu/gcc  cet cet cet cet multilib
+cross-m68k-unknown-linux-gnu/gdb  multilib

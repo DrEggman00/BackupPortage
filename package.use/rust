@@ -1,0 +1,2 @@
+dev-lang/rust system-llvm clippy rustfmt rust-analyzer rust-src verify-sig -debug lto -wasm -nightly -miri -parallel-compiler -big-endian -test doc
+dev-lang/rust LLVM_TARGETS: x86 RISCV

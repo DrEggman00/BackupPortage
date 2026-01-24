@@ -1,0 +1,4 @@
+#Wireshark
+net-analyzer/wireshark capinfos captype dftest dumpcap editcap gui mergecap minizip netlink pcap plugins randkt randpktdump reordercap tshark text2pcap sharkd udpdump androiddump bcg729 ciscodump doc dpauxmon http2 http3 ibc libxml2 -lua lz4 wifi zlib -test ssl sshdump spandsp snappy smi -selinux sdjournal sbc opus maxminddb
+#GNOME:net-wireless/wpa_supplicant dbus qt5 qt6 -gnome readline gui p2p wps fils hs2-0 mbo tdls mesh ap -macsec eap-sim fasteap uncommon-eap-types smartcard wimax -tkip -wep wvite -ps3 -privsep -selinux eapol-test
+#net-analyzer/wireshark pcap gui plugins dumpcap capinfos captype editcap mergecap reordercap text2pcap filecaps tshark netlink zstd -sharkd -dftest -androiddump -ciscodump -dpauxmon http2 bcg729 doc 

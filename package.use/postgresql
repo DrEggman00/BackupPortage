@@ -1,0 +1,2 @@
+#Postgresql
+dev-db/postgresql systemd server readline ssl zlib lz4 zstd uuid icu python perl -pam -ldap -kerberos -oauth -static-libs -debug doc -test

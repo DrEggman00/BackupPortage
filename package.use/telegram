@@ -1,0 +1,2 @@
+#Telegram Desktop
+net-im/telegram-desktop X wayland dbus screencast fonts jemalloc -libdispatch enchant -webkit

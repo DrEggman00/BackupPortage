@@ -1,0 +1,4 @@
+#cuda
+dev-util/nvidia-cuda-toolkit ~amd64
+#nvidia-vaapi-driver
+media-libs/nvidia-vaapi-driver ~amd64

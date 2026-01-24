@@ -1,0 +1,6 @@
+#NodeJS
+dev-cpp/simdutf ~amd64
+#nodejs
+net-libs/nodejs ~amd64
+dev-libs/simdjson ~amd64
+net-libs/nghttp2 ~amd64
