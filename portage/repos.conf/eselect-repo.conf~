@@ -4,22 +4,9 @@
 
 
 
-[guru]
-location = /var/db/repos/guru
+
+
+[salfter]
+location = /var/db/repos/salfter
 sync-type = git
-sync-uri = https://github.com/gentoo-mirror/guru.git
-
-
-
-[crossdev]
-location = /var/db/repos/crossdev
-
-[steam-overlay]
-location = /var/db/repos/steam-overlay
-sync-type = git
-sync-uri = https://github.com/anyc/steam-overlay.git
-
-[pentoo]
-location = /var/db/repos/pentoo
-sync-type = git
-sync-uri = https://github.com/pentoo/pentoo-overlay.git
+sync-uri = https://gitlab.com/salfter/portage.git

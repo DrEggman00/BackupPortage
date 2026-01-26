@@ -1,2 +1,3 @@
 #Python
 dev-lang/python ensurepip ncurses readline ssl xml gdbm tk -wininst 
+dev-python/sphinx -python_targets_python3_13

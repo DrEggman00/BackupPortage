@@ -1,3 +1,7 @@
+*/* LINGUAS: pt_BR
+
+*/* L10N: pt-BR
+
 # required by media-libs/freetype-2.13.3::gentoo[brotli]
 # required by media-gfx/fontforge-20230101-r2::gentoo[-test]
 # required by app-office/libreoffice-25.2.4.3-r1::gentoo
@@ -45,6 +49,7 @@
 # required by virtual/libudev-251-r2::gentoo
 # required by sys-apps/hwloc-2.11.2-r1::gentoo[udev]
 # required by dev-cpp/tbb-2021.9.0::gentoo
+dev-cpp/tbb abi_x86_32
 # required by media-libs/embree-4.4.0::gentoo[tbb]
 # required by media-libs/openpgl-0.7.0::gentoo
 # required by media-gfx/blender-4.4.3::gentoo[openpgl]
