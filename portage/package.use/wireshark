@@ -4253,3 +4253,27 @@ net-analyzer/wireshark capinfos captype dftest dumpcap editcap gui mergecap mini
 # required by dev-python/aiohttp-cors-0.8.1::gentoo[test]
 # required by dev-python/black-25.1.0::gentoo[test]
 >=dev-python/wcag-contrast-ratio-0.9-r1 python_targets_python3_12
+# required by dev-python/sphinx-rtd-theme-3.0.2::gentoo
+# required by sys-fs/btrfs-progs-6.17.1::gentoo[man]
+# required by @selected
+# required by @world (argument)
+=dev-python/sphinx-8.2.3-r2 python_targets_python3_13
+# required by net-misc/gnome-remote-desktop-48.2::gentoo[rdp]
+# required by gnome-base/gnome-extra-apps-48.0::gentoo
+# required by gnome-base/gnome-48.0::gentoo[extras]
+# required by gnome (argument)
+>=net-misc/freerdp-3.14.1 server
+# required by gnome-extra/gnome-contacts-47.1.1::gentoo
+# required by gnome-base/gnome-core-apps-48.0::gentoo
+# required by gnome-base/gnome-48.0::gentoo
+# required by gnome (argument)
+>=dev-libs/folks-0.15.9-r1 eds
+# required by gnome-extra/gnome-contacts-47.1.1::gentoo
+# required by gnome-base/gnome-core-apps-48.0::gentoo
+# required by gnome-base/gnome-48.0::gentoo
+# required by gnome (argument)
+>=gnome-extra/evolution-data-server-3.56.2-r1 vala
+# required by app-editors/emacs-30.2-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=app-emacs/emacs-common-1.13 games

@@ -444,3 +444,4 @@
 # required by app-emulation/wine-proton-9.0.4-r2::gentoo
 # required by wine-proton (argument)
 >=dev-libs/libgpg-error-1.55 abi_x86_32
+app-emulation/wine-staging -abi_x86_32
