@@ -434,3 +434,6 @@ net-analyzer/wireshark capinfos captype dftest dumpcap editcap gui mergecap mini
 # required by llvm-runtimes/compiler-rt-sanitizers-20.1.8-r1::gentoo
 # required by llvm-runtimes/clang-runtime-20.1.8-r1::gentoo[sanitize,compiler-rt]
 >=dev-python/olefile-0.47 python_targets_python3_14
+# required by www-client/chromium-144.0.7559.109::gentoo[-ffmpeg-chromium,bindist]
+# required by chromium (argument)
+=media-video/ffmpeg-6.1.4 chromium
