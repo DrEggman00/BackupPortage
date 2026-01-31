@@ -1,2 +1,3 @@
 #GCC 
-sys-devel/gcc cxx pie ssp hardened lto rust time64 pgo pch openmp vanilla extra -libgdiagnostics zstd -valgrind fortran -ada cobol -d -modula2 -go -objc -fixed-point -objc-gc -debug cet -systemtap -ieee-long-double -test jit multilib -default-stack-clash-protection 
+sys-devel/gcc cxx pie ssp hardened lto rust time64 pgo pch openmp vanilla extra -libgdiagnostics zstd -valgrind fortran -ada -d -modula2 -go -objc -fixed-point -objc-gc -debug cet -systemtap -ieee-long-double -test jit multilib -default-stack-clash-protection cobol
+
