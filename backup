@@ -1,0 +1,14 @@
+#!/bin/bash
+set -e
+
+cd /home/dr/BackupPortage
+
+cp -rv /etc/portage /home/dr/BackupPortage/
+
+MESSAGE=$1
+
+git add .
+
+git commit -m "$MESSAGE"
+
+git push
