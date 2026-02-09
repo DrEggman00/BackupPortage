@@ -1,4 +1,589 @@
 #Python
 dev-lang/python ensurepip ncurses readline ssl xml gdbm tk -wininst 
 dev-python/sphinx python_targets_python3_14 -python_targets_python3_13 -python_targets_python3_12
+dev-python/myst-parser PYTHON_TARGETS: -python3_13 -python3_12 python3_14
 
+
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/alabaster-1.0.0 python_targets_python3_14
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/babel-2.17.0 python_targets_python3_14
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/docutils-0.22.4 python_targets_python3_14
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/imagesize-1.4.1 python_targets_python3_14
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/jinja2-3.1.6 python_targets_python3_14
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/roman-numerals-py-4.1.0::gentoo
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/packaging-25.0 python_targets_python3_14
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/pygments-2.19.2 python_targets_python3_14
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/requests-2.32.5 python_targets_python3_14
+# required by dev-python/roman-numerals-py-4.1.0::gentoo
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/roman-numerals-4.1.0 python_targets_python3_14
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/snowballstemmer-3.0.1 python_targets_python3_14
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/sphinxcontrib-applehelp-2.0.0-r1 python_targets_python3_14
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/sphinxcontrib-devhelp-2.0.0-r1 python_targets_python3_14
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/sphinxcontrib-htmlhelp-2.1.0-r1 python_targets_python3_14
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/sphinxcontrib-jsmath-1.0.1-r4 python_targets_python3_14
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/sphinxcontrib-qthelp-2.0.0-r1 python_targets_python3_14
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/sphinxcontrib-serializinghtml-2.0.0-r1 python_targets_python3_14
+# required by dev-python/hatchling-1.27.0::gentoo
+# required by dev-python/pygments-2.19.2::gentoo
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/gpep517-19 python_targets_python3_14
+# required by dev-python/sphinxcontrib-qthelp-2.0.0-r1::gentoo
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/flit-core-3.12.0 python_targets_python3_14
+# required by dev-python/gpep517-19::gentoo
+# required by dev-python/roman-numerals-py-4.1.0::gentoo
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/installer-0.7.0 python_targets_python3_14
+# required by dev-python/requests-2.32.5::gentoo
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/setuptools-80.9.0-r1 python_targets_python3_14
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/roman-numerals-py-4.1.0::gentoo
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/jaraco-collections-5.2.1 python_targets_python3_14
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/roman-numerals-py-4.1.0::gentoo
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/jaraco-functools-4.4.0 python_targets_python3_14
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/roman-numerals-py-4.1.0::gentoo
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/jaraco-text-4.0.0 python_targets_python3_14
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/roman-numerals-py-4.1.0::gentoo
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/more-itertools-10.8.0 python_targets_python3_14
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/roman-numerals-py-4.1.0::gentoo
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/platformdirs-4.5.0 python_targets_python3_14
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/roman-numerals-py-4.1.0::gentoo
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/wheel-0.45.1 python_targets_python3_14
+# required by dev-python/hatch-vcs-0.5.0::gentoo
+# required by dev-python/urllib3-2.6.3::gentoo
+# required by dev-python/requests-2.32.5::gentoo
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/setuptools-scm-9.2.2 python_targets_python3_14
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/roman-numerals-py-4.1.0::gentoo
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/trove-classifiers-2025.12.1.14 python_targets_python3_14
+# required by dev-python/jaraco-text-4.0.0::gentoo
+# required by dev-python/jaraco-collections-5.2.1::gentoo
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/roman-numerals-py-4.1.0::gentoo
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/jaraco-context-6.0.2 python_targets_python3_14
+# required by dev-python/requests-2.32.5::gentoo
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/certifi-3024.7.22 python_targets_python3_14
+# required by dev-python/requests-2.32.5::gentoo
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/charset-normalizer-3.4.4 python_targets_python3_14
+# required by dev-python/requests-2.32.5::gentoo
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/idna-3.11 python_targets_python3_14
+# required by dev-python/requests-2.32.5::gentoo
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/urllib3-2.6.3 python_targets_python3_14
+# required by dev-python/urllib3-2.6.3::gentoo
+# required by dev-python/requests-2.32.5::gentoo
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/pysocks-1.7.1-r2 python_targets_python3_14
+# required by dev-python/urllib3-2.6.3::gentoo
+# required by dev-python/requests-2.32.5::gentoo
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/hatch-vcs-0.5.0 python_targets_python3_14
+# required by dev-python/hatch-vcs-0.5.0::gentoo
+# required by dev-python/urllib3-2.6.3::gentoo
+# required by dev-python/requests-2.32.5::gentoo
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/hatchling-1.27.0 python_targets_python3_14
+# required by dev-python/hatchling-1.27.0::gentoo
+# required by dev-python/pygments-2.19.2::gentoo
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/editables-0.5 python_targets_python3_14
+# required by dev-python/hatchling-1.27.0::gentoo
+# required by dev-python/pygments-2.19.2::gentoo
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/pathspec-0.12.1 python_targets_python3_14
+# required by dev-python/hatchling-1.27.0::gentoo
+# required by dev-python/pygments-2.19.2::gentoo
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/pluggy-1.6.0 python_targets_python3_14
+# required by dev-python/jinja2-3.1.6::gentoo
+# required by sys-apps/systemd-utils-255.18::gentoo[python_single_target_python3_13]
+# required by virtual/libudev-251-r2::gentoo[-systemd]
+# required by dev-libs/libgudev-238-r2::gentoo
+# required by sys-fs/udisks-2.10.2-r1::gentoo[daemon]
+# required by kde-frameworks/solid-6.22.0::gentoo
+# required by kde-frameworks/kio-6.22.1::gentoo
+# required by kde-plasma/libplasma-6.5.5::gentoo
+# required by kde-plasma/polkit-kde-agent-6.5.5::gentoo
+# required by sys-auth/polkit-126-r2::gentoo[kde]
+# required by sys-auth/polkit-qt-0.200.0::gentoo
+>=dev-python/markupsafe-3.0.3 python_targets_python3_14
+# required by dev-python/docutils-0.22.4::gentoo
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/pillow-11.3.0 python_targets_python3_14
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+=dev-python/sphinx-8.2.3-r2 python_targets_python3_13
+# required by dev-python/sphinx-8.2.3-r2::gentoo
+# required by dev-python/myst-parser-4.0.1-r1::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[doc,python_single_target_python3_13]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_nvk,-video_cards_asahi,-opencl,vulkan,video_cards_intel]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.12::gentoo
+>=dev-python/roman-numerals-py-4.1.0 python_targets_python3_14
+# required by dev-python/pillow-11.3.0::gentoo
+# required by dev-python/docutils-0.22.4::gentoo
+# required by gnome-base/librsvg-2.60.0::gentoo
+# required by media-video/ffmpeg-7.1.3::gentoo[svg]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by media-libs/libsdl2-2.32.6::gentoo[pipewire]
+>=dev-python/olefile-0.47 python_targets_python3_14
+# required by llvm-core/clang-21.1.8::gentoo[python_single_target_python3_13,doc]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_asahi,-video_cards_nvk,-opencl,video_cards_intel,vulkan]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by @selected
+# required by @world (argument)
+>=dev-python/myst-parser-5.0.0 python_targets_python3_13
+# required by dev-python/myst-parser-5.0.0::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[python_single_target_python3_13,doc]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_asahi,-video_cards_nvk,-opencl,video_cards_intel,vulkan]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by @selected
+# required by @world (argument)
+>=dev-python/sphinx-9.0.4-r1 python_targets_python3_13
+# required by dev-python/myst-parser-5.0.0::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[python_single_target_python3_13,doc]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_asahi,-video_cards_nvk,-opencl,video_cards_intel,vulkan]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by @selected
+# required by @world (argument)
+>=dev-python/markdown-it-py-4.0.0 python_targets_python3_14
+# required by dev-python/myst-parser-5.0.0::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[python_single_target_python3_13,doc]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_asahi,-video_cards_nvk,-opencl,video_cards_intel,vulkan]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by @selected
+# required by @world (argument)
+>=dev-python/mdit-py-plugins-0.5.0 python_targets_python3_14
+# required by dev-python/myst-parser-5.0.0::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[python_single_target_python3_13,doc]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_asahi,-video_cards_nvk,-opencl,video_cards_intel,vulkan]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by @selected
+# required by @world (argument)
+>=dev-python/pyyaml-6.0.3 python_targets_python3_14
+# required by dev-python/pyyaml-6.0.3::gentoo
+# required by media-libs/mesa-25.2.8::gentoo
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by @selected
+# required by @world (argument)
+>=dev-python/cython-3.1.7 python_targets_python3_14
+# required by dev-python/markdown-it-py-4.0.0::gentoo
+# required by dev-python/mdit-py-plugins-0.5.0::gentoo
+# required by dev-python/myst-parser-5.0.0::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[python_single_target_python3_13,doc]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_asahi,-video_cards_nvk,-opencl,video_cards_intel,vulkan]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by @selected
+# required by @world (argument)
+>=dev-python/linkify-it-py-2.0.3 python_targets_python3_14
+# required by dev-python/markdown-it-py-4.0.0::gentoo
+# required by dev-python/mdit-py-plugins-0.5.0::gentoo
+# required by dev-python/myst-parser-5.0.0::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[python_single_target_python3_13,doc]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_asahi,-video_cards_nvk,-opencl,video_cards_intel,vulkan]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by @selected
+# required by @world (argument)
+>=dev-python/mdurl-0.1.2 python_targets_python3_14
+# required by dev-python/linkify-it-py-2.0.3::gentoo
+# required by dev-python/markdown-it-py-4.0.0::gentoo
+# required by dev-python/mdit-py-plugins-0.5.0::gentoo
+# required by dev-python/myst-parser-5.0.0::gentoo
+# required by llvm-core/clang-21.1.8::gentoo[python_single_target_python3_13,doc]
+# required by llvm-core/libclc-21.1.8::gentoo[llvm_slot_21]
+# required by media-libs/mesa-25.2.8::gentoo[-video_cards_asahi,-video_cards_nvk,-opencl,video_cards_intel,vulkan]
+# required by media-libs/libsdl2-2.32.6::gentoo[gles2]
+# required by media-video/ffmpeg-7.1.3::gentoo[sdl]
+# required by media-video/pipewire-1.4.9-r3::gentoo[ffmpeg]
+# required by @selected
+# required by @world (argument)
+>=dev-python/uc-micro-py-1.0.3 python_targets_python3_14
+# required by net-im/telegram-desktop-6.2.4::gentoo
+# required by telegram-desktop (argument)
+>=media-video/ffmpeg-7.1.3 opus vpx

@@ -1,10 +1,4 @@
-#KDE
-kde-plasma/plasma-meta browser-integration wayland crash-handler display-manager kwallet firewall networkmanager sddm smart wallpapers X accessibility bluetooth -discover -grub -wallpapers -oxygen-theme plymouth systemd thunderbolt 
-#kde-plasma/plasma-meta X browser-integration crash-handler display-manager sddm systemd firewall kwallet networkmanager pipewire -wallpapers -flatpak accessibility bluetooth -crypt -cups -discover grub plymouth -oxygen-theme -rdp -sdk -thunderbolt -wacom -webengine -unsupported -discover
-#kde-plasma/plasma-workspace -semantic-desktop
-# required by app-accessibility/orca-47.5::gentoo[python_single_target_python3_13,braille]
-# required by kde-plasma/plasma-meta-6.3.6::gentoo[accessibility]
-# required by plasma-meta (argument)
+kde-plasma/plasma-meta browser-integration crash-handler display-manager kwallet firewall networkmanager sddm smart wallpapers X accesssibility bluetooth -discover -grub -wallpapers -oxygen-theme plymouth thunderbolt
 >=app-accessibility/brltty-6.7 python
 # required by kde-plasma/xdg-desktop-portal-kde-6.3.6-r1::gentoo
 # required by kde-plasma/plasma-integration-6.3.6::gentoo
@@ -24,3 +18,4 @@ kde-plasma/plasma-meta browser-integration wayland crash-handler display-manager
 # required by kde-plasma/plasma-meta-6.3.6::gentoo
 # required by plasma-meta (argument)
 >=dev-qt/qtbase-6.9.1-r2 cups
+

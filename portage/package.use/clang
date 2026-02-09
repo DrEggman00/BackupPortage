@@ -1,2 +1,1 @@
-#Clang
 llvm-core/clang extra pie static-analyzer verify-sig xml doc -test -debug -ieee-long-double
