@@ -1,5 +1,0 @@
-#Firefox
-www-client/firefox X wayland dbus -system-pipewire -system-av1 -system-harfbuzz -system-icu -system-jpeg -system-libevent -system-libvpx -system-webp -system-png openh264 hwaccel wasm-sandbox wifi clang -pgo -jumbo-build -jpegxl -libproxy -valgrind -telemetry -eme-free -jack -sndio -gnome-shell -debug -test -selinux 
-# required by www-client/firefox-140.1.0::gentoo[system-libvpx]
-# required by =firefox-140.1.0 (argument)
->=media-libs/libvpx-1.14.1 postproc

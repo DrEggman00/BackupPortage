@@ -1,6 +1,0 @@
-# required by x11-libs/pango-1.56.3::gentoo
-# required by gui-libs/libdecor-0.2.2-r1::gentoo
-# required by media-libs/libsdl2-2.32.6::gentoo[wayland]
-# required by app-emulation/wine-proton-9.0.4-r2::gentoo[sdl]
-# required by wine-proton (argument)
->=media-libs/freetype-2.13.3 brotli abi_x86_32

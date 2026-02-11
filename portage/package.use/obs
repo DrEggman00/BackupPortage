@@ -1,2 +1,0 @@
-#OBS Studios
-media-video/obs-studios pipewire nvenc qsv truetype v4l wayland browser python lua mpegts speex websocket -alsa -jack -sndio -decklink -test-input -vlc 

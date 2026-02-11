@@ -1,2 +1,0 @@
-#Libreoffice
-app-office/libreoffice branding -cups dubs kde qt6 vulkan pdfimport -base mariadb postgres -java gstreamer bluetooth googledrive -ldap -odk -gtk -gtk3 -gtk4 -eds -coinmp -debug -test -valgrind -custom-cflags

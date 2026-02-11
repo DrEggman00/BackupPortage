@@ -1,5 +1,0 @@
-cross-sparc-unknown-linux-gnu/linux-headers  multilib
-cross-sparc-unknown-linux-gnu/glibc  cet cet cet cet cet cet cet cet cet multilib
-cross-sparc-unknown-linux-gnu/binutils  cet cet cet cet cet cet cet cet cet multilib
-cross-sparc-unknown-linux-gnu/gcc  cet cet cet cet cet cet cet default-stack-clash-protection ssp hardened -nossp cet cet multilib
-cross-sparc-unknown-linux-gnu/gdb  multilib

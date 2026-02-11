@@ -1,5 +1,0 @@
-cross-alpha-unknown-linux-gnu/linux-headers  multilib
-cross-alpha-unknown-linux-gnu/glibc  cet cet cet cet cet cet cet multilib
-cross-alpha-unknown-linux-gnu/binutils  cet cet cet cet cet cet cet multilib
-cross-alpha-unknown-linux-gnu/gcc  cet cet cet cet cet cet default-stack-clash-protection ssp hardened -nossp cet multilib
-cross-alpha-unknown-linux-gnu/gdb  multilib
