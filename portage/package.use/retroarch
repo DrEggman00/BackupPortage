@@ -1,0 +1,3 @@
+#games-emulation/retroarch-assets ozone materialui rgui xmb
+#games-emulation/retroarch X alsa dbus egl flac opengl ozone pulseaudio qt6 sdl ssl udev vulkan wayland xv zlib ffmpeg freetype gamemode libusb
+games-emulation/RetroArch X alsa egl opengl ozone pipewire -pulseaudio -rgui -sdl threads truetype udev vulkan wayland xv zlib 7zip -cg -cheevos -debug ffmpeg filters -gles3 -gles2 hid jack kms libass libusb -materialui network -openal -oss -v4l2 -videocore -xinerama -xmb

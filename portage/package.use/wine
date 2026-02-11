@@ -1,0 +1,24 @@
+#app-emulation/wine-staging X alsa bluetooth cups dbus fontconfig gecko gstreamer mingw mono nls opengl pulseaudio sdl ssl strip truetype udev unwind usb vulkan wayland wow64 -capi crossdev-mingw -custom-cflags -dos ffmpeg -gphoto2 -kerberos -llvm-libunwind -netapi -odbc -opencl -pcap -perl -samba -scanner (-selinux) -smartcard -v4l -xinerama arm64 
+app-emulation/wine-staging -abi_x86_32
+
+# required by dev-texlive/texlive-xetex-2024_p71515::gentoo
+# required by texlive-xetex (argument)
+>=app-text/texlive-core-2024-r1 xetex
+# required by app-emulation/virt-manager-5.1.0-r1::gentoo[gui]
+# required by virt-manager (argument)
+>=net-misc/spice-gtk-0.42-r4 usbredir
+# required by app-emulation/libvirt-11.10.0::gentoo[virt-network]
+# required by app-emulation/libvirt-glib-5.0.0-r1::gentoo
+# required by app-emulation/virt-manager-5.1.0-r1::gentoo
+# required by virt-manager (argument)
+>=net-dns/dnsmasq-2.91 script
+# required by app-crypt/swtpm-0.10.0-r2::gentoo
+# required by app-emulation/libvirt-11.10.0::gentoo[qemu]
+# required by app-emulation/libvirt-glib-5.0.0-r1::gentoo
+# required by app-emulation/virt-manager-5.1.0-r1::gentoo
+# required by virt-manager (argument)
+>=net-libs/gnutls-3.8.11 tools pkcs11
+# required by app-emulation/virt-manager-5.1.0-r1::gentoo[gui]
+# required by @selected
+# required by @world (argument)
+>=net-misc/spice-gtk-0.42-r4 sasl

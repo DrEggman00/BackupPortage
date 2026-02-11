@@ -1,0 +1,4 @@
+#Pipewire
+media-video/pipewire X bluetooth extra ffmpeg jack-client pipewire-alsa readline sound-server
+media-video/ffmpeg sdl
+media-libs/libsdl2 pipewire
