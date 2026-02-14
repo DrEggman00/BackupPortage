@@ -1,16 +1,7 @@
 # created by eselect-repo
 
-[guru]
-location = /var/db/repos/guru
-sync-type = git
-sync-uri = https://github.com/gentoo-mirror/guru.git
 
-[steam-overlay]
-location = /var/db/repos/steam-overlay
+[tatsh-overlay]
+location = /var/db/repos/tatsh-overlay
 sync-type = git
-sync-uri = https://github.com/anyc/steam-overlay.git
-
-[bentoo]
-location = /var/db/repos/bentoo
-sync-type = git
-sync-uri = https://github.com/lucascouts/bentoo.git
+sync-uri = https://github.com/Tatsh/tatsh-overlay.git

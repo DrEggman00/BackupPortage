@@ -22,3 +22,13 @@ app-emulation/wine-staging -abi_x86_32
 # required by @selected
 # required by @world (argument)
 >=net-misc/spice-gtk-0.42-r4 sasl
+# required by kde-frameworks/kdnssd-6.22.0-r1::gentoo
+# required by kde-apps/kio-extras-25.08.3::gentoo
+# required by kde-plasma/plasma-workspace-6.5.5-r1::gentoo
+# required by virtual/notification-daemon-0::gentoo
+# required by x11-libs/libnotify-0.8.6::gentoo
+# required by app-admin/system-config-printer-1.5.18-r3::gentoo
+# required by kde-plasma/print-manager-6.5.5::gentoo
+# required by kde-plasma/plasma-meta-6.5.5-r1::gentoo
+# required by plasma-meta (argument)
+>=net-dns/avahi-0.9_rc2-r3 mdnsresponder-compat
