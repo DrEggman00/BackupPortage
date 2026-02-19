@@ -1,4 +1,4 @@
-app-emulation/qemu aio io-uring udev vhost-net slirp spice sdl gtk usb fdt pin-upstream-blobs seccomp filecaps vnc jpeg png gnutls virgl opengl xattr virtfs alsa pipewire curl ssh nfs -plugins jemalloc -numa doc -oss -infiniband -xen -systemtap -debug -valgrind -selinux
+app-emulation/qemu aio io-uring udev vhost-net slirp spice sdl -gtk usb fdt pin-upstream-blobs seccomp filecaps vnc jpeg png gnutls virgl opengl xattr virtfs alsa pipewire curl ssh nfs -plugins jemalloc -numa doc -oss -infiniband -xen -systemtap -debug -valgrind -selinux
 #app-emulation/qemu   QEMU_SOFTMMU_TARGETS:  x86_64 riscv32 riscv64
 #app-emulation/qemu   QEMU_USER_TARGETS:  x86_64 riscv32 riscv64
 

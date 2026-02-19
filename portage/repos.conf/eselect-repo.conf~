@@ -1,7 +1,9 @@
 # created by eselect-repo
 
 
-[tatsh-overlay]
-location = /var/db/repos/tatsh-overlay
+
+[steam-overlay]
+location = /var/db/repos/steam-overlay
 sync-type = git
-sync-uri = https://github.com/Tatsh/tatsh-overlay.git
+sync-uri = https://github.com/anyc/steam-overlay.git
+
