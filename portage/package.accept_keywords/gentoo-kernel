@@ -1,0 +1,6 @@
+#gentoo-kernel
+sys-kernel/gentoo-kernel ~amd64
+virtual/dist-kernel ~amd64
+sys-fs/zfs ~amd64
+sys-fs/zfs-kmod ~amd64
+

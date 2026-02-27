@@ -1,0 +1,862 @@
+#app-emulation/wine-staging X alsa bluetooth cups dbus fontconfig gecko gstreamer mingw mono nls opengl pulseaudio sdl ssl strip truetype udev unwind usb vulkan wayland wow64 -capi crossdev-mingw -custom-cflags -dos ffmpeg -gphoto2 -kerberos -llvm-libunwind -netapi -odbc -opencl -pcap -perl -samba -scanner (-selinux) -smartcard -v4l -xinerama arm64 
+app-emulation/wine-staging -abi_x86_32
+
+# required by dev-texlive/texlive-xetex-2024_p71515::gentoo
+# required by texlive-xetex (argument)
+>=app-text/texlive-core-2024-r1 xetex
+# required by app-emulation/virt-manager-5.1.0-r1::gentoo[gui]
+# required by virt-manager (argument)
+>=net-misc/spice-gtk-0.42-r4 usbredir
+# required by app-emulation/libvirt-11.10.0::gentoo[virt-network]
+# required by app-emulation/libvirt-glib-5.0.0-r1::gentoo
+# required by app-emulation/virt-manager-5.1.0-r1::gentoo
+# required by virt-manager (argument)
+>=net-dns/dnsmasq-2.91 script
+# required by app-crypt/swtpm-0.10.0-r2::gentoo
+# required by app-emulation/libvirt-11.10.0::gentoo[qemu]
+# required by app-emulation/libvirt-glib-5.0.0-r1::gentoo
+# required by app-emulation/virt-manager-5.1.0-r1::gentoo
+# required by virt-manager (argument)
+>=net-libs/gnutls-3.8.11 tools pkcs11
+# required by app-emulation/virt-manager-5.1.0-r1::gentoo[gui]
+# required by @selected
+# required by @world (argument)
+>=net-misc/spice-gtk-0.42-r4 sasl
+# required by kde-frameworks/kdnssd-6.22.0-r1::gentoo
+# required by kde-apps/kio-extras-25.08.3::gentoo
+# required by kde-plasma/plasma-workspace-6.5.5-r1::gentoo
+# required by virtual/notification-daemon-0::gentoo
+# required by x11-libs/libnotify-0.8.6::gentoo
+# required by app-admin/system-config-printer-1.5.18-r3::gentoo
+# required by kde-plasma/print-manager-6.5.5::gentoo
+# required by kde-plasma/plasma-meta-6.5.5-r1::gentoo
+# required by plasma-meta (argument)
+>=net-dns/avahi-0.9_rc2-r3 mdnsresponder-compat
+# required by app-editors/emacs-30.2-r1::gentoo[gui,gsettings]
+# required by emacs (argument)
+>=app-emacs/emacs-common-1.13 gsettings
+# required by dev-python/pillow-12.1.1::gentoo
+# required by dev-python/docutils-0.22.4::gentoo
+# required by dev-libs/glib-2.84.4::gentoo
+# required by www-client/chromium-145.0.7632.75::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-python/pybind11-3.0.1 python_targets_python3_14
+# required by dev-python/pybind11-3.0.1::gentoo
+# required by dev-python/pillow-12.1.1::gentoo
+# required by dev-python/docutils-0.22.4::gentoo
+# required by dev-libs/glib-2.84.4::gentoo
+# required by www-client/chromium-145.0.7632.75::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-python/scikit-build-core-0.11.6 python_targets_python3_14
+# required by dev-python/scikit-build-core-0.11.6::gentoo
+# required by dev-python/pybind11-3.0.1::gentoo
+# required by dev-python/pillow-12.1.1::gentoo
+# required by dev-python/docutils-0.22.4::gentoo
+# required by dev-libs/glib-2.84.4::gentoo
+# required by www-client/chromium-145.0.7632.75::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-python/pyproject-metadata-0.10.0 python_targets_python3_14
+# required by sys-kernel/cachyos-sources-6.19.3::CachyOS-kernels[autofdo]
+# required by sys-kernel/cachyos-sources (argument)
+>=dev-util/perf-6.14 libpfm
+# required by dev-python/ipykernel-6.31.0::gentoo[-test]
+# required by dev-python/qtconsole-5.7.0::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[python_targets_python3_13,python_targets_python3_14,python_targets_python3_12,-python_targets_python3_11,gui]
+# required by dev-python/ipyparallel-9.0.2::gentoo
+>=dev-python/comm-0.2.3 python_targets_python3_12
+# required by dev-python/ipykernel-6.31.0::gentoo[-test]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/ipython-9.9.0 python_targets_python3_12
+# required by dev-python/ipykernel-6.31.0::gentoo[-test]
+# required by dev-python/qtconsole-5.7.0::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[python_targets_python3_13,python_targets_python3_14,python_targets_python3_12,-python_targets_python3_11,gui]
+# required by dev-python/ipyparallel-9.0.2::gentoo
+>=dev-python/jupyter-client-8.8.0 python_targets_python3_12
+# required by dev-python/nbclient-0.10.2-r1::gentoo
+# required by dev-python/nbconvert-7.16.6-r1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/jupyter-core-5.9.1 python_targets_python3_12
+# required by dev-python/ipython-9.9.0::gentoo
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/matplotlib-inline-0.2.1 python_targets_python3_12
+# required by dev-python/ipykernel-6.31.0::gentoo[-test]
+# required by dev-python/qtconsole-5.7.0::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[python_targets_python3_13,python_targets_python3_14,python_targets_python3_12,-python_targets_python3_11,gui]
+# required by dev-python/ipyparallel-9.0.2::gentoo
+>=dev-python/nest-asyncio-1.6.0-r1 python_targets_python3_12
+# required by dev-python/wheel-0.46.2::gentoo
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/distlib-0.4.0::gentoo
+# required by app-emulation/qemu-10.2.0-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-python/packaging-26.0 python_targets_python3_12
+# required by dev-python/ipykernel-6.31.0::gentoo[-test]
+# required by dev-python/qtconsole-5.7.0::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[python_targets_python3_13,python_targets_python3_14,python_targets_python3_12,-python_targets_python3_11,gui]
+# required by dev-python/ipyparallel-9.0.2::gentoo
+>=dev-python/psutil-7.1.3 python_targets_python3_12
+# required by dev-python/jupyter-client-8.8.0::gentoo
+# required by dev-python/qtconsole-5.7.0::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[python_targets_python3_13,python_targets_python3_14,python_targets_python3_12,-python_targets_python3_11,gui]
+# required by dev-python/ipykernel-6.31.0::gentoo[-test]
+# required by dev-python/ipyparallel-9.0.2::gentoo
+>=dev-python/pyzmq-27.1.0 python_targets_python3_12
+# required by dev-python/jupyter-client-8.8.0::gentoo
+# required by dev-python/qtconsole-5.7.0::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[python_targets_python3_13,python_targets_python3_14,python_targets_python3_12,-python_targets_python3_11,gui]
+# required by dev-python/ipykernel-6.31.0::gentoo[-test]
+# required by dev-python/ipyparallel-9.0.2::gentoo
+>=dev-python/tornado-6.5.2 python_targets_python3_12
+# required by dev-python/ipython-9.9.0::gentoo
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/traitlets-5.14.3 python_targets_python3_12
+# required by dev-python/sip-6.15.1::gentoo
+# required by dev-python/pyqt-builder-1.19.1::gentoo
+# required by dev-python/pyqt6-6.10.2::gentoo
+# required by dev-python/qtpy-2.4.3-r1::gentoo[pyqt6]
+# required by dev-python/qtconsole-5.7.0::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[python_targets_python3_13,python_targets_python3_14,python_targets_python3_12,-python_targets_python3_11,gui]
+# required by dev-python/ipykernel-6.31.0::gentoo[-test]
+# required by dev-python/ipyparallel-9.0.2::gentoo
+>=dev-python/gpep517-19 python_targets_python3_12
+# required by dev-python/service-identity-24.2.0::gentoo
+# required by dev-python/twisted-25.5.0-r1::gentoo[ssl]
+# required by dev-python/prometheus-client-0.23.1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/hatchling-1.27.0 python_targets_python3_12
+# required by dev-python/pdm-backend-2.4.6::gentoo[-test]
+# required by dev-python/webcolors-25.10.0::gentoo
+# required by dev-python/jsonschema-4.26.0::gentoo
+# required by dev-python/jupyter-events-0.12.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/editables-0.5 python_targets_python3_12
+# required by dev-python/hatchling-1.27.0::gentoo
+# required by dev-python/argcomplete-3.6.3::gentoo
+# required by app-emulation/virt-manager-5.1.0-r1::gentoo[python_single_target_python3_13]
+# required by @selected
+# required by @world (argument)
+>=dev-python/pathspec-0.12.1 python_targets_python3_12
+# required by dev-python/hatchling-1.27.0::gentoo
+# required by dev-python/argcomplete-3.6.3::gentoo
+# required by app-emulation/virt-manager-5.1.0-r1::gentoo[python_single_target_python3_13]
+# required by @selected
+# required by @world (argument)
+>=dev-python/pluggy-1.6.0 python_targets_python3_12
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/distlib-0.4.0::gentoo
+# required by app-emulation/qemu-10.2.0-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-python/trove-classifiers-2025.12.1.14 python_targets_python3_12
+# required by dev-python/editables-0.5::gentoo
+# required by dev-python/pdm-backend-2.4.6::gentoo[-test]
+# required by dev-python/webcolors-25.10.0::gentoo
+# required by dev-python/jsonschema-4.26.0::gentoo
+# required by dev-python/jupyter-events-0.12.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/flit-core-3.12.0 python_targets_python3_12
+# required by dev-python/hatch-vcs-0.5.0::gentoo
+# required by dev-python/argon2-cffi-25.1.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/setuptools-scm-9.2.2 python_targets_python3_12
+# required by dev-python/bleach-6.3.0::gentoo
+# required by dev-python/nbconvert-7.16.6-r1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/setuptools-80.9.0-r1 python_targets_python3_12
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/distlib-0.4.0::gentoo
+# required by app-emulation/qemu-10.2.0-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-python/jaraco-collections-5.2.1 python_targets_python3_12
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/distlib-0.4.0::gentoo
+# required by app-emulation/qemu-10.2.0-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-python/jaraco-functools-4.4.0 python_targets_python3_12
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/distlib-0.4.0::gentoo
+# required by app-emulation/qemu-10.2.0-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-python/jaraco-text-4.0.0 python_targets_python3_12
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/distlib-0.4.0::gentoo
+# required by app-emulation/qemu-10.2.0-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-python/more-itertools-10.8.0 python_targets_python3_12
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/distlib-0.4.0::gentoo
+# required by app-emulation/qemu-10.2.0-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-python/platformdirs-4.5.0 python_targets_python3_12
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/distlib-0.4.0::gentoo
+# required by app-emulation/qemu-10.2.0-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-python/wheel-0.46.2 python_targets_python3_12
+# required by dev-python/jaraco-text-4.0.0::gentoo
+# required by dev-python/jaraco-collections-5.2.1::gentoo
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/distlib-0.4.0::gentoo
+# required by app-emulation/qemu-10.2.0-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-python/jaraco-context-6.0.2 python_targets_python3_12
+# required by dev-python/gpep517-19::gentoo
+# required by dev-python/distro-1.9.0::gentoo
+# required by app-admin/eclean-kernel-2.99.10::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-python/installer-0.7.0 python_targets_python3_12
+# required by dev-python/tornado-6.5.2::gentoo
+# required by dev-python/terminado-0.18.1::gentoo
+# required by dev-python/jupyter-server-terminals-0.5.3-r1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/twisted-25.5.0-r1 python_targets_python3_12
+# required by dev-python/twisted-25.5.0-r1::gentoo
+# required by dev-python/prometheus-client-0.23.1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/attrs-25.4.0 python_targets_python3_12
+# required by dev-python/twisted-25.5.0-r1::gentoo
+# required by dev-python/prometheus-client-0.23.1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/automat-25.4.16 python_targets_python3_12
+# required by dev-python/twisted-25.5.0-r1::gentoo
+# required by dev-python/prometheus-client-0.23.1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/constantly-23.10.4 python_targets_python3_12
+# required by dev-python/twisted-25.5.0-r1::gentoo
+# required by dev-python/prometheus-client-0.23.1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/hyperlink-21.0.0-r1 python_targets_python3_12
+# required by dev-python/twisted-25.5.0-r1::gentoo[-test]
+# required by dev-python/prometheus-client-0.23.1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/incremental-24.11.0 python_targets_python3_12
+# required by dev-python/pyopenssl-25.3.0::gentoo[-python_targets_python3_11,python_targets_python3_12]
+# required by dev-python/twisted-25.5.0-r1::gentoo[ssl]
+# required by dev-python/prometheus-client-0.23.1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/typing-extensions-4.15.0 python_targets_python3_12
+# required by dev-python/twisted-25.5.0-r1::gentoo
+# required by dev-python/prometheus-client-0.23.1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/zope-interface-8.2 python_targets_python3_12
+# required by dev-python/twisted-25.5.0-r1::gentoo[ssl]
+# required by dev-python/prometheus-client-0.23.1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/pyopenssl-25.3.0 python_targets_python3_12
+# required by dev-python/twisted-25.5.0-r1::gentoo[ssl]
+# required by dev-python/prometheus-client-0.23.1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/service-identity-24.2.0 python_targets_python3_12
+# required by dev-python/anyio-4.11.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/idna-3.11 python_targets_python3_12
+# required by dev-python/attrs-25.4.0::gentoo
+# required by dev-python/cattrs-25.3.0::gentoo
+# required by media-gfx/blender-5.0.0::gentoo[python_single_target_python3_13]
+# required by @selected
+# required by @world (argument)
+>=dev-python/hatch-fancy-pypi-readme-25.1.0 python_targets_python3_12
+# required by dev-python/pyopenssl-25.3.0::gentoo
+# required by dev-python/twisted-25.5.0-r1::gentoo[ssl]
+# required by dev-python/prometheus-client-0.23.1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/cryptography-46.0.5 python_targets_python3_12
+# required by dev-python/pyasn1-modules-0.4.2::gentoo
+# required by dev-python/service-identity-24.2.0::gentoo
+# required by dev-python/twisted-25.5.0-r1::gentoo[ssl]
+# required by dev-python/prometheus-client-0.23.1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/pyasn1-0.6.1 python_targets_python3_12
+# required by dev-python/service-identity-24.2.0::gentoo
+# required by dev-python/twisted-25.5.0-r1::gentoo[ssl]
+# required by dev-python/prometheus-client-0.23.1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/pyasn1-modules-0.4.2 python_targets_python3_12
+# required by dev-python/referencing-0.37.0::gentoo
+# required by dev-python/jupyter-events-0.12.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/hatch-vcs-0.5.0 python_targets_python3_12
+# required by dev-python/cryptography-46.0.5::gentoo[python_targets_python3_14,python_targets_python3_12,python_targets_python3_13,-python_targets_python3_11,-test]
+# required by dev-python/pyopenssl-25.3.0::gentoo
+# required by dev-python/twisted-25.5.0-r1::gentoo[ssl]
+# required by dev-python/prometheus-client-0.23.1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/cffi-2.0.0 python_targets_python3_12
+# required by dev-python/cryptography-46.0.5::gentoo
+# required by dev-python/pyopenssl-25.3.0::gentoo
+# required by dev-python/twisted-25.5.0-r1::gentoo[ssl]
+# required by dev-python/prometheus-client-0.23.1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-util/maturin-1.11.5 python_targets_python3_14 python_targets_python3_12
+# required by dev-python/cffi-2.0.0::gentoo[-test]
+# required by dev-python/zstandard-0.25.0::gentoo[python_targets_python3_13,python_targets_python3_14,-python_targets_python3_12,-python_targets_python3_11]
+# required by media-gfx/blender-5.0.0::gentoo[python_single_target_python3_13]
+# required by @selected
+# required by @world (argument)
+>=dev-python/pycparser-2.23 python_targets_python3_12
+# required by dev-python/pycparser-2.23::gentoo[-test]
+# required by dev-python/cffi-2.0.0::gentoo[-test]
+# required by dev-python/zstandard-0.25.0::gentoo[python_targets_python3_13,python_targets_python3_14,-python_targets_python3_12,-python_targets_python3_11]
+# required by media-gfx/blender-5.0.0::gentoo[python_single_target_python3_13]
+# required by @selected
+# required by @world (argument)
+>=dev-python/ply-3.11-r2 python_targets_python3_12
+# required by dev-python/constantly-23.10.4::gentoo
+# required by dev-python/twisted-25.5.0-r1::gentoo
+# required by dev-python/prometheus-client-0.23.1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/versioneer-0.29-r1 python_targets_python3_12
+# required by dev-python/pyzmq-27.1.0::gentoo[python_targets_python3_13,-python_targets_python3_11,python_targets_python3_14,python_targets_python3_12]
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/cython-3.1.7 python_targets_python3_12
+# required by dev-python/pyzmq-27.1.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/scikit-build-core-0.11.6 python_targets_python3_12
+# required by dev-python/pdm-backend-2.4.6::gentoo[-test]
+# required by dev-python/webcolors-25.10.0::gentoo
+# required by dev-python/jsonschema-4.26.0::gentoo
+# required by dev-python/jupyter-events-0.12.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/pyproject-metadata-0.10.0 python_targets_python3_12
+# required by dev-python/jupyter-client-8.8.0::gentoo
+# required by dev-python/qtconsole-5.7.0::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[python_targets_python3_13,python_targets_python3_14,python_targets_python3_12,-python_targets_python3_11,gui]
+# required by dev-python/ipykernel-6.31.0::gentoo[-test]
+# required by dev-python/ipyparallel-9.0.2::gentoo
+>=dev-python/python-dateutil-2.9.0_p0 python_targets_python3_12
+# required by dev-python/html5lib-1.2_pre20240221::gentoo
+# required by dev-python/beautifulsoup4-4.14.3::gentoo
+# required by dev-python/nbconvert-7.16.6-r1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/six-1.17.0 python_targets_python3_12
+# required by dev-python/ipython-9.9.0::gentoo
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/decorator-5.2.1 python_targets_python3_12
+# required by dev-python/ipython-9.9.0::gentoo
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/ipython-pygments-lexers-1.1.1 python_targets_python3_12
+# required by dev-python/ipython-9.9.0::gentoo
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/jedi-0.19.2 python_targets_python3_12
+# required by dev-python/ipython-9.9.0::gentoo
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/pexpect-4.9.0 python_targets_python3_12
+# required by dev-python/ipython-9.9.0::gentoo
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/prompt-toolkit-3.0.52 python_targets_python3_12
+# required by dev-python/ipython-9.9.0::gentoo
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/pygments-2.19.2 python_targets_python3_12
+# required by dev-python/ipython-9.9.0::gentoo
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/stack-data-0.6.3-r1 python_targets_python3_12
+# required by dev-python/ipython-9.9.0::gentoo[python_targets_python3_13,python_targets_python3_14,python_targets_python3_12,-python_targets_python3_11,gui]
+# required by dev-python/ipykernel-6.31.0::gentoo[-test]
+# required by dev-python/ipyparallel-9.0.2::gentoo
+>=dev-python/qtconsole-5.7.0 python_targets_python3_12
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/ipyparallel-9.0.2 python_targets_python3_12
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/jupyter-server-2.17.0-r1 python_targets_python3_12
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+=dev-python/ipykernel-6.31.0 python_targets_python3_13 python_targets_python3_14
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/tqdm-4.67.1 python_targets_python3_12
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/anyio-4.11.0 python_targets_python3_12
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/argon2-cffi-25.1.0 python_targets_python3_12
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/jinja2-3.1.6 python_targets_python3_12
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/jupyter-server-terminals-0.5.3-r1 python_targets_python3_12
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/jupyter-events-0.12.0 python_targets_python3_12
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/nbconvert-7.16.6-r1 python_targets_python3_12
+# required by dev-python/nbconvert-7.16.6-r1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/nbformat-5.10.4 python_targets_python3_12
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/prometheus-client-0.23.1 python_targets_python3_12
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/send2trash-1.8.3 python_targets_python3_12
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/terminado-0.18.1 python_targets_python3_12
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/websocket-client-1.9.0 python_targets_python3_12
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/hatch-jupyter-builder-0.9.1-r1 python_targets_python3_12
+# required by dev-python/pexpect-4.9.0::gentoo
+# required by dev-python/ipython-9.9.0::gentoo
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/ptyprocess-0.7.0-r1 python_targets_python3_12
+# required by dev-python/nbformat-5.10.4::gentoo
+# required by dev-python/nbclient-0.10.2-r1::gentoo
+# required by dev-python/nbconvert-7.16.6-r1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/fastjsonschema-2.21.2 python_targets_python3_12
+# required by dev-python/jupyter-events-0.12.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/jsonschema-4.26.0 python_targets_python3_12
+# required by dev-python/nbformat-5.10.4::gentoo
+# required by dev-python/nbclient-0.10.2-r1::gentoo
+# required by dev-python/nbconvert-7.16.6-r1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/hatch-nodejs-version-0.4.0 python_targets_python3_12
+# required by dev-python/jsonschema-4.26.0::gentoo
+# required by dev-python/jupyter-events-0.12.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/jsonschema-specifications-2025.9.1 python_targets_python3_12
+# required by dev-python/jsonschema-specifications-2025.9.1::gentoo
+# required by dev-python/jsonschema-4.26.0::gentoo
+# required by dev-python/jupyter-events-0.12.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/referencing-0.37.0 python_targets_python3_12
+# required by dev-python/jsonschema-4.26.0::gentoo
+# required by dev-python/jupyter-events-0.12.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/rpds-py-0.30.0 python_targets_python3_12
+# required by dev-python/jsonschema-4.26.0::gentoo
+# required by dev-python/jupyter-events-0.12.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/fqdn-1.5.1-r2 python_targets_python3_12
+# required by dev-python/jsonschema-4.26.0::gentoo
+# required by dev-python/jupyter-events-0.12.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/isoduration-20.11.0-r1 python_targets_python3_12
+# required by dev-python/jsonschema-4.26.0::gentoo
+# required by dev-python/jupyter-events-0.12.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/jsonpointer-3.0.0 python_targets_python3_12
+# required by dev-python/jsonschema-4.26.0::gentoo
+# required by dev-python/jupyter-events-0.12.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/rfc3339-validator-0.1.4-r1 python_targets_python3_12
+# required by dev-python/jsonschema-4.26.0::gentoo
+# required by dev-python/jupyter-events-0.12.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/rfc3986-validator-0.1.1-r2 python_targets_python3_12
+# required by dev-python/jsonschema-4.26.0::gentoo
+# required by dev-python/jupyter-events-0.12.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/rfc3987-1.3.8-r3 python_targets_python3_12
+# required by dev-python/jsonschema-4.26.0::gentoo
+# required by dev-python/jupyter-events-0.12.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/uri-template-1.3.0 python_targets_python3_12
+# required by dev-python/jsonschema-4.26.0::gentoo
+# required by dev-python/jupyter-events-0.12.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/webcolors-25.10.0 python_targets_python3_12
+# required by dev-python/webcolors-25.10.0::gentoo
+# required by dev-python/jsonschema-4.26.0::gentoo
+# required by dev-python/jupyter-events-0.12.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/pdm-backend-2.4.6 python_targets_python3_12
+# required by dev-python/pdm-backend-2.4.6::gentoo[-test]
+# required by dev-python/webcolors-25.10.0::gentoo
+# required by dev-python/jsonschema-4.26.0::gentoo
+# required by dev-python/jupyter-events-0.12.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/tomli-w-1.2.0 python_targets_python3_12
+# required by dev-python/rfc3987-1.3.8-r3::gentoo[python_targets_python3_14,python_targets_python3_12,python_targets_python3_13,-python_targets_python3_11]
+# required by dev-python/jsonschema-4.26.0::gentoo
+# required by dev-python/jupyter-events-0.12.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/regex-2025.11.3 python_targets_python3_12
+# required by dev-python/rfc3339-validator-0.1.4-r1::gentoo
+# required by dev-python/jsonschema-4.26.0::gentoo
+# required by dev-python/jupyter-events-0.12.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/strict-rfc3339-0.7-r2 python_targets_python3_12
+# required by dev-python/isoduration-20.11.0-r1::gentoo
+# required by dev-python/jsonschema-4.26.0::gentoo
+# required by dev-python/jupyter-events-0.12.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/arrow-1.4.0 python_targets_python3_12
+# required by dev-python/arrow-1.4.0::gentoo
+# required by dev-python/isoduration-20.11.0-r1::gentoo
+# required by dev-python/jsonschema-4.26.0::gentoo
+# required by dev-python/jupyter-events-0.12.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/tzdata-10001 python_targets_python3_12
+# required by dev-python/nbconvert-7.16.6-r1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/beautifulsoup4-4.14.3 python_targets_python3_12
+# required by dev-python/nbconvert-7.16.6-r1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/bleach-6.3.0 python_targets_python3_12
+# required by dev-python/nbconvert-7.16.6-r1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/defusedxml-0.8.0_rc2 python_targets_python3_12
+# required by dev-python/nbconvert-7.16.6-r1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/jupyterlab-pygments-0.3.0 python_targets_python3_12
+# required by dev-python/nbconvert-7.16.6-r1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/markupsafe-3.0.3 python_targets_python3_12
+# required by dev-python/nbconvert-7.16.6-r1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/mistune-3.2.0 python_targets_python3_12
+# required by dev-python/nbconvert-7.16.6-r1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/nbclient-0.10.2-r1 python_targets_python3_12
+# required by dev-python/nbconvert-7.16.6-r1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/pandocfilters-1.5.1 python_targets_python3_12
+# required by dev-python/nbconvert-7.16.6-r1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/tinycss2-1.5.1 python_targets_python3_12
+# required by dev-python/html5lib-1.2_pre20240221::gentoo
+# required by dev-python/beautifulsoup4-4.14.3::gentoo
+# required by dev-python/nbconvert-7.16.6-r1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/webencodings-0.5.1-r2 python_targets_python3_12
+# required by dev-python/bleach-6.3.0::gentoo
+# required by dev-python/nbconvert-7.16.6-r1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/html5lib-1.2_pre20240221 python_targets_python3_12
+# required by dev-python/beautifulsoup4-4.14.3::gentoo
+# required by dev-python/nbconvert-7.16.6-r1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/lxml-6.0.2 python_targets_python3_12
+# required by dev-python/beautifulsoup4-4.14.3::gentoo
+# required by dev-python/nbconvert-7.16.6-r1::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/soupsieve-2.8.1 python_targets_python3_12
+# required by dev-python/jupyter-events-0.12.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/python-json-logger-4.0.0 python_targets_python3_12
+# required by dev-python/jupyter-events-0.12.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/pyyaml-6.0.3 python_targets_python3_12
+# required by dev-python/argon2-cffi-25.1.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/argon2-cffi-bindings-25.1.0 python_targets_python3_12
+# required by dev-python/anyio-4.11.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/sniffio-1.3.1 python_targets_python3_12
+# required by dev-python/anyio-4.11.0::gentoo
+# required by dev-python/jupyter-server-2.17.0-r1::gentoo
+# required by dev-python/ipyparallel-9.0.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/truststore-0.10.4 python_targets_python3_12
+# required by dev-python/qtconsole-5.7.0::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[python_targets_python3_13,python_targets_python3_14,python_targets_python3_12,-python_targets_python3_11,gui]
+# required by dev-python/ipykernel-6.31.0::gentoo[-test]
+# required by dev-python/ipyparallel-9.0.2::gentoo
+>=dev-python/qtpy-2.4.3-r1 python_targets_python3_12 printsupport
+# required by dev-python/qtpy-2.4.3-r1::gentoo[pyqt6]
+# required by dev-python/qtconsole-5.7.0::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[python_targets_python3_13,python_targets_python3_14,python_targets_python3_12,-python_targets_python3_11,gui]
+# required by dev-python/ipykernel-6.31.0::gentoo[-test]
+# required by dev-python/ipyparallel-9.0.2::gentoo
+>=dev-python/pyqt6-6.10.2 python_targets_python3_12
+# required by dev-python/pyqt6-6.10.2::gentoo[dbus]
+# required by dev-python/qtpy-2.4.3-r1::gentoo[pyqt6]
+# required by dev-python/qtconsole-5.7.0::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[python_targets_python3_13,python_targets_python3_14,python_targets_python3_12,-python_targets_python3_11,gui]
+# required by dev-python/ipykernel-6.31.0::gentoo[-test]
+# required by dev-python/ipyparallel-9.0.2::gentoo
+>=dev-python/dbus-python-1.4.0 python_targets_python3_12
+# required by dev-python/pyqt6-6.10.2::gentoo
+# required by dev-python/qtpy-2.4.3-r1::gentoo[pyqt6]
+# required by dev-python/qtconsole-5.7.0::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[python_targets_python3_13,python_targets_python3_14,python_targets_python3_12,-python_targets_python3_11,gui]
+# required by dev-python/ipykernel-6.31.0::gentoo[-test]
+# required by dev-python/ipyparallel-9.0.2::gentoo
+>=dev-python/pyqt6-sip-13.11.0 python_targets_python3_12
+# required by dev-python/pyqt6-6.10.2::gentoo
+# required by dev-python/qtpy-2.4.3-r1::gentoo[pyqt6]
+# required by dev-python/qtconsole-5.7.0::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[python_targets_python3_13,python_targets_python3_14,python_targets_python3_12,-python_targets_python3_11,gui]
+# required by dev-python/ipykernel-6.31.0::gentoo[-test]
+# required by dev-python/ipyparallel-9.0.2::gentoo
+>=dev-python/pyqt-builder-1.19.1 python_targets_python3_12
+# required by dev-python/pyqt6-6.10.2::gentoo
+# required by dev-python/qtpy-2.4.3-r1::gentoo[pyqt6]
+# required by dev-python/qtconsole-5.7.0::gentoo
+# required by dev-python/ipython-9.9.0::gentoo[python_targets_python3_13,python_targets_python3_14,python_targets_python3_12,-python_targets_python3_11,gui]
+# required by dev-python/ipykernel-6.31.0::gentoo[-test]
+# required by dev-python/ipyparallel-9.0.2::gentoo
+>=dev-python/sip-6.15.1 python_targets_python3_12
+# required by dev-python/stack-data-0.6.3-r1::gentoo
+# required by dev-python/ipython-9.9.0::gentoo
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/asttokens-3.0.0-r1 python_targets_python3_12
+# required by dev-python/stack-data-0.6.3-r1::gentoo
+# required by dev-python/ipython-9.9.0::gentoo
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/executing-2.2.1 python_targets_python3_12
+# required by dev-python/stack-data-0.6.3-r1::gentoo
+# required by dev-python/ipython-9.9.0::gentoo
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/pure-eval-0.2.3 python_targets_python3_12
+# required by dev-python/prompt-toolkit-3.0.52::gentoo
+# required by dev-python/ipython-9.9.0::gentoo
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/wcwidth-0.2.14 python_targets_python3_12
+# required by dev-python/jedi-0.19.2::gentoo
+# required by dev-python/ipython-9.9.0::gentoo
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/parso-0.8.5 python_targets_python3_12
+# required by dev-python/ipython-9.9.0::gentoo[smp]
+>=dev-python/ipykernel-7.2.0 python_targets_python3_13 python_targets_python3_14
+# required by dev-python/ipykernel-7.2.0::gentoo
+# required by ipykernel (argument)
+>=dev-python/ipython-9.9.0 -python_targets_python3_14
+# required by dev-python/ipykernel-6.31.0::gentoo[-test]
+# required by dev-python/qtconsole-5.7.0::gentoo
+>=dev-python/ipython-9.9.0 python_targets_python3_14

@@ -1,0 +1,3 @@
+www-client/chromium ~amd64
+dev-build/gn ~amd64
+dev-util/esbuild ~amd64
