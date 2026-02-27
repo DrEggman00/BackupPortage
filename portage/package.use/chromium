@@ -1,2 +1,0 @@
-www-client/chromium X wayland screencast -cups pulseaudio system-harfbuzz system-icu system-png system-zstd official proprietary-codecs widevine rar -debug -headless -bundled-toolchain -test -ffmpeg-chromium
-www-client/chromium L10N: pt-BR

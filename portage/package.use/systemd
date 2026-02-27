@@ -1,1 +1,0 @@
-sys-apps/systemd kernel-install kmod lz4 zstd seccomp acl pam policykit xkb cryptsetup elfutils resolvconf dns-over-tls openssl bpf tpm secureboot -http -curl -cgroup-hybrid -sysv-utils -importd -homed -passwdqc -pwquality -pkcs11 -audit -apparmor -selinux -test -vanilla -split-usr -lzma -idn -iptables sysv-utils 
