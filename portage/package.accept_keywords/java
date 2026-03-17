@@ -1,0 +1,4 @@
+dev-java/openjdk-bin ~amd64
+virtual/jre ~amd64
+virtual/jdk ~amd64
+dev-java/openjdk-jre-bin ~amd64

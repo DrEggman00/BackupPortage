@@ -18,7 +18,13 @@ location = /var/db/repos/tatsh-overlay
 sync-type = git
 sync-uri = https://github.com/Tatsh/tatsh-overlay.git
 
-[CachyOS-kernels]
-location = /var/db/repos/CachyOS-kernels
+
+[pentoo]
+location = /var/db/repos/pentoo
 sync-type = git
-sync-uri = https://github.com/Szowisz/CachyOS-kernels.git
+sync-uri = https://github.com/pentoo/pentoo-overlay.git
+
+[hyproverlay]
+location = /var/db/repos/hyproverlay
+sync-type = git
+sync-uri = https://codeberg.org/hyproverlay/hyproverlay.git
