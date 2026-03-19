@@ -1,0 +1,2 @@
+#tail -f $(ls -td /var/tmp/portage/*/* | head -n1)/temp/build.log | grep --line-buffered -o "\[[0-9]\+/[0-9]\+\]" | awk "{ printf \"\r%s\", \$0 }"
+sudo tail -f $(sudo ls -td /var/tmp/portage/*/* | head -n1)/temp/build.log | grep --line-buffered -o "\[[0-9]\+/[0-9]\+\]" | awk "{ printf \"\r%s\", \$0 }"
