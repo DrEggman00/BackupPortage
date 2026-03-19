@@ -864,3 +864,12 @@ app-emulation/wine-staging -abi_x86_32
 # required by media-sound/spotify-1.2.82::gentoo
 # required by spotify (argument)
 >=dev-libs/libdbusmenu-16.04.0-r4 gtk3
+# required by sys-libs/pam-1.7.2::gentoo
+# required by sys-apps/util-linux-2.41.3-r1::gentoo[pam]
+# required by sys-fs/e2fsprogs-1.47.3-r1::gentoo[tools]
+# required by app-crypt/mit-krb5-1.21.3-r1::gentoo
+# required by dev-db/postgresql-18.3::gentoo[kerberos]
+# required by app-office/libreoffice-25.2.7.2-r1::gentoo[postgres]
+# required by @selected
+# required by @world (argument)
+>=virtual/libcrypt-2-r1 abi_x86_32
