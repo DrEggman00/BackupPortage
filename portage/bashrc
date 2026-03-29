@@ -1,0 +1,9 @@
+# Exemplo para colocar em /etc/portage/bashrc
+post_pkg_setup() {
+    echo -e "\e[1;31m[!] ALERTA: Iniciando produção da unidade ${CATEGORY}/${PN}...\e[0m"
+    echo -e "\e[1;33m[!] Recursos alocados para a conquista mundial.\e[0m"
+}
+
+post_src_install() {
+    echo -e "\e[1;32m[*] SUCESSO: Unidade ${CATEGORY}/${PN} armada e pronta para combate.\e[0m"
+}
