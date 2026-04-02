@@ -1,1 +1,2 @@
 dev-lang/rust ABI_X86: 32 64
+dev-lang/rust rust-analyzer rust-src
