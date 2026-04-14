@@ -1,2 +1,29 @@
-#tail -f $(ls -td /var/tmp/portage/*/* | head -n1)/temp/build.log | grep --line-buffered -o "\[[0-9]\+/[0-9]\+\]" | awk "{ printf \"\r%s\", \$0 }"
-sudo tail -f $(sudo ls -td /var/tmp/portage/*/* | head -n1)/temp/build.log | grep --line-buffered -o "\[[0-9]\+/[0-9]\+\]" | awk "{ printf \"\r%s\", \$0 }"
+#!/bin/bash
+
+LOG=$(sudo ls -td /var/tmp/portage/*/* | head -n1)/temp/build.log
+
+sudo tail -f "$LOG" | \
+grep --line-buffered -o "\[[0-9]\+/[0-9]\+\]" | \
+awk '
+function draw_bar(p, width) {
+    filled = int(p * width / 100);
+    bar = "";
+    for (i = 0; i < filled; i++) bar = bar "#";
+    for (i = filled; i < width; i++) bar = bar "-";
+    return bar;
+}
+
+{
+    gsub(/[\[\]]/, "", $0);
+    split($0, a, "/");
+
+    current = a[1];
+    total = a[2];
+    percent = (current / total) * 100;
+
+    bar = draw_bar(percent, 40);
+
+    printf "\r[%s/%s] [%s] %.2f%%", current, total, bar, percent;
+    fflush(stdout);
+}
+'
