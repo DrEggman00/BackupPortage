@@ -1,1 +1,0 @@
-sys-kernel/cachyos-sources bore bbr3 autofdo propeller o3 mnative hz_ticks_1000 tickrate_full preempt_full -hugepage_madvise hugepage_always llvm-lto-thin -bmq -eevdf -debug -build -deckify -mgeneric -mgeneric_v1 -mgeneric_v2 -mgeneric_v3 -mgeneric_v4 -kcfi -llvm-lto-full -preempt_lazy -preempt_vol -hugepage_madvise per-gov -rt -server 

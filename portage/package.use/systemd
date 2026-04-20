@@ -1,1 +1,69 @@
 sys-apps/systemd kernel-install kmod lz4 zstd seccomp acl pam policykit xkb cryptsetup elfutils resolvconf dns-over-tls openssl bpf tpm secureboot -http -curl -cgroup-hybrid -sysv-utils -importd -homed -passwdqc -pwquality -pkcs11 -audit -apparmor -selinux -test -vanilla -split-usr -lzma -idn -iptables sysv-utils 
+# required by net-misc/curl-8.19.0::gentoo[openssl,quic]
+# required by dev-lang/rust-bin-1.93.1::gentoo
+# required by media-video/rav1e-0.8.1::gentoo
+# required by media-video/ffmpeg-8.0.1::gentoo[rav1e]
+# required by media-video/pipewire-1.4.10::gentoo[ffmpeg]
+# required by media-libs/libsdl2-2.32.8::gentoo[pipewire]
+>=net-libs/ngtcp2-1.22.0 abi_x86_32
+# required by media-libs/freetype-2.14.3::gentoo[brotli]
+# required by media-libs/libbluray-1.3.4-r3::gentoo[truetype]
+# required by media-video/ffmpeg-8.0.1::gentoo[bluray]
+# required by media-video/pipewire-1.4.10::gentoo[ffmpeg]
+# required by media-libs/libsdl2-2.32.8::gentoo[pipewire]
+>=app-arch/brotli-1.1.0 abi_x86_32
+# required by media-libs/mesa-25.3.6::gentoo[vulkan]
+# required by media-libs/libsdl2-2.32.8::gentoo[gles2]
+# required by media-video/ffmpeg-8.0.1::gentoo[sdl]
+# required by media-video/pipewire-1.4.10::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.13_p20260216::gentoo
+>=media-libs/libdisplay-info-0.3.0 abi_x86_32
+# required by x11-drivers/nvidia-drivers-595.58.03::gentoo[wayland]
+# required by x11-base/xorg-drivers-21.1-r2::gentoo[video_cards_nvidia]
+# required by x11-base/xorg-server-21.1.21::gentoo[xorg]
+# required by x11-drivers/xf86-input-libinput-1.5.0::gentoo
+>=gui-libs/egl-wayland2-1.0.1 abi_x86_32
+# required by www-client/firefox-140.9.1::gentoo[system-libvpx]
+# required by firefox (argument)
+>=media-libs/libvpx-1.16.0 postproc
+# required by www-client/firefox-140.9.1::gentoo[system-png]
+# required by firefox (argument)
+>=media-libs/libpng-1.6.56 apng
+# required by www-client/firefox-140.9.1::gentoo[X,pgo]
+# required by firefox (argument)
+>=x11-base/xorg-server-21.1.21 xvfb
+# required by dev-texlive/texlive-xetex-2024_p71515::gentoo
+# required by texlive-xetex (argument)
+>=app-text/texlive-core-2024-r1 xetex
+# required by app-emulation/libvirt-12.0.0::gentoo[virt-network]
+# required by app-emulation/libvirt-glib-5.0.0-r1::gentoo
+# required by app-emulation/virt-manager-5.1.0-r1::gentoo
+# required by virt-manager (argument)
+>=net-dns/dnsmasq-2.91 script
+# required by app-crypt/swtpm-0.10.1::gentoo
+# required by app-emulation/libvirt-12.0.0::gentoo[qemu]
+# required by app-emulation/libvirt-glib-5.0.0-r1::gentoo
+# required by app-emulation/virt-manager-5.1.0-r1::gentoo
+# required by virt-manager (argument)
+>=net-libs/gnutls-3.8.12 tools pkcs11
+# required by app-emulation/virt-manager-5.1.0-r1::gentoo[gui]
+# required by virt-manager (argument)
+>=net-misc/spice-gtk-0.42-r4 sasl usbredir
+# required by dev-libs/libayatana-appindicator-0.5.94::gentoo
+# required by media-sound/spotify-1.2.86::gentoo
+# required by spotify (argument)
+>=dev-libs/libdbusmenu-16.04.0-r4 gtk3
+# required by games-util/steam-launcher-1.0.0.85-r3::steam-overlay[video_cards_nvidia,vulkan]
+# required by steam-launcher (argument)
+>=media-libs/vulkan-layers-1.4.341.0 abi_x86_32
+# required by media-libs/vulkan-layers-1.4.341.0::gentoo
+# required by games-util/steam-launcher-1.0.0.85-r3::steam-overlay[video_cards_nvidia,vulkan]
+# required by steam-launcher (argument)
+>=dev-util/glslang-1.4.341.0 abi_x86_32
+# required by media-libs/vulkan-layers-1.4.341.0::gentoo
+# required by games-util/steam-launcher-1.0.0.85-r3::steam-overlay[video_cards_nvidia,vulkan]
+# required by steam-launcher (argument)
+>=dev-util/vulkan-utility-libraries-1.4.341.0 abi_x86_32
+# required by media-gfx/blender-5.0.0::gentoo[ffmpeg]
+# required by blender (argument)
+>=media-video/ffmpeg-8.1 xvid

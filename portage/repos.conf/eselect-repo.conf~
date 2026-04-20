@@ -1,21 +1,16 @@
 # created by eselect-repo
 
-
-
-
 [steam-overlay]
 location = /var/db/repos/steam-overlay
 sync-type = git
 sync-uri = https://github.com/anyc/steam-overlay.git
 
-[tatsh-overlay]
-location = /var/db/repos/tatsh-overlay
+[guru]
+location = /var/db/repos/guru
 sync-type = git
-sync-uri = https://github.com/Tatsh/tatsh-overlay.git
+sync-uri = https://github.com/gentoo-mirror/guru.git
 
-
-
-[cosmic-overlay]
-location = /var/db/repos/cosmic-overlay
+[hyproverlay]
+location = /var/db/repos/hyproverlay
 sync-type = git
-sync-uri = https://github.com/fsvm88/cosmic-overlay.git
+sync-uri = https://codeberg.org/hyproverlay/hyproverlay.git
