@@ -10,6 +10,12 @@ location = /var/db/repos/guru
 sync-type = git
 sync-uri = https://github.com/gentoo-mirror/guru.git
 
+
+#[crossdev]
+#location = local
+[local]
+location = /var/db/repos/local
+
 [hyproverlay]
 location = /var/db/repos/hyproverlay
 sync-type = git

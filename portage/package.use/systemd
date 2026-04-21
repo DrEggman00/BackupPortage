@@ -67,3 +67,6 @@ sys-apps/systemd kernel-install kmod lz4 zstd seccomp acl pam policykit xkb cryp
 # required by media-gfx/blender-5.0.0::gentoo[ffmpeg]
 # required by blender (argument)
 >=media-video/ffmpeg-8.1 xvid
+# required by gui-apps/swaync-0.12.6::guru
+# required by swaync (argument)
+>=gui-libs/gtk4-layer-shell-1.1.1-r1 introspection vala
