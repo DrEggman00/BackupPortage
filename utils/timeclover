@@ -1,29 +1,62 @@
 #!/bin/bash
 
-LOG=$(sudo ls -td /var/tmp/portage/*/* | head -n1)/temp/build.log
+# Garante que o cursor volte ao normal ao sair
+trap 'tput cnorm; exit' INT TERM
 
-sudo tail -f "$LOG" | \
-grep --line-buffered -o "\[[0-9]\+/[0-9]\+\]" | \
-awk '
-function draw_bar(p, width) {
-    filled = int(p * width / 100);
-    bar = "";
-    for (i = 0; i < filled; i++) bar = bar "#";
-    for (i = filled; i < width; i++) bar = bar "-";
-    return bar;
-}
+# Esconde o cursor e limpa a tela
+tput cinvis
+clear
 
-{
-    gsub(/[\[\]]/, "", $0);
-    split($0, a, "/");
+while true; do
+    tput cup 0 0
+    # Usando printf para cores no Bash (mais limpo)
+    printf "\033[1;34m--- Gentoo Build Monitor ---\033[0m\n"
+    echo "Pressione [CTRL+C] para sair"
+    echo "----------------------------"
 
-    current = a[1];
-    total = a[2];
-    percent = (current / total) * 100;
+    # Busca logs ativos
+    LOGS=$(find /var/tmp/portage -name "build.log" 2>/dev/null)
 
-    bar = draw_bar(percent, 40);
+    if [ -z "$LOGS" ]; then
+        tput ed
+        echo "Nenhum pacote sendo compilado no momento..."
+    else
+        for LOG in $LOGS; do
+            # Extrai Nome/Categoria
+            PKG=$(echo "$LOG" | awk -F'/' '{print $(NF-3)"/"$(NF-2)}')
 
-    printf "\r[%s/%s] [%s] %.2f%%", current, total, bar, percent;
-    fflush(stdout);
-}
-'
+            # Captura progresso e remove cores ANSI (limpeza prévia)
+            PROGRESS_LINE=$(tail -n 50 "$LOG" 2>/dev/null | grep -a "\[[0-9]\+/[0-9]\+\]" | tail -n 1 | sed 's/\x1b\[[0-9;]*m//g')
+
+            if [ -n "$PROGRESS_LINE" ]; then
+                # Extrai apenas os números [atual/total]
+                DATA=$(echo "$PROGRESS_LINE" | sed -n 's/.*\[\([0-9]*\)\/\([0-9]*\)\].*/\1 \2/p')
+                
+                echo "$DATA" | awk -v pkg="$PKG" '
+                function draw_bar(p, width) {
+                    filled = int(p * width / 100);
+                    bar = "";
+                    for (i = 0; i < filled; i++) bar = bar "#";
+                    for (i = filled; i < width; i++) bar = bar "-";
+                    return bar;
+                }
+                $1 != "" && $2 != "" {
+                    current = $1;
+                    total = $2;
+                    percent = (current / total) * 100;
+                    bar = draw_bar(percent, 25);
+                    
+                    # \033[K limpa a linha, \033[1;32m é verde
+                    printf "\033[K%-40s \033[1;32m[%s]\033[0m %5.1f%% (%d/%d)\n", pkg, bar, percent, current, total;
+                }'
+            else
+                # Usando printf aqui também para manter o padrão
+                printf "\033[K%s \033[2m[Aguardando progresso...]\033[0m\n" "$PKG"
+            fi
+        done
+        # Limpa o que sobrou da tela abaixo
+        tput ed
+    fi
+
+    sleep 1
+done
