@@ -3,3 +3,5 @@ media-gfx/blender ~amd64
 media-libs/openimageio ~amd64
 sci-mathematics/manifold ~amd64
 media-libs/openexr ~amd64
+media-libs/opensubdiv ~amd64
+media-libs/osl ~amd64

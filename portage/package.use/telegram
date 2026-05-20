@@ -1,0 +1,5 @@
+# required by net-im/telegram-desktop-6.5.1::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-libs/tg_owt-0_pre20250515-r2 -screencast
+net-im/telegram-desktop -screencast

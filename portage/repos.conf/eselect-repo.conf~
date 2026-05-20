@@ -13,10 +13,19 @@ sync-uri = https://github.com/gentoo-mirror/guru.git
 
 #[crossdev]
 #location = local
-[local]
-location = /var/db/repos/local
-
 [hyproverlay]
 location = /var/db/repos/hyproverlay
 sync-type = git
 sync-uri = https://codeberg.org/hyproverlay/hyproverlay.git
+
+[crossdev]
+location = /var/db/repos/crossdev
+
+[ii-dots]
+location = /var/db/repos/ii-dots
+
+
+[sage-on-gentoo]
+location = /var/db/repos/sage-on-gentoo
+sync-type = git
+sync-uri = https://github.com/cschwan/sage-on-gentoo.git

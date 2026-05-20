@@ -1,0 +1,5 @@
+llvm-core/llvm ~amd64
+llvm-core/clang ~amd64
+llvm-core/clang-common ~amd64
+llvm-core/llvm-common ~amd64
+dev-util/spirv-llvm-translator ~amd64
