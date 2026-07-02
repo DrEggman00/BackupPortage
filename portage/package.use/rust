@@ -1,2 +1,4 @@
 dev-lang/rust ABI_X86: 32 64
 dev-lang/rust rust-analyzer rust-src
+dev-lang/rust LLVM_SLOT: 22 21
+#'=dev-lang/rust-1.94.1 LLVM_SLOT:21

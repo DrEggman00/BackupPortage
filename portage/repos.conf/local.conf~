@@ -1,5 +1,0 @@
-[local]
-location = /var/db/repos/local
-priority = 10
-masters = gentoo
-auto-sync = no

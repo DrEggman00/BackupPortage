@@ -1,6 +1,8 @@
 media-gfx/blender fluid bullet tbb openmp fftw cycles openvdb nanovdb cuda -hip -hiprt osl jemalloc 
 media-libs/opensubdiv opengl cuda tbb
-media-libs/osl llvm_slot_20
-#media-libs/mesa llvm_slot_20
+#media-libs/mesa llvm_slot_20 -llvm_slot_2
 media-gfx/blender llvm_slot_20
-media-libs/mesa llvm_slot_20 -llvm_slot_21 -llvm_slot_18 -llvm_slot_19
+media-libs/mesa llvm_slot_20 -llvm_slot_21 -llvm_slot_22 -llvm_slot_18 -llvm_slot_19
+
+media-libs/osl llvm_slot_20
+dev-lang/ispc llvm_slot_20

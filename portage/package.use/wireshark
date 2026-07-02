@@ -1,0 +1,28 @@
+net-analyzer/wireshark LUA_SINGLE_TARGET: -lua5-3 lua5-4
+# required by dev-db/sqlite-3.53.1::gentoo[tcl]
+# required by dev-lang/python-3.13.14::gentoo[sqlite]
+# required by dev-python/sphinx-9.1.0::gentoo[python_targets_python3_13]
+# required by llvm-core/clang-22.1.8::gentoo[doc,python_single_target_python3_13]
+# required by @selected
+# required by @world (argument)
+>=dev-lang/tcl-8.6.17 abi_x86_32
+# required by media-libs/mesa-26.0.7::gentoo[lm-sensors]
+# required by media-gfx/blender-5.0.0::gentoo[osl]
+# required by @selected
+# required by @world (argument)
+>=sys-apps/lm-sensors-3.6.2 abi_x86_32
+# required by media-libs/libsdl2-2.32.8::gentoo[jack]
+# required by app-emulation/qemu-10.2.3::gentoo[sdl]
+# required by @selected
+# required by @world (argument)
+>=virtual/jack-2 abi_x86_32
+# required by virtual/jack-2::gentoo
+# required by app-emulation/qemu-10.2.3::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-sound/jack2-1.9.22 abi_x86_32
+# required by kde-frameworks/kimageformats-6.25.0::gentoo[heif]
+# required by kde-apps/okular-26.04.1::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-libs/libheif-1.20.2 x265
