@@ -1,0 +1,3 @@
+media-video/ffmpeg X alsa bzip2 dav1d vulkan vaapi qsv nvenc bluray dvd cdio opencl libplacebo zimg chromaprint sdl fdk -samba -amrenc -gsm -codec2 pulseaudio opengl vdpau drm gpl postproc svt-av1 rav1e x264 x265 vpx opus vorbis libass -amf  truetype fribidi fontconfig zlib lzma xml chromium webp
+media-video/pipewire bluetooth sound-server pipewire-alsa pulseaudio dbus systemd ffmpeg X echo-cancel gsettings liblc3 v4l zeroconf -flatpak -jack-client -jack-sdk -modemmanager -roc -ieee1394 -system-service extra
+media-video/wireplumber -system-service

@@ -1,0 +1,2 @@
+www-client/firefox X clang jumbo-build system-av1 system-harfbuzz system-jpeg system-libevent system-libvpx system-webp -telemetry dbus -debug -gnome-shell system-pipewire system-png -test wayland wifi
+www-client/firefox L10N: pt-BR

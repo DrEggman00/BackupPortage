@@ -1,0 +1,21 @@
+# required by net-im/telegram-desktop-6.5.1::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-libs/tg_owt-0_pre20250515-r2 -screencast
+net-im/telegram-desktop -screencast
+# required by sys-kernel/gentoo-kernel-7.0.13::gentoo[-generic-uki,initramfs]
+# required by virtual/dist-kernel-7.0.13::gentoo
+>=sys-kernel/installkernel-68 dracut
+# required by media-gfx/blender-5.0.0::gentoo[osl]
+# required by blender (argument)
+# required by sys-boot/os-prober-1.82::gentoo
+# required by os-prober (argument)
+>=sys-boot/grub-2.14-r5 mount
+# required by app-emulation/wine-vanilla-11.0::gentoo[gecko,wow64]
+# required by virtual/wine-0-r11::gentoo
+# required by wine (argument)
+>=app-emulation/wine-gecko-2.47.4 abi_x86_32
+# required by app-emulation/wine-vanilla-11.0::gentoo[mingw,-crossdev-mingw,wow64]
+# required by virtual/wine-0-r11::gentoo
+# required by wine (argument)
+>=dev-util/mingw64-toolchain-14.0.0 abi_x86_32

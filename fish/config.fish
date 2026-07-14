@@ -3,8 +3,34 @@ if status is-interactive
     # No greeting
     set fish_greeting
 
-    # Edite este arquivo com: nano ~/.config/fish/config.fish
-    alias up="sudo emerge --verbose --ask --newuse --changed-use --deep --update --autounmask-write=y @world"
+    # Use starship
+    function starship_transient_prompt_func
+        starship module character
+    end
+    if test "$TERM" != "linux"
+        starship init fish | source
+        enable_transience
+    end
+    
+    # Colors
+    if test -f ~/.local/state/quickshell/user/generated/terminal/sequences.txt
+        cat ~/.local/state/quickshell/user/generated/terminal/sequences.txt
+    end
+
+    # Aliases
+    # kitty doesn't clear properly so we need to do this weird printing
+    alias clear "printf '\033[2J\033[3J\033[1;1H'"
+    alias celar "printf '\033[2J\033[3J\033[1;1H'"
+    alias claer "printf '\033[2J\033[3J\033[1;1H'"
+    alias pamcan pacman
+    alias q 'qs -c ii'
+
+
+
+
+
+
+alias up="sudo emerge --verbose --ask --newuse --changed-use --deep --update --autounmask-write=y @world"
     alias i="sudo emerge --verbose --ask"
     alias ia="sudo emerge --verbose --ask --autounmask-write=y"
     alias r="sudo emerge --unmerge --ask"
@@ -43,36 +69,10 @@ if status is-interactive
     # --- Configurações Específicas ---
     alias update-grub="sudo nano /etc/default/grub && sudo grub-mkconfig -o /boot/grub/grub.cfg"
 
-    # --- Aliases para o próprio Fish (Substitutos do ZSH) ---
-    alias sf="source ~/.config/fish/config.fish"
-    alias fs="vim ~/.config/fish/config.fish"
-
-    # Use starship
-    function starship_transient_prompt_func
-        starship module character
-    end
-    if test "$TERM" != linux
-        starship init fish | source
-        enable_transience
-    end
-
-    # Colors
-    if test -f ~/.local/state/quickshell/user/generated/terminal/sequences.txt
-        cat ~/.local/state/quickshell/user/generated/terminal/sequences.txt
-    end
-
-    # Aliases
-    # kitty doesn't clear properly so we need to do this weird printing
-    alias clear "printf '\033[2J\033[3J\033[1;1H'"
-    alias celar "printf '\033[2J\033[3J\033[1;1H'"
-    alias claer "printf '\033[2J\033[3J\033[1;1H'"
-    alias pamcan pacman
-    alias q 'qs -c ii'
-    if test "$TERM" != linux
+    if test "$TERM" != "linux"
         alias ls 'eza --icons'
     end
-    if test "$TERM" = xterm-kitty
+    if test "$TERM" = "xterm-kitty"
         alias ssh 'kitten ssh'
     end
-
 end

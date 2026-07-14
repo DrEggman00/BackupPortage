@@ -1,0 +1,2 @@
+#media-video/obs-studio wayland pipewire nvenc qsv pulseaudio speex lua python browser 
+media-video/obs-studio browser truetype v4l pipewire pulseaudio vlc websocket fdk speex nvenc qsv wayland jack alsa 

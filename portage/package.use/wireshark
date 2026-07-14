@@ -1,0 +1,93 @@
+net-analyzer/wireshark LUA_SINGLE_TARGET: -lua5-3 lua5-4
+# required by dev-db/sqlite-3.53.1::gentoo[tcl]
+# required by dev-lang/python-3.13.14::gentoo[sqlite]
+# required by dev-python/sphinx-9.1.0::gentoo[python_targets_python3_13]
+# required by llvm-core/clang-22.1.8::gentoo[doc,python_single_target_python3_13]
+# required by @selected
+# required by @world (argument)
+>=dev-lang/tcl-8.6.17 abi_x86_32
+# required by media-libs/mesa-26.0.7::gentoo[lm-sensors]
+# required by media-gfx/blender-5.0.0::gentoo[osl]
+# required by @selected
+# required by @world (argument)
+>=sys-apps/lm-sensors-3.6.2 abi_x86_32
+# required by media-libs/libsdl2-2.32.8::gentoo[jack]
+# required by app-emulation/qemu-10.2.3::gentoo[sdl]
+# required by @selected
+# required by @world (argument)
+>=virtual/jack-2 abi_x86_32
+# required by virtual/jack-2::gentoo
+# required by app-emulation/qemu-10.2.3::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-sound/jack2-1.9.22 abi_x86_32
+# required by kde-frameworks/kimageformats-6.25.0::gentoo[heif]
+# required by kde-apps/okular-26.04.1::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-libs/libheif-1.20.2 x265
+# required by net-misc/curl-8.20.0-r1::gentoo[brotli]
+# required by dev-lang/rust-bin-1.95.0::gentoo
+# required by media-video/rav1e-0.8.1::gentoo
+# required by media-video/ffmpeg-8.1.2::gentoo[rav1e]
+# required by media-video/pipewire-1.6.7::gentoo[ffmpeg]
+# required by media-libs/libsdl2-2.32.8::gentoo[pipewire]
+>=app-arch/brotli-1.1.0 abi_x86_32
+# required by net-misc/curl-8.20.0-r1::gentoo[quic,openssl]
+# required by dev-lang/rust-bin-1.95.0::gentoo
+# required by media-video/rav1e-0.8.1::gentoo
+# required by media-video/ffmpeg-8.1.2::gentoo[rav1e]
+# required by media-video/pipewire-1.6.7::gentoo[ffmpeg]
+# required by media-libs/libsdl2-2.32.8::gentoo[pipewire]
+>=net-libs/ngtcp2-1.22.0 abi_x86_32
+# required by dev-python/setuptools-scm-10.0.5::gentoo[-test]
+# required by dev-python/hatch-vcs-0.5.0::gentoo
+# required by dev-python/scikit-build-core-0.12.2::gentoo
+# required by dev-python/pybind11-3.0.4::gentoo
+# required by dev-python/pillow-12.3.0::gentoo
+# required by dev-python/docutils-0.22.4::gentoo
+# required by dev-util/glib-utils-2.88.2::gentoo
+# required by net-dns/avahi-0.9_rc3::gentoo
+# required by media-video/pipewire-1.6.7::gentoo[zeroconf]
+# required by media-libs/libsdl2-2.32.8::gentoo[pipewire]
+# required by media-video/ffmpeg-8.1.2::gentoo[sdl]
+>=dev-python/vcs-versioning-1.1.1 python_targets_python3_12
+# required by media-libs/mesa-26.0.8::gentoo[vulkan]
+# required by media-libs/libsdl2-2.32.8::gentoo[wayland]
+# required by media-video/ffmpeg-8.1.2::gentoo[sdl]
+# required by media-video/pipewire-1.6.7::gentoo[ffmpeg]
+# required by media-video/wireplumber-0.5.15::gentoo
+>=media-libs/libdisplay-info-0.3.0 abi_x86_32
+# required by net-libs/gnutls-3.8.13::gentoo[post-quantum]
+# required by media-video/ffmpeg-8.1.2::gentoo[gnutls,-openssl]
+# required by media-video/pipewire-1.6.7::gentoo[ffmpeg]
+# required by media-libs/libsdl2-2.32.8::gentoo[pipewire]
+>=dev-libs/leancrypto-1.7.2-r3 abi_x86_32
+# required by x11-drivers/nvidia-drivers-610.43.03::gentoo[wayland]
+# required by x11-base/xorg-drivers-21.1-r2::gentoo[video_cards_nvidia]
+# required by x11-base/xorg-server-21.1.23::gentoo[xorg]
+# required by x11-drivers/xf86-input-libinput-1.5.0::gentoo
+>=gui-libs/egl-wayland2-1.0.1 abi_x86_32
+# required by games-util/steam-launcher-1.0.0.85-r3::steam-overlay[vulkan,video_cards_nvidia]
+# required by steam-launcher (argument)
+>=media-libs/vulkan-layers-1.4.341.0 abi_x86_32
+# required by media-libs/vulkan-layers-1.4.341.0::gentoo
+# required by games-util/steam-launcher-1.0.0.85-r3::steam-overlay[vulkan,video_cards_nvidia]
+# required by steam-launcher (argument)
+>=dev-util/vulkan-utility-libraries-1.4.341.0 abi_x86_32
+# required by media-gfx/blender-5.0.0::gentoo[ffmpeg]
+# required by blender (argument)
+>=media-video/ffmpeg-8.1.2 xvid
+# required by dev-python/html5lib-1.2_pre20240221::gentoo
+# required by dev-python/rdflib-7.6.0::gentoo
+# required by media-libs/lv2-1.18.10-r2::gentoo[python_single_target_python3_14]
+# required by media-libs/lilv-0.24.26-r1::gentoo
+# required by media-sound/audacity-3.7.8::gentoo[lv2]
+# required by media-sound/audacity (argument)
+>=dev-python/pkg-resources-81.0.0 python_targets_python3_12
+# required by www-client/firefox-140.12.0::gentoo[system-libvpx]
+# required by firefox (argument)
+>=media-libs/libvpx-1.16.0 postproc
+# required by www-client/firefox-140.12.0::gentoo[system-png]
+# required by firefox (argument)
+>=media-libs/libpng-1.6.58 apng

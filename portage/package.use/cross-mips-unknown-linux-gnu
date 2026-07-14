@@ -1,0 +1,4 @@
+cross-mips-unknown-linux-gnu/binutils -multilib
+cross-mips-unknown-linux-gnu/linux-headers -selinux headers-only -multilib
+cross-mips-unknown-linux-gnu/glibc static-libs -selinux -libraries -multilib
+cross-mips-unknown-linux-gnu/gcc -sanitize -vtv -selinux -objc -objc++ -objc-gc -vtv -sanitize -multilib

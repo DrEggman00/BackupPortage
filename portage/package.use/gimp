@@ -1,0 +1,3 @@
+media-gfx/gimp wayland webp heif jpegxl jpeg2k openmp udev vector-cons lua javascript alsa X openexr bash-completion -aqua -debug -doc -aalib -fits -postscript -wmf -xpm 
+
+dev-lang/spidermonkey LLVM_SLOT: 21

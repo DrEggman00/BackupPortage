@@ -1,0 +1,2 @@
+sys-apps/flatpak seccomp -test -doc
+kde-plasma/discover firmware -debug flatpak -telemetry -test -webengine
