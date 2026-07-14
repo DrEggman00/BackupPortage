@@ -41,7 +41,7 @@ if status is-interactive
     alias timeover="watch -cn 0.1 genlop -ci"
 
     # --- Configurações Específicas ---
-    alias update-grub="sudo vim /etc/default/grub && sudo grub-mkconfig -o /boot/grub/grub.cfg"
+    alias update-grub="sudo nano /etc/default/grub && sudo grub-mkconfig -o /boot/grub/grub.cfg"
 
     # --- Aliases para o próprio Fish (Substitutos do ZSH) ---
     alias sf="source ~/.config/fish/config.fish"

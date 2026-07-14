@@ -1,6 +1,0 @@
-*/* PYTHON_TARGETS: -* python3_13 python3_14
-*/* PYTHON_SINGLE_TARGET: -* python3_13
-
-app-emulation/qemu PYTHON_SINGLE_TARGET: python3_14
-
-dev-lang/python ensurepip ncurses readline ssl xml gdbm tk -wininst 

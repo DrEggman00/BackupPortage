@@ -1,3 +1,0 @@
-app-emulation/qemu ~amd64
-sys-firmware/edk2-bin ~amd64
-app-emulation/virt-manager ~amd64
