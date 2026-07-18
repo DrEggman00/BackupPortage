@@ -23,10 +23,13 @@ if [[ "$choice" =~ ^[Ss]$ ]]; then
     
     # O segredo: uma pequena pausa para o Portage terminar de escrever no terminal
     sleep 1
-    
-    echo -e "\n${RED}########################################"
-    echo -e "[*] ALVO NEUTRALIZADO: ${TARGET}"
-    echo -e "########################################${NC}"
+    # Exemplo de melhoria no seu script:
+    if [ $? -eq 0 ]; then
+        echo -e "\n${RED}[*] ALVO NEUTRALIZADO: ${TARGET}${NC}"
+    else
+        echo -e "\n\e[1;31m[!] ERRO: O alvo não pôde ser neutralizado (ou não existe).\e[0m"
+    fi
+
 else
     echo -e "\n\e[1;34m[I] Operação abortada. Alvo poupado.\e[0m"
 fi

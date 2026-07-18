@@ -1,0 +1,7 @@
+kde-plasma/* ~amd64
+dev-lang/* ~amd64
+dev-perl/* ~amd64
+virtual/* ~amd64
+perl-*/* ~amd64
+#sys-devel/* ~amd64
+kde-*/* ~amd64
