@@ -1,4 +1,6 @@
-media-gfx/blender fluid bullet tbb openmp fftw cycles openvdb nanovdb cuda -hip -hiprt osl jemalloc 
+#media-gfx/blender fluid bullet tbb openmp fftw cycles openvdb nanovdb cuda -hip -hiprt osl jemalloc 
+media-gfx/blender cuda experimental optix cycles ffmpeg color-management opengl openmp opensubdiv oidn tbb pipewire wayland X potrace rubberband man sndfile openvdb nanovdb cycles-bin-kernels -hip -hiprt -gnome -debug -valgrind  
+media-gfx/blender python_single_target_python3_13 -python_single_target_python3_14
 media-libs/opensubdiv opengl cuda tbb
 #media-libs/mesa llvm_slot_20 -llvm_slot_2
 media-gfx/blender llvm_slot_20

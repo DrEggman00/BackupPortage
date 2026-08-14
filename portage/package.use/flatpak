@@ -1,2 +1,2 @@
-sys-apps/flatpak seccomp -test -doc
+sys-apps/flatpak seccomp -test -doc X systemd policykit
 kde-plasma/discover firmware -debug flatpak -telemetry -test -webengine

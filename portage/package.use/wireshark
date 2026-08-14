@@ -94,3 +94,23 @@ net-analyzer/wireshark LUA_SINGLE_TARGET: -lua5-3 lua5-4
 # required by media-gfx/gimp-3.2.4::gentoo[lua_single_target_luajit,lua]
 # required by gimp (argument)
 >=dev-lua/lgi-0.9.2_p20260407 lua_targets_luajit
+# required by net-fs/samba-4.24.4::gentoo
+# required by net-fs/cifs-utils-7.7::gentoo[acl]
+>=net-libs/ngtcp2-1.24.0 gnutls
+# required by media-gfx/blender-9999::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-libs/openimageio-3.1.7.0-r1 python
+# required by app-containers/docker-29.5.2::gentoo
+# required by app-containers/docker (argument)
+>=app-containers/containerd-2.3.3 btrfs
+# required by sci-libs/onnxruntime-1.28.0::guru
+# required by www-apps/anything-llm-1.15.0::tatsh-overlay
+# required by www-apps/anything-llm (argument)
+>=sci-ml/onnx-1.20.1 disableStaticReg
+# required by dev-python/hatchling-1.32.0::gentoo
+# required by dev-python/argcomplete-3.7.2::gentoo
+# required by app-emulation/virt-manager-5.1.0-r1::gentoo[python_single_target_python3_14]
+# required by @selected
+# required by @world (argument)
+>=dev-python/tomlkit-0.15.1 python_targets_python3_12
