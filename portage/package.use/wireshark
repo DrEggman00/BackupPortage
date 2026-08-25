@@ -114,3 +114,19 @@ net-analyzer/wireshark LUA_SINGLE_TARGET: -lua5-3 lua5-4
 # required by @selected
 # required by @world (argument)
 >=dev-python/tomlkit-0.15.1 python_targets_python3_12
+# required by dev-util/rocm-smi-7.2.0::gentoo
+# required by sys-apps/hwloc-2.12.2::gentoo[rocm]
+# required by dev-cpp/tbb-2022.3.0-r1::gentoo
+# required by media-libs/embree-4.4.0::gentoo
+# required by media-libs/openpgl-0.7.0::gentoo
+# required by media-gfx/blender-5.0.0::gentoo
+# required by @selected
+# required by @world (argument)
+>=x11-libs/libdrm-2.4.134 video_cards_amdgpu
+# required by media-libs/opencv-4.12.0-r2::gentoo[lapack,openmp,mkl]
+# required by media-plugins/frei0r-plugins-2.4.1-r1::gentoo[facedetect]
+# required by media-libs/mlt-7.40.0::gentoo[frei0r]
+# required by kde-apps/kdenlive-26.04.3::gentoo
+# required by @selected
+# required by @world (argument)
+>=sci-libs/mkl-2026.1.0.236 gnu-openmp

@@ -22,7 +22,14 @@ sync-type = git
 sync-uri = https://github.com/PF4Public/gentoo-overlay.git
 
 
-[menelkir]
-location = /var/db/repos/menelkir
+
+[tatsh-overlay]
+location = /var/db/repos/tatsh-overlay
 sync-type = git
-sync-uri = https://gitlab.com/menelkir/gentoo-overlay.git
+sync-uri = https://github.com/Tatsh/tatsh-overlay.git
+
+
+[pentoo]
+location = /var/db/repos/pentoo
+sync-type = git
+sync-uri = https://github.com/pentoo/pentoo-overlay.git
