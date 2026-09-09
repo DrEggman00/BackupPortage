@@ -50,6 +50,14 @@ alias up="sudo emerge --verbose --ask --newuse --changed-use --deep --update --a
     alias softup="sudo MAKEOPTS='-j2 -l2' emerge -auvDNn @world"
     alias med="sudo MAKEOPTS='-j12 -l12'"
     alias upm="emerge -uvDNn @world"
+	
+    # --- QEMU ---
+    
+    alias rgcc="riscv64-linux-gnu-gcc"
+    alias ras="riscv64-linux-gnu-as"
+    alias rld="riscv64-linux-gnu-ld"
+    alias rclang="clang --target=riscv64-linux-gnu"
+    alias rqemu="qemu-riscv64"
 
     # --- Utilidades ---
     alias power="sudo cpupower frequency-set -g powersave"
@@ -65,12 +73,11 @@ alias up="sudo emerge --verbose --ask --newuse --changed-use --deep --update --a
     alias battery="fastfetch | grep Battery"
     alias os="fastfetch | grep OS"
     alias timeover="watch -cn 0.1 genlop -ci"
-
     # --- Configurações Específicas ---
     alias update-grub="sudo nano /etc/default/grub && sudo grub-mkconfig -o /boot/grub/grub.cfg"
 
     if test "$TERM" != "linux"
-        alias ls 'eza --icons'
+        alias ls="eza --icons=always"
     end
     if test "$TERM" = "xterm-kitty"
         alias ssh 'kitten ssh'
