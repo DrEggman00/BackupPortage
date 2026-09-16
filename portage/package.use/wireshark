@@ -130,3 +130,32 @@ net-analyzer/wireshark LUA_SINGLE_TARGET: -lua5-3 lua5-4
 # required by @selected
 # required by @world (argument)
 >=sci-libs/mkl-2026.1.0.236 gnu-openmp
+# required by app-emulation/qemu-10.2.3-r1::gentoo[static-user]
+# required by @selected
+# required by @world (argument)
+>=dev-libs/glib-2.88.3 static-libs
+# required by app-emulation/qemu-10.2.3-r1::gentoo[static-user,xattr]
+# required by @selected
+# required by @world (argument)
+>=sys-apps/attr-2.6.0 static-libs
+# required by dev-libs/glib-2.88.3::gentoo
+# required by app-emulation/qemu-10.2.3-r1::gentoo[static-user]
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libpcre2-10.48 static-libs
+# required by app-emulation/qemu-10.2.3-r1::gentoo[static-user]
+# required by @selected
+# required by @world (argument)
+>=virtual/zlib-1.3.1-r1 static-libs
+# required by virtual/zlib-1.3.1-r1::gentoo
+# required by app-emulation/qemu-10.2.3-r1::gentoo[static-user]
+# required by @selected
+# required by @world (argument)
+>=sys-libs/zlib-1.3.2-r1 static-libs
+# required by kde-apps/kamoso-26.08.1::gentoo
+# required by kamoso (argument)
+>=media-plugins/gst-plugins-meta-1.26.11 theora
+# required by media-plugins/gst-plugins-meta-1.26.11::gentoo
+# required by kde-apps/kamoso-26.08.1::gentoo
+# required by kamoso (argument)
+>=media-libs/gst-plugins-base-1.26.11 theora
