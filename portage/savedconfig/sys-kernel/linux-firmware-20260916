@@ -1002,6 +1002,9 @@ ath10k/WCN3990/hw1.0/qrb4210/firmware-5.bin
 ath10k/WCN3990/hw1.0/qrb4210/wlanmdsp.mbn
 ath10k/WCN3990/hw1.0/qcm2290/firmware-5.bin
 ath10k/WCN3990/hw1.0/qcm2290/wlanmdsp.mbn
+ath10k/WCN3990/hw1.0/shikra/notice.txt_wlanmdsp
+ath10k/WCN3990/hw1.0/shikra/wlanmdsp.mbn
+ath10k/WCN3990/hw1.0/shikra/firmware-5.bin
 ath10k/WCN3990/hw1.0/notice.txt_wlanmdsp
 ath10k/WCN3990/hw1.0/wlanmdsp.mbn
 ath10k/WCN3990/hw1.0/firmware-5.bin
@@ -1251,6 +1254,7 @@ brcm/brcmfmac43455-sdio.raspberrypi,4-compute-module.txt
 brcm/brcmfmac43455-sdio.raspberrypi,3-model-a-plus.txt
 brcm/brcmfmac43430-sdio.raspberrypi,model-zero-2-w.txt
 brcm/brcmfmac43430-sdio.raspberrypi,model-zero-w.txt
+brcm/brcmfmac43430-sdio.ultrapower,taiqicat-a01.txt
 brcm/brcmfmac43430-sdio.beagle,beaglev-starlight-jh7100-r0.txt
 brcm/brcmfmac43430-sdio.beagle,beaglev-starlight-jh7100-a1.txt
 brcm/brcmfmac43430-sdio.starfive,visionfive-v1.txt
@@ -1380,6 +1384,7 @@ cirrus/cs35l56-b0-dsp1-misc-17aa390d-spkid0.wmfw
 cirrus/cs35l56-b0-dsp1-misc-17aa390c-spkid1.wmfw
 cirrus/cs35l56-b0-dsp1-misc-17aa390b.wmfw
 cirrus/cs35l56-b0-dsp1-misc-17aa3905.wmfw
+cirrus/cs35l57-b2-dsp1-misc-17aa3843.wmfw
 cirrus/cs35l56-b0-dsp1-misc-17aa383c-spkid1-ampr.bin
 cirrus/cs35l56-b0-dsp1-misc-17aa383c-spkid1-ampl.bin
 cirrus/cs35l56-b0-dsp1-misc-17aa383c-spkid1.wmfw
@@ -2591,6 +2596,10 @@ cirrus/cs35l56-b0-dsp1-misc-17aa390b-amp2.bin
 cirrus/cs35l56-b0-dsp1-misc-17aa390b-amp1.bin
 cirrus/cs35l56-b0-dsp1-misc-17aa3905-amp2.bin
 cirrus/cs35l56-b0-dsp1-misc-17aa3905-amp1.bin
+cirrus/cs35l57-b2-dsp1-misc-17aa3843-l1u3.bin
+cirrus/cs35l57-b2-dsp1-misc-17aa3843-l1u2.bin
+cirrus/cs35l57-b2-dsp1-misc-17aa3843-l1u1.bin
+cirrus/cs35l57-b2-dsp1-misc-17aa3843-l1u0.bin
 cirrus/cs35l56-b0-dsp1-misc-17aa383c-spkid0-ampr.bin
 cirrus/cs35l56-b0-dsp1-misc-17aa383c-spkid0-ampl.bin
 cirrus/cs35l56-b0-dsp1-misc-17aa3838-spkid1-ampr.bin
@@ -2943,6 +2952,7 @@ cirrus/cs35l56-b0-dsp1-misc-10280c62-spkid0-amp2.bin
 cirrus/cs35l56-b0-dsp1-misc-10280c62-spkid0-amp1.bin
 cirrus/cs35l63/CS35L63_Rev2.5.7.wmfw
 cirrus/cs35l63/CS35L63_Rev2.5.4.wmfw
+cirrus/cs35l56/CS35L56_Rev4.7.12.wmfw
 cirrus/cs35l56/CS35L56_Rev4.7.2.wmfw
 cirrus/cs35l56/CS35L56_Rev4.7.0.wmfw
 cirrus/cs35l56/CS35L56_Rev4.5.9.wmfw
@@ -5417,6 +5427,12 @@ qcom/nord/adsp1_dtb.mbn
 qcom/nord/adsp_dtb.mbn
 qcom/nord/adsp1.mbn
 qcom/nord/adsp.mbn
+qcom/maili/adspuo.jsn
+qcom/maili/adspua.jsn
+qcom/maili/adsps.jsn
+qcom/maili/adspr.jsn
+qcom/maili/adsp_dtb.mbn
+qcom/maili/adsp.mbn
 qcom/hawi/adspuo.jsn
 qcom/hawi/adspua.jsn
 qcom/hawi/adsps.jsn
@@ -5671,6 +5687,8 @@ qcom/sdm845/wlanmdsp.mbn
 qcom/sdm845/modemuw.jsn
 qcom/sdm845/modem_nm.mbn
 qcom/sdm845/mba.mbn
+qcom/sdm845/SHIFT/axolotl/mba.mbn
+qcom/sdm845/SHIFT/axolotl/wlanmdsp.mbn
 qcom/sdm845/SHIFT/axolotl/a630_zap.mbn
 qcom/sdm845/Thundercomm/db845c/slpius.jsn
 qcom/sdm845/Thundercomm/db845c/slpir.jsn
@@ -5749,6 +5767,7 @@ qcom/vpu/vpu30_p4_s6_16mb.mbn
 qcom/vpu/vpu30_p4_s6.mbn
 qcom/vpu/vpu30_p4_s7.mbn
 qcom/vpu/vpu20_p4_sm8450_s7.mbn
+qcom/vpu/vpu20_p4_gen2_s6.mbn
 qcom/vpu/vpu20_p1_gen2_s6.mbn
 qcom/vpu/ar50lt_p1_gen2_s6.mbn
 qcom/vpu/vpu30_p1_s7.mbn
@@ -6121,6 +6140,7 @@ rtl_nic/rtl8153b-2.fw
 rtl_nic/rtl8153a-4.fw
 rtl_nic/rtl8153a-3.fw
 rtl_nic/rtl8153a-2.fw
+rtl_nic/rtl8261d.bin
 rtl_nic/rtl8261c.bin
 rtl_nic/rtl8127a-1.fw
 rtl_nic/rtl8126a-3.fw
