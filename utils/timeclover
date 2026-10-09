@@ -1,62 +1,124 @@
 #!/bin/bash
+# Gentoo Build Monitor - detecta progresso em vários formatos de log
 
-# Garante que o cursor volte ao normal ao sair
-trap 'tput cnorm; exit' INT TERM
+BUILD_DIR="${BUILD_DIR:-/var/tmp/portage}"
+BAR_WIDTH=25
+GENLOP_EVERY="${GENLOP_EVERY:-2}"   # roda o genlop a cada N segundos (ele lê o emerge.log, não precisa ser mais rápido)
 
-# Esconde o cursor e limpa a tela
-tput cinvis
+trap 'tput cnorm; exit' INT TERM EXIT
+tput civis
 clear
+
+# Lê as últimas linhas do log e devolve "atual total" ou "pct" via variáveis globais.
+# Formatos suportados (do mais específico para o mais genérico):
+#   [12/345]            ninja, meson
+#   Building 12/345     cargo/rust (também "Building [===>   ] 12/345: crate")
+#   [ 45%]              cmake + make
+#   (12/345)            vários
+#   12/345              contagem solta no começo/fim da linha (ex: "Compiling ... 12/345")
+#   45%                 porcentagem solta (ex: "Building 45%")
+parse_progress() {
+    local log="$1" line
+    CUR="" TOT="" PCT=""
+
+    # \r -> \n porque cargo/outros reescrevem a mesma linha; tira cores ANSI
+    while IFS= read -r line; do
+        if   [[ $line =~ \[[[:space:]]*([0-9]+)/([0-9]+)\] ]]; then
+            CUR=${BASH_REMATCH[1]} TOT=${BASH_REMATCH[2]}; return 0
+        elif [[ $line =~ [Bb]uilding[^0-9]*([0-9]+)/([0-9]+) ]]; then
+            CUR=${BASH_REMATCH[1]} TOT=${BASH_REMATCH[2]}; return 0
+        elif [[ $line =~ \[[[:space:]]*([0-9]+)%\] ]]; then
+            PCT=${BASH_REMATCH[1]}; return 0
+        elif [[ $line =~ \(([0-9]+)/([0-9]+)\) ]]; then
+            CUR=${BASH_REMATCH[1]} TOT=${BASH_REMATCH[2]}; return 0
+        elif [[ $line =~ (^|[[:space:]])([0-9]+)/([0-9]+)([[:space:]:]|$) ]]; then
+            CUR=${BASH_REMATCH[2]} TOT=${BASH_REMATCH[3]}; return 0
+        elif [[ $line =~ (^|[[:space:]])([0-9]{1,3})(\.[0-9]+)?%([[:space:]]|$) ]]; then
+            PCT=${BASH_REMATCH[2]}; return 0
+        fi
+    done < <(tail -c 20000 "$log" 2>/dev/null | tr '\r' '\n' | sed 's/\x1b\[[0-9;]*[A-Za-z]//g' | tac)
+    return 1
+}
+
+draw_bar() {
+    local p=$1 w=$2 filled i bar=""
+    (( p > 100 )) && p=100
+    filled=$(( p * w / 100 ))
+    for ((i=0; i<filled; i++)); do bar+="#"; done
+    for ((i=filled; i<w; i++)); do bar+="-"; done
+    printf '%s' "$bar"
+}
+
+last_activity() {
+    # Última linha não vazia, sem cores, cortada para caber na tela
+    tail -c 4000 "$1" 2>/dev/null | tr '\r' '\n' | sed 's/\x1b\[[0-9;]*[A-Za-z]//g' \
+        | grep -av '^[[:space:]]*$' | tail -n 1 | cut -c1-$(( $(tput cols) - 4 ))
+}
+
+SPIN='|/-\'
+tick=0
+GENLOP_OUT=""
 
 while true; do
     tput cup 0 0
-    # Usando printf para cores no Bash (mais limpo)
-    printf "\033[1;34m--- Gentoo Build Monitor ---\033[0m\n"
-    echo "Pressione [CTRL+C] para sair"
-    echo "----------------------------"
+    printf "\033[K\033[1;34m--- Gentoo Build Monitor ---\033[0m\n"
+    printf "\033[KPressione [q] ou [ESC] para sair\n"
+    printf "\033[K----------------------------\n"
 
-    # Busca logs ativos
-    LOGS=$(find /var/tmp/portage -name "build.log" 2>/dev/null)
+    mapfile -t LOGS < <(find "$BUILD_DIR" -name build.log 2>/dev/null)
+    sp=${SPIN:$(( tick % 4 )):1}
+    used=3   # linhas já usadas na tela (cabeçalho + barras)
 
-    if [ -z "$LOGS" ]; then
-        tput ed
-        echo "Nenhum pacote sendo compilado no momento..."
+    if (( ${#LOGS[@]} == 0 )); then
+        printf "\033[KNenhum pacote sendo compilado no momento...\n"
+        GENLOP_OUT=""
+        used=$(( used + 1 ))
     else
-        for LOG in $LOGS; do
-            # Extrai Nome/Categoria
-            PKG=$(echo "$LOG" | awk -F'/' '{print $(NF-3)"/"$(NF-2)}')
+        for LOG in "${LOGS[@]}"; do
+            # .../portage/<categoria>/<pacote-versão>/temp/build.log
+            PKG=$(awk -F/ '{print $(NF-3)"/"$(NF-2)}' <<<"$LOG")
 
-            # Captura progresso e remove cores ANSI (limpeza prévia)
-            PROGRESS_LINE=$(tail -n 50 "$LOG" 2>/dev/null | grep -a "\[[0-9]\+/[0-9]\+\]" | tail -n 1 | sed 's/\x1b\[[0-9;]*m//g')
-
-            if [ -n "$PROGRESS_LINE" ]; then
-                # Extrai apenas os números [atual/total]
-                DATA=$(echo "$PROGRESS_LINE" | sed -n 's/.*\[\([0-9]*\)\/\([0-9]*\)\].*/\1 \2/p')
-                
-                echo "$DATA" | awk -v pkg="$PKG" '
-                function draw_bar(p, width) {
-                    filled = int(p * width / 100);
-                    bar = "";
-                    for (i = 0; i < filled; i++) bar = bar "#";
-                    for (i = filled; i < width; i++) bar = bar "-";
-                    return bar;
-                }
-                $1 != "" && $2 != "" {
-                    current = $1;
-                    total = $2;
-                    percent = (current / total) * 100;
-                    bar = draw_bar(percent, 25);
-                    
-                    # \033[K limpa a linha, \033[1;32m é verde
-                    printf "\033[K%-40s \033[1;32m[%s]\033[0m %5.1f%% (%d/%d)\n", pkg, bar, percent, current, total;
-                }'
+            if parse_progress "$LOG"; then
+                if [[ -n $TOT && $TOT -gt 0 ]]; then
+                    PCT=$(( CUR * 100 / TOT ))
+                    INFO="($CUR/$TOT)"
+                else
+                    INFO=""
+                fi
+                printf "\033[K%-40s \033[1;32m[%s]\033[0m %3d%% %s\n" \
+                    "$PKG" "$(draw_bar "$PCT" "$BAR_WIDTH")" "$PCT" "$INFO"
+                used=$(( used + 1 ))
             else
-                # Usando printf aqui também para manter o padrão
-                printf "\033[K%s \033[2m[Aguardando progresso...]\033[0m\n" "$PKG"
+                printf "\033[K%-40s \033[2m[%s sem progresso detectável]\033[0m\n" "$PKG" "$sp"
+                printf "\033[K  \033[2m> %s\033[0m\n" "$(last_activity "$LOG")"
+                used=$(( used + 2 ))
             fi
         done
-        # Limpa o que sobrou da tela abaixo
-        tput ed
+
+        # genlop -ci: tempo decorrido / estimativa. Atualiza só a cada N ticks (cache entre eles)
+        if (( tick % GENLOP_EVERY == 0 )) || [[ -z $GENLOP_OUT ]]; then
+            GENLOP_OUT=$(genlop -ci 2>&1 | sed 's/$/\x1b[K/')
+        fi
+        printf "\033[K\n"
+        used=$(( used + 1 ))
+        # corta para não passar da altura do terminal (senão a tela rola e bagunça)
+        printf '%s\n' "$GENLOP_OUT" | head -n $(( $(tput lines) - used - 1 ))
     fi
 
-    sleep 1
+    tput ed
+    (( tick++ ))
+
+    # Espera 1s por uma tecla (substitui o sleep). Sai com q/Q ou ESC.
+    if read -rsn1 -t 1 key; then
+        case $key in
+            q|Q) exit 0 ;;
+            $'\e')
+                # Setas e teclas de função também começam com ESC e mandam mais bytes.
+                # Se nada vier logo depois, foi o ESC sozinho.
+                read -rsn2 -t 0.05 rest || exit 0
+                ;;
+        esac
+    elif (( $? <= 128 )); then
+        sleep 1   # stdin sem terminal/EOF: evita loop acelerado
+    fi
 done
