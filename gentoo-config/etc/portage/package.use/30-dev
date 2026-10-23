@@ -1,0 +1,52 @@
+############ TOOLCHAIN ############
+# gcc: removidos cobol, rust (front-ends extras que só alongam o build) e 'vanilla'
+# (contradiz hardened/pie/ssp: desliga os defaults que você pediu). 'jit' fica: o Emacs native-comp usa.
+sys-devel/gcc cxx pie ssp hardened -lto -pgo pch openmp extra -libgdiagnostics zstd -valgrind fortran -ada -d -modula2 -go -objc -fixed-point -objc-gc -debug cet -systemtap -ieee-long-double -test jit multilib -default-stack-clash-protection time64
+
+llvm-core/clang extra pie static-analyzer verify-sig xml -doc -test -debug -ieee-long-double
+llvm-core/llvm LLVM_TARGETS: -* X86 RISCV
+llvm-core/clang LLVM_TARGETS: -* X86 RISCV
+dev-debug/gdb multitarget
+
+# Rust: use SÓ o rust-bin (emerge -1 dev-lang/rust-bin). O dev-lang/rust do fonte com
+# ABI_X86=32 64 compilava o compilador duas vezes.
+dev-lang/rust-bin clippy rustfmt rust-analyzer rust-src
+
+############ PYTHON / WEB ############
+# Sem PYTHON_TARGETS próprios e sem wildcard dev-python/*: vale o padrão do profile.
+# (As ~150 linhas python_targets_python3_12/14 vinham do ipykernel + wildcard.)
+# Precisa de Jupyter/ipykernel? Use um venv: uv venv && uv pip install ipykernel  (ou nix develop).
+dev-lang/php mysqli pdo
+dev-lang/php POSTGRES_TARGETS: postgres18
+net-libs/nodejs npm
+
+############ CONTAINERS / VMs ############
+# VirtualBox REMOVIDO (módulo de kernel + doc; QEMU/KVM já cobre). Se precisar, descomente:
+#app-emulation/virtualbox X gui opengl alsa dbus dist-kernel modules-compress -doc
+app-containers/docker container-init overlay2 btrfs systemd -apparmor -seccomp -selinux
+app-containers/containerd btrfs
+# 'doc' virou '-doc': puxava sphinx + dezenas de pacotes Python.
+app-emulation/qemu static-user aio io-uring udev vhost-net slirp spice sdl -gtk usb fdt pin-upstream-blobs seccomp filecaps vnc jpeg png gnutls virgl opengl xattr virtfs alsa pipewire curl ssh nfs -plugins jemalloc -numa -doc -oss -infiniband -xen -systemtap -debug -valgrind -selinux
+app-emulation/qemu QEMU_SOFTMMU_TARGETS: -riscv32 riscv64 x86_64 -i386 -arm -armeb -aarch64 -aarch64_be mips -mipsel mips64 -mips64el -mipsn32 -mipsn32el -ppc -ppc64 -ppc64le -sparc -sparc32plus -sparc64 -s390x -avr -rx -xtensa -xtensaeb -tricore -hexagon -microblaze -microblazeel -alpha -hppa -m68k -or1k -sh4 -sh4eb -loongarch64
+app-emulation/qemu QEMU_USER_TARGETS: -riscv32 riscv64 x86_64 -i386 -arm -armeb -aarch64 -aarch64_be mips -mipsel mips64 -mips64el -mipsn32 -mipsn32el -ppc -ppc64 -ppc64le -sparc -sparc32plus -sparc64 -s390x -avr -rx -xtensa -xtensaeb -tricore -hexagon -microblaze -microblazeel -alpha -hppa -m68k -or1k -sh4 -sh4eb -loongarch64
+# exigidos por qemu[static-user]
+dev-libs/glib static-libs
+sys-apps/attr static-libs
+dev-libs/libpcre2 static-libs
+virtual/zlib static-libs
+sys-libs/zlib static-libs
+app-emulation/libvirt policykit
+app-emulation/virt-manager gui policykit sasl verif-sig
+net-misc/spice-gtk usbredir sasl
+net-dns/dnsmasq script
+net-libs/gnutls tools pkcs11
+
+############ CROSSDEV (deixe para o fim) ############
+cross-mips-unknown-linux-gnu/binutils -multilib
+cross-mips-unknown-linux-gnu/linux-headers -selinux headers-only -multilib
+cross-mips-unknown-linux-gnu/glibc static-libs -selinux -libraries -multilib
+cross-mips-unknown-linux-gnu/gcc -sanitize -vtv -selinux -objc -objc++ -objc-gc -multilib
+cross-riscv64-unknown-linux-gnu/binutils -multilib
+cross-riscv64-unknown-linux-gnu/linux-headers -selinux headers-only -multilib
+cross-riscv64-unknown-linux-gnu/glibc static-libs -selinux -libraries -multilib
+cross-riscv64-unknown-linux-gnu/gcc -sanitize -vtv -selinux -objc -objc++ -objc-gc -multilib

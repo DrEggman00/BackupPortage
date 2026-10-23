@@ -1,0 +1,45 @@
+############ BOOT / KERNEL ############
+# Um kernel só: gentoo-kernel (dist-kernel). O nvidia-drivers usa dist-kernel, então
+# misturar com cachyos-sources exigiria `-dist-kernel` e @module-rebuild manual.
+sys-kernel/gentoo-kernel -debug -experimental -hardened modules-compress -modules-sign -secureboot savedconfig -test -verify-sig initramfs strip
+sys-kernel/installkernel dracut grub
+sys-boot/grub mount
+
+############ SYSTEMD ############
+# Removidos: bpf (exige clang com LLVM_TARGETS BPF), secureboot, -split-usr, -cgroup-hybrid,
+# -vanilla (flags removidas/inúteis). sysv-utils estava ligado E desligado; ficou ligado.
+sys-apps/systemd kernel-install kmod lz4 zstd seccomp acl pam policykit xkb cryptsetup elfutils resolvconf dns-over-tls openssl tpm sysv-utils -http -curl -importd -homed -passwdqc -pwquality -pkcs11 -audit -apparmor -selinux -test -lzma -idn -iptables
+
+############ REDE ############
+net-misc/networkmanager iwd wifi concheck introspection nss ppp tools -bluetooth -wext -modemmanager
+net-misc/curl http2 ssl openssl brotli zstd websockets psl hsts idn -quic -http3
+net-misc/wget ssl zlib idn nls pcre
+
+############ KDE PLASMA ############
+# Corrigido: 'accesssibility' (typo, era ignorado). 'wallpapers' e '-wallpapers' juntos:
+# valia o último (desligado). '-discover' mantido: você usa o flatpak pela CLI.
+# Quer o Discover com Flatpak? troque por 'discover' aqui e descomente a linha do discover abaixo.
+kde-plasma/plasma-meta browser-integration crash-handler display-manager kwallet firewall networkmanager sddm smart bluetooth plymouth thunderbolt X -discover -grub -oxygen-theme -wallpapers
+#kde-plasma/discover firmware flatpak -telemetry -webengine
+kde-plasma/kwin lock
+kde-plasma/kwin-x11 lock
+dev-qt/qtbase cups
+dev-qt/qtmultimedia ffmpeg pipewire v4l
+x11-base/xwayland libei
+net-dns/avahi mdnsresponder-compat
+sys-apps/flatpak seccomp -test -doc X systemd policykit
+
+############ NVIDIA (GTX 1650 Max-Q = Turing, kernel-open suportado) ############
+# Removidos powerd/persistenced: nvidia-powerd só serve de Ampere em diante.
+# static-libs: exigido pelo hwloc[video_cards_nvidia] (tbb -> embree -> blender).
+x11-drivers/nvidia-drivers kernel-open modules strip static-libs X tools dist-kernel wayland modules-compress
+
+############ MESA / GRÁFICOS ############
+# Sem pinos de LLVM (20/21/23 conviviam e geravam 3 builds de LLVM). Deixe o portage escolher o slot.
+media-libs/mesa vulkan -opencl
+media-libs/libsdl2 gles2 pipewire -jack
+
+############ ÁUDIO (PipeWire) ############
+# -ffmpeg e -jack: cortam ffmpeg/librsvg/rust e jack2 de 32 bits da cadeia do Steam.
+media-video/pipewire X bluetooth sound-server pipewire-alsa dbus systemd echo-cancel gsettings liblc3 v4l zeroconf extra readline -ffmpeg -flatpak -jack-client -jack-sdk -modemmanager -roc -ieee1394 -system-service
+media-video/wireplumber -system-service

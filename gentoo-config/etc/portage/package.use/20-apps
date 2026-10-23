@@ -1,0 +1,53 @@
+############ MÍDIA ############
+# ffmpeg unificado (ffmpeg + illogical-impulse). Removidos svg e rav1e (puxavam librsvg/rust).
+media-video/ffmpeg X alsa bzip2 dav1d vulkan vaapi qsv nvenc bluray dvd cdio opencl libplacebo zimg chromaprint sdl fdk pulseaudio opengl vdpau drm gpl postproc svt-av1 x264 x265 vpx opus vorbis libass truetype fribidi fontconfig zlib lzma xml chromium webp gnutls openh264 theora lame xvid -samba -amrenc -gsm -codec2 -amf
+media-libs/libvpx postproc
+media-libs/libpng apng
+media-libs/libheif x265
+media-plugins/gst-plugins-meta theora
+media-libs/gst-plugins-base theora
+media-sound/audacity ffmpeg alsa flac ogg vorbis id3tag ladspa lv2 vamp mad mpg123 sbsms -audiocom -portmixer -twolame -test
+media-video/obs-studio browser truetype v4l pipewire pulseaudio vlc websocket fdk speex nvenc qsv wayland alsa -jack
+media-libs/opencv python v4l
+media-plugins/frei0r-plugins -facedetect
+
+############ NAVEGADORES ############
+# Ambos compilam por HORAS. Alternativas: www-client/chromium-bin e www-client/firefox-bin (ou Flatpak).
+www-client/chromium X wayland screencast -cups pulseaudio system-harfbuzz system-icu system-png system-zstd official proprietary-codecs widevine rar -debug -headless -bundled-toolchain -test -ffmpeg-chromium
+www-client/firefox X clang jumbo-build system-av1 system-harfbuzz system-jpeg system-libevent system-libvpx system-webp -telemetry dbus -debug -gnome-shell system-pipewire system-png -test wayland wifi
+www-client/firefox L10N: pt-BR
+
+############ ESCRITÓRIO / IMAGEM ############
+# LibreOffice: corrigido 'dubs' -> 'dbus'; removidos mariadb/postgres (com -base não servem e puxavam
+# postgresql+kerberos). Alternativa que não compila: app-office/libreoffice-bin.
+app-office/libreoffice branding -cups dbus kde qt6 vulkan pdfimport -base -java gstreamer bluetooth googledrive -ldap -odk -gtk -gtk3 -gtk4 -eds -coinmp -debug -test -valgrind -custom-cflags
+# GIMP: removido 'javascript' (puxava o spidermonkey inteiro). Recoloque se usa plug-ins JS.
+media-gfx/gimp wayland webp heif jpegxl jpeg2k openmp udev vector-cons lua alsa X openexr bash-completion -aqua -debug -doc -aalib -fits -postscript -wmf -xpm
+dev-lua/lgi lua_targets_luajit
+# Blender: sem pino de LLVM/Python (deixe o portage escolher). Se reclamar de cycles-bin-kernels
+# (exige cuda/hip), remova essa flag. Alternativa: media-gfx/blender-bin. Evite o blender-9999 (live/git).
+media-gfx/blender experimental cycles ffmpeg color-management opengl openmp opensubdiv oidn tbb pipewire wayland X potrace rubberband man sndfile openvdb nanovdb cycles-bin-kernels -hip -hiprt -gnome -debug -valgrind
+media-libs/opensubdiv opengl tbb
+media-libs/oidn -cuda
+media-libs/freetype brotli
+sci-physics/bullet double-precision
+sci-libs/fftw threads
+sci-mathematics/octave gui
+app-text/texlive graphics science mathtools luatex xetex truetype png metapost pstricks tex4ht humanities publishers -cjk -music -games -context -extra
+dev-libs/uriparser -doc qt6 unicode
+app-editors/emacs X acl cairo dbus dynamic-loading gfile gif gmp gtk gui harfbuzz inotify jit jpeg json libxml2 png source sqlite ssl svg systemd threads tree-sitter webp xattr xft xpm zlib -Xaw3d -aqua -athena -imagemagick -motif -xwidgets
+app-emacs/emacs-common gsettings
+app-arch/p7zip rar
+sys-fs/android-file-transfer-linux fuse
+dev-libs/libdbusmenu gtk3
+
+############ JOGOS / EMULAÇÃO ############
+# Corrigido: o atom era games-emulation/RetroArch (maiúsculo), que não casava com nada.
+games-emulation/retroarch X alsa egl opengl ozone pipewire -pulseaudio -rgui -sdl threads truetype udev vulkan wayland xv zlib 7zip -cg -cheevos -debug ffmpeg filters -gles3 -gles2 hid kms libass libusb -materialui network -openal -oss -v4l2 -videocore -xinerama -xmb
+games-emulation/eden cubeb opengl qt6 sdl usb -camera -discord llvm lto -room -test -web-applet -web-service -wifi
+media-libs/imgui sdl2 opengl vulkan glfw sdl3 sdl3-renderer sdl2-renderer
+
+############ OUTROS ############
+net-im/telegram-desktop -screencast
+media-libs/tg_owt -screencast
+net-analyzer/wireshark LUA_SINGLE_TARGET: -lua5-3 lua5-4

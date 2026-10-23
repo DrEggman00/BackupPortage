@@ -1,0 +1,3 @@
+# Este é o ÚLTIMO arquivo em ordem alfabética: o portage (--autounmask-write) anexa aqui,
+# em vez de espalhar blocos "# required by" por steam, telegram, texlive, wine...
+# Revise de vez em quando e mova o que for preferência sua para o arquivo certo.
