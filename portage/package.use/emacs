@@ -1,0 +1,1 @@
+app-editors/emacs X acl cairo dbus dynamic-loading gfile gif gmp gtk gui harfbuzz inotify jit jpeg json libxml2 png source sqlite ssl svg systemd threads tree-sitter webp xattr xft xpm zlib -Xaw3d -aqua -athena -imagemagick -motif -xwidgets

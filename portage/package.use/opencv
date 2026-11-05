@@ -1,1 +1,1 @@
-media-libs/opencv python v4l
+media-libs/opencv python v4l -mkl
