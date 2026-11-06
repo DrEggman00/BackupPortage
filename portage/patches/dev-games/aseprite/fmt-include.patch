@@ -1,0 +1,11 @@
+--- a/src/app/commands/cmd_run_command.cpp
++++ b/src/app/commands/cmd_run_command.cpp
+@@ -8,6 +8,8 @@
+   #include "config.h"
+ #endif
+ 
++#include <fmt/format.h>
++
+ #include "app/app.h"
+ #include "app/app_menus.h"
+ #include "app/commands/command.h"
