@@ -1,4 +1,3 @@
-*/* systemd -elogind
 kde-plasma/plasma-meta browser-integration crash-handler display-manager kwallet firewall networkmanager sddm smart wallpapers X accesssibility bluetooth -discover -grub -wallpapers -oxygen-theme plymouth thunderbolt
 >=app-accessibility/brltty-6.7 python
 # required by kde-plasma/xdg-desktop-portal-kde-6.3.6-r1::gentoo
