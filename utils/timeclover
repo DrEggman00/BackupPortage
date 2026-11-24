@@ -1,27 +1,78 @@
 #!/bin/bash
-# Gentoo Build Monitor - detecta progresso em vários formatos de log
+# Gentoo Build Monitor v2
+#  - progresso de build (vários formatos de log) + genlop
+#  - uso de CPU por núcleo, carga, temperatura
+#  - memória, swap e uso do diretório de build (tmpfs?)
+#  - top processos por CPU (calculado a partir do /proc) + contagem de compiladores ativos
+#
+# Teclas: [q]/[ESC] sair   [c] núcleos   [p] processos   [g] genlop
+# Variáveis: BUILD_DIR, GENLOP_EVERY, TOP_N
+
+export LC_NUMERIC=C   # EPOCHREALTIME / sort -n com ponto decimal, independente do locale
 
 BUILD_DIR="${BUILD_DIR:-/var/tmp/portage}"
 BAR_WIDTH=25
-GENLOP_EVERY="${GENLOP_EVERY:-2}"   # roda o genlop a cada N segundos (ele lê o emerge.log, não precisa ser mais rápido)
+CORE_BAR_WIDTH=8
+GENLOP_EVERY="${GENLOP_EVERY:-2}"   # roda o genlop a cada N ciclos
+TOP_N="${TOP_N:-8}"                 # quantos processos mostrar
 
-trap 'tput cnorm; exit' INT TERM EXIT
+HZ=$(getconf CLK_TCK 2>/dev/null || echo 100)
+PAGE_KB=$(( $(getconf PAGESIZE 2>/dev/null || echo 4096) / 1024 ))
+ESC=$'\e'
+
+SNAP=$(mktemp) JOBF=$(mktemp)
+cleanup() { tput cnorm; rm -f "$SNAP" "$SNAP.new" "$JOBF"; }
+trap cleanup EXIT
+trap 'exit 0' INT TERM
 tput civis
 clear
 
-# Lê as últimas linhas do log e devolve "atual total" ou "pct" via variáveis globais.
+# ---------------------------------------------------------------- utilidades
+
+FULL=$(printf '%100s' '' | tr ' ' '#')
+EMPTY=${FULL//#/-}
+
+# bar PCT LARGURA [COR]  -> resultado em $BAR (sem fork)
+bar() {
+    local p=$1 w=$2 c=$3 f
+    (( p > 100 )) && p=100
+    (( p < 0 )) && p=0
+    f=$(( p * w / 100 ))
+    if [[ -z $c ]]; then
+        if   (( p >= 80 )); then c=31
+        elif (( p >= 50 )); then c=33
+        else c=32; fi
+    fi
+    BAR="${ESC}[${c}m[${FULL:0:f}${EMPTY:0:w-f}]${ESC}[0m"
+}
+
+FRAME=()
+addf() { local l; printf -v l "$@"; FRAME+=("$l"); }
+
+# kB -> "1.2G" / "345M" em $REPLY
+human_kb() {
+    local kb=$1
+    if (( kb >= 1048576 )); then
+        local t=$(( kb * 10 / 1048576 )); REPLY="$(( t / 10 )).$(( t % 10 ))G"
+    else
+        REPLY="$(( kb / 1024 ))M"
+    fi
+}
+
+# ---------------------------------------------------------- progresso do build
+
+# Lê as últimas linhas do log e devolve CUR/TOT ou PCT via variáveis globais.
 # Formatos suportados (do mais específico para o mais genérico):
 #   [12/345]            ninja, meson
-#   Building 12/345     cargo/rust (também "Building [===>   ] 12/345: crate")
+#   Building 12/345     cargo/rust
 #   [ 45%]              cmake + make
 #   (12/345)            vários
-#   12/345              contagem solta no começo/fim da linha (ex: "Compiling ... 12/345")
-#   45%                 porcentagem solta (ex: "Building 45%")
+#   12/345              contagem solta
+#   45%                 porcentagem solta
 parse_progress() {
     local log="$1" line
     CUR="" TOT="" PCT=""
 
-    # \r -> \n porque cargo/outros reescrevem a mesma linha; tira cores ANSI
     while IFS= read -r line; do
         if   [[ $line =~ \[[[:space:]]*([0-9]+)/([0-9]+)\] ]]; then
             CUR=${BASH_REMATCH[1]} TOT=${BASH_REMATCH[2]}; return 0
@@ -40,78 +91,223 @@ parse_progress() {
     return 1
 }
 
-draw_bar() {
-    local p=$1 w=$2 filled i bar=""
-    (( p > 100 )) && p=100
-    filled=$(( p * w / 100 ))
-    for ((i=0; i<filled; i++)); do bar+="#"; done
-    for ((i=filled; i<w; i++)); do bar+="-"; done
-    printf '%s' "$bar"
+last_activity() {
+    tail -c 4000 "$1" 2>/dev/null | tr '\r' '\n' | sed 's/\x1b\[[0-9;]*[A-Za-z]//g' \
+        | grep -av '^[[:space:]]*$' | tail -n 1 | cut -c1-$(( COLS - 4 ))
 }
 
-last_activity() {
-    # Última linha não vazia, sem cores, cortada para caber na tela
-    tail -c 4000 "$1" 2>/dev/null | tr '\r' '\n' | sed 's/\x1b\[[0-9;]*[A-Za-z]//g' \
-        | grep -av '^[[:space:]]*$' | tail -n 1 | cut -c1-$(( $(tput cols) - 4 ))
+# ----------------------------------------------------------- amostras do sistema
+
+declare -A P_TOT P_IDL
+CORE_PCT=() CPU_ALL=0
+
+sample_cpu() {
+    local name u n s i w irq sirq st rest tot idl dtot didl pct
+    CORE_PCT=()
+    while read -r name u n s i w irq sirq st rest; do
+        [[ $name == cpu* ]] || break
+        tot=$(( u + n + s + i + w + irq + sirq + st )); idl=$(( i + w ))
+        dtot=$(( tot - ${P_TOT[$name]:-0} )); didl=$(( idl - ${P_IDL[$name]:-0} ))
+        pct=0
+        (( dtot > 0 && ${P_TOT[$name]:-0} > 0 )) && pct=$(( 100 * (dtot - didl) / dtot ))
+        P_TOT[$name]=$tot P_IDL[$name]=$idl
+        if [[ $name == cpu ]]; then CPU_ALL=$pct; else CORE_PCT+=("$pct"); fi
+    done < /proc/stat
+    read -r LOAD1 LOAD5 LOAD15 _ < /proc/loadavg
 }
+
+sample_mem() {
+    local k v
+    while read -r k v _; do
+        case $k in
+            MemTotal:)     MEM_T=$v ;;
+            MemAvailable:) MEM_A=$v ;;
+            SwapTotal:)    SW_T=$v ;;
+            SwapFree:)     SW_F=$v ;;
+        esac
+    done < /proc/meminfo
+}
+
+read_temp() {
+    local f t m=0
+    for f in /sys/class/thermal/thermal_zone*/temp; do
+        [[ -r $f ]] || continue
+        read -r t < "$f" 2>/dev/null || continue
+        (( t > m )) && m=$t
+    done
+    TEMP=""
+    (( m > 0 )) && TEMP=$(( m / 1000 ))
+}
+
+# CPU por processo = delta de (utime+stime) em /proc/<pid>/stat entre duas amostras.
+# (o %CPU do ps é média da vida inteira do processo; aqui é o uso real do último intervalo)
+PROCS=() JOBS=0 LAST_US=0 FIRST=1
+sample_procs() {
+    local now_us=$1
+    mapfile -t PROCS < <(
+        awk -v now="$now_us" -v last="$LAST_US" -v hz="$HZ" -v first="$FIRST" \
+            -v pkb="$PAGE_KB" -v outf="$SNAP.new" -v jf="$JOBF" '
+        BEGIN { dt = (now - last) / 1000000; if (dt <= 0) dt = 1; jobs = 0 }
+        FNR == NR { prev[$1] = $2; next }
+        {
+            split(FILENAME, fp, "/"); pid = fp[3]
+            s = $0; open = index(s, "("); pos = 0
+            while ((q = index(substr(s, pos + 1), ")")) > 0) pos += q
+            comm = substr(s, open + 1, pos - open - 1); gsub(/ /, "_", comm)
+            split(substr(s, pos + 2), a, " ")
+            t = a[12] + a[13]; rss = a[22]
+            print pid, t > outf
+            if (first)               d = 0
+            else if (pid in prev)    d = t - prev[pid]
+            else                     d = t          # processo novo no intervalo
+            cpu = d / (hz * dt) * 100; if (cpu < 0) cpu = 0
+            if (cpu >= 1 && comm ~ /^(cc1|cc1plus|cc1obj|lto1|rustc|clang|clang\+\+|ld|ld\.bfd|ld\.gold|ld\.lld|as|go|cgo|ghc|javac)$/) jobs++
+            if (cpu >= 0.1) printf "%.1f %d %d %s\n", cpu, pid, rss * pkb, comm
+        }
+        END { print jobs > jf }
+        ' "$SNAP" /proc/[0-9]*/stat 2>/dev/null | sort -rn | head -n "$TOP_N"
+    )
+    [[ -f $SNAP.new ]] && mv "$SNAP.new" "$SNAP"
+    read -r JOBS < "$JOBF"
+    LAST_US=$now_us FIRST=0
+}
+
+# ---------------------------------------------------------------- seções da tela
+
+section_builds() {
+    local LOG PKG INFO
+    mapfile -t LOGS < <(find "$BUILD_DIR" -name build.log 2>/dev/null)
+    if (( ${#LOGS[@]} == 0 )); then
+        addf "\033[2mNenhum pacote sendo compilado no momento...\033[0m"
+        GENLOP_LINES=()
+        return
+    fi
+    for LOG in "${LOGS[@]}"; do
+        # .../portage/<categoria>/<pacote-versão>/temp/build.log
+        PKG=$(awk -F/ '{print $(NF-3)"/"$(NF-2)}' <<<"$LOG")
+        if parse_progress "$LOG"; then
+            if [[ -n $TOT ]] && (( 10#$TOT > 0 )); then
+                PCT=$(( 10#$CUR * 100 / 10#$TOT ))
+                INFO="($(( 10#$CUR ))/$(( 10#$TOT )))"
+            else
+                INFO=""
+            fi
+            bar "$(( 10#$PCT ))" "$BAR_WIDTH" "1;32"
+            addf "%-40s %s %3d%% %s" "$PKG" "$BAR" "$(( 10#$PCT ))" "$INFO"
+        else
+            addf "%-40s \033[2m[%s sem progresso detectável]\033[0m" "$PKG" "$SP"
+            addf "  \033[2m> %s\033[0m" "$(last_activity "$LOG")"
+        fi
+    done
+
+    if (( SHOW_GENLOP )); then
+        if ! command -v genlop >/dev/null; then
+            GENLOP_LINES=("${ESC}[2m(genlop não instalado: emerge app-portage/genlop)${ESC}[0m")
+        elif (( tick % GENLOP_EVERY == 0 )) || (( ${#GENLOP_LINES[@]} == 0 )); then
+            mapfile -t GENLOP_LINES < <(genlop -ci 2>&1)
+        fi
+        FRAME+=("")
+        FRAME+=("${GENLOP_LINES[@]}")
+    fi
+}
+
+section_cpu() {
+    local i cells="" cell ncols per=0 temp_s=""
+    [[ -n $TEMP ]] && temp_s="  temp ${TEMP}°C"
+    bar "$CPU_ALL" "$BAR_WIDTH"
+    addf "\033[1mCPU\033[0m  %s %3d%%  carga %s %s %s  (%d threads)%s" \
+        "$BAR" "$CPU_ALL" "$LOAD1" "$LOAD5" "$LOAD15" "${#CORE_PCT[@]}" "$temp_s"
+
+    (( SHOW_CORES )) || return
+    ncols=$(( COLS / (CORE_BAR_WIDTH + 14) )); (( ncols < 1 )) && ncols=1
+    for i in "${!CORE_PCT[@]}"; do
+        bar "${CORE_PCT[i]}" "$CORE_BAR_WIDTH"
+        printf -v cell 'C%-3d%s %3d%%  ' "$i" "$BAR" "${CORE_PCT[i]}"
+        cells+=$cell
+        if (( ++per == ncols )); then FRAME+=("$cells"); cells="" per=0; fi
+    done
+    [[ -n $cells ]] && FRAME+=("$cells")
+}
+
+section_mem() {
+    local used pct a b
+    used=$(( MEM_T - MEM_A ))
+    pct=$(( MEM_T > 0 ? used * 100 / MEM_T : 0 ))
+    bar "$pct" "$BAR_WIDTH"
+    human_kb "$used"; a=$REPLY; human_kb "$MEM_T"; b=$REPLY
+    addf "\033[1mMEM\033[0m  %s %3d%%  %s / %s" "$BAR" "$pct" "$a" "$b"
+
+    local extra=""
+    if (( SW_T > 0 )); then
+        human_kb $(( SW_T - SW_F )); a=$REPLY; human_kb "$SW_T"; b=$REPLY
+        extra="swap $a/$b"
+    else
+        extra="sem swap"
+    fi
+    if [[ -d $BUILD_DIR ]]; then
+        local fs used_d size_d pc_d
+        read -r fs used_d size_d pc_d < <(df -h --output=fstype,used,size,pcent "$BUILD_DIR" 2>/dev/null | tail -n 1)
+        [[ -n $fs ]] && extra+="   $BUILD_DIR ($fs): $used_d/$size_d $pc_d"
+    fi
+    addf "     \033[2m%s\033[0m" "$extra"
+}
+
+section_procs() {
+    local row pc pid kb comm c
+    addf "\033[1mPROCESSOS\033[0m  compiladores ativos: \033[1m%s\033[0m%s" "$JOBS" "${MAKEOPTS:+   $MAKEOPTS}"
+    addf "\033[2m%-7s %6s %7s  %s\033[0m" "PID" "CPU%" "MEM" "COMANDO"
+    for row in "${PROCS[@]}"; do
+        read -r pc pid kb comm <<<"$row"
+        if   (( ${pc%.*} >= 80 )); then c=31
+        elif (( ${pc%.*} >= 40 )); then c=33
+        else c=32; fi
+        human_kb "$kb"
+        addf "%-7s ${ESC}[%sm%6s${ESC}[0m %7s  %s" "$pid" "$c" "$pc" "$REPLY" "$comm"
+    done
+}
+
+# ------------------------------------------------------------------ laço principal
 
 SPIN='|/-\'
 tick=0
-GENLOP_OUT=""
+GENLOP_LINES=()
+SHOW_CORES=1 SHOW_PROCS=1 SHOW_GENLOP=1
+MAKEOPTS=$(grep -rhE '^[[:space:]]*MAKEOPTS=' /etc/portage/make.conf 2>/dev/null | tail -n 1 | tr -d '"')
+echo "0 0" > "$SNAP"; echo 0 > "$JOBF"
 
 while true; do
-    tput cup 0 0
-    printf "\033[K\033[1;34m--- Gentoo Build Monitor ---\033[0m\n"
-    printf "\033[KPressione [q] ou [ESC] para sair\n"
-    printf "\033[K----------------------------\n"
+    COLS=$(tput cols); LINES_N=$(tput lines)
+    SP=${SPIN:$(( tick % 4 )):1}
 
-    mapfile -t LOGS < <(find "$BUILD_DIR" -name build.log 2>/dev/null)
-    sp=${SPIN:$(( tick % 4 )):1}
-    used=3   # linhas já usadas na tela (cabeçalho + barras)
-
-    if (( ${#LOGS[@]} == 0 )); then
-        printf "\033[KNenhum pacote sendo compilado no momento...\n"
-        GENLOP_OUT=""
-        used=$(( used + 1 ))
-    else
-        for LOG in "${LOGS[@]}"; do
-            # .../portage/<categoria>/<pacote-versão>/temp/build.log
-            PKG=$(awk -F/ '{print $(NF-3)"/"$(NF-2)}' <<<"$LOG")
-
-            if parse_progress "$LOG"; then
-                if [[ -n $TOT && $TOT -gt 0 ]]; then
-                    PCT=$(( CUR * 100 / TOT ))
-                    INFO="($CUR/$TOT)"
-                else
-                    INFO=""
-                fi
-                printf "\033[K%-40s \033[1;32m[%s]\033[0m %3d%% %s\n" \
-                    "$PKG" "$(draw_bar "$PCT" "$BAR_WIDTH")" "$PCT" "$INFO"
-                used=$(( used + 1 ))
-            else
-                printf "\033[K%-40s \033[2m[%s sem progresso detectável]\033[0m\n" "$PKG" "$sp"
-                printf "\033[K  \033[2m> %s\033[0m\n" "$(last_activity "$LOG")"
-                used=$(( used + 2 ))
-            fi
-        done
-
-        # genlop -ci: tempo decorrido / estimativa. Atualiza só a cada N ticks (cache entre eles)
-        if (( tick % GENLOP_EVERY == 0 )) || [[ -z $GENLOP_OUT ]]; then
-            GENLOP_OUT=$(genlop -ci 2>&1 | sed 's/$/\x1b[K/')
-        fi
-        printf "\033[K\n"
-        used=$(( used + 1 ))
-        # corta para não passar da altura do terminal (senão a tela rola e bagunça)
-        printf '%s\n' "$GENLOP_OUT" | head -n $(( $(tput lines) - used - 1 ))
+    # amostra no máximo a cada 0,5s (tecla pressionada redesenha sem distorcer os deltas)
+    now_us=${EPOCHREALTIME//[.,]/}
+    if (( now_us - LAST_US >= 500000 )); then
+        sample_cpu; sample_mem; read_temp; sample_procs "$now_us"
     fi
 
+    FRAME=()
+    addf "\033[1;34m--- Gentoo Build Monitor ---\033[0m  %(%T)T" -1
+    addf "\033[2m[q] sair  [c] núcleos  [p] processos  [g] genlop\033[0m"
+    FRAME+=("")
+    section_builds
+    FRAME+=("")
+    section_cpu
+    section_mem
+    if (( SHOW_PROCS )); then FRAME+=(""); section_procs; fi
+
+    # corta na altura do terminal (senão a tela rola e bagunça)
+    tput cup 0 0
+    printf '\033[K%s\n' "${FRAME[@]:0:LINES_N-1}"
     tput ed
     (( tick++ ))
 
-    # Espera 1s por uma tecla (substitui o sleep). Sai com q/Q ou ESC.
+    # Espera 1s por uma tecla (substitui o sleep).
     if read -rsn1 -t 1 key; then
         case $key in
             q|Q) exit 0 ;;
+            c|C) SHOW_CORES=$(( 1 - SHOW_CORES )) ;;
+            p|P) SHOW_PROCS=$(( 1 - SHOW_PROCS )) ;;
+            g|G) SHOW_GENLOP=$(( 1 - SHOW_GENLOP )) ;;
             $'\e')
                 # Setas e teclas de função também começam com ESC e mandam mais bytes.
                 # Se nada vier logo depois, foi o ESC sozinho.
